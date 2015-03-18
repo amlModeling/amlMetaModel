@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: amlMetaModel
+Bundle-SymbolicName: amlMetaModel
+Bundle-Version: 1.0.0.qualifier
+Export-Package: CAEX,
+ CAEX.impl,
+ CAEX.util,
+ Test
+Require-Bundle: org.eclipse.emf.ecore
+Import-Package: org.eclipse.emf.ecore.xmi,
+ org.eclipse.emf.ecore.xmi.impl,
+ org.eclipse.emf.ecore.xmi.util
