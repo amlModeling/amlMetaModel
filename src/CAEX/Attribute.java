@@ -18,13 +18,13 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link CAEX.Attribute#getDefaultValue <em>Default Value</em>}</li>
- *   <li>{@link CAEX.Attribute#getValue <em>Value</em>}</li>
  *   <li>{@link CAEX.Attribute#getRefSemantic <em>Ref Semantic</em>}</li>
  *   <li>{@link CAEX.Attribute#getConstraint <em>Constraint</em>}</li>
  *   <li>{@link CAEX.Attribute#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link CAEX.Attribute#getAttributeDataType <em>Attribute Data Type</em>}</li>
  *   <li>{@link CAEX.Attribute#getUnit <em>Unit</em>}</li>
+ *   <li>{@link CAEX.Attribute#getValue <em>Value</em>}</li>
+ *   <li>{@link CAEX.Attribute#getDefaultValue <em>Default Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -34,56 +34,54 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Attribute extends CAEXObject {
 	/**
-	 * Returns the value of the '<em><b>Default Value</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Default Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * A predefined default value for an attribute.
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Default Value</em>' containment reference.
-	 * @see #setDefaultValue(EObject)
+	 * @return the value of the '<em>Default Value</em>' attribute.
+	 * @see #setDefaultValue(String)
 	 * @see CAEX.CAEXPackage#getAttribute_DefaultValue()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='DefaultValue' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='element' name='DefaultValue' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EObject getDefaultValue();
+	String getDefaultValue();
 
 	/**
-	 * Sets the value of the '{@link CAEX.Attribute#getDefaultValue <em>Default Value</em>}' containment reference.
+	 * Sets the value of the '{@link CAEX.Attribute#getDefaultValue <em>Default Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Default Value</em>' containment reference.
+	 * @param value the new value of the '<em>Default Value</em>' attribute.
 	 * @see #getDefaultValue()
 	 * @generated
 	 */
-	void setDefaultValue(EObject value);
+	void setDefaultValue(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Value</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Element describing the value of an attribute.
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Value</em>' containment reference.
-	 * @see #setValue(EObject)
+	 * @return the value of the '<em>Value</em>' attribute.
+	 * @see #setValue(String)
 	 * @see CAEX.CAEXPackage#getAttribute_Value()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='Value' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='element' name='Value' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EObject getValue();
+	String getValue();
 
 	/**
-	 * Sets the value of the '{@link CAEX.Attribute#getValue <em>Value</em>}' containment reference.
+	 * Sets the value of the '{@link CAEX.Attribute#getValue <em>Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Value</em>' containment reference.
+	 * @param value the new value of the '<em>Value</em>' attribute.
 	 * @see #getValue()
 	 * @generated
 	 */
-	void setValue(EObject value);
+	void setValue(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Ref Semantic</b></em>' containment reference list.

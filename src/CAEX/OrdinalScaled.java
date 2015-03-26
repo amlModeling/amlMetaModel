@@ -24,81 +24,78 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface OrdinalScaled extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Required Max Value</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Required Max Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Element to define a maximum value of an attribute.
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Required Max Value</em>' containment reference.
-	 * @see #setRequiredMaxValue(EObject)
+	 * @return the value of the '<em>Required Max Value</em>' attribute.
+	 * @see #setRequiredMaxValue(String)
 	 * @see CAEX.CAEXPackage#getOrdinalScaled_RequiredMaxValue()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='RequiredMaxValue' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='element' name='RequiredMaxValue' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EObject getRequiredMaxValue();
+	String getRequiredMaxValue();
 
 	/**
-	 * Sets the value of the '{@link CAEX.OrdinalScaled#getRequiredMaxValue <em>Required Max Value</em>}' containment reference.
+	 * Sets the value of the '{@link CAEX.OrdinalScaled#getRequiredMaxValue <em>Required Max Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Required Max Value</em>' containment reference.
+	 * @param value the new value of the '<em>Required Max Value</em>' attribute.
 	 * @see #getRequiredMaxValue()
 	 * @generated
 	 */
-	void setRequiredMaxValue(EObject value);
+	void setRequiredMaxValue(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Required Value</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Required Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Element to define a required value of an attribute. 
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Required Value</em>' containment reference.
-	 * @see #setRequiredValue(EObject)
+	 * @return the value of the '<em>Required Value</em>' attribute.
+	 * @see #setRequiredValue(String)
 	 * @see CAEX.CAEXPackage#getOrdinalScaled_RequiredValue()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='RequiredValue' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='element' name='RequiredValue' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EObject getRequiredValue();
+	String getRequiredValue();
 
 	/**
-	 * Sets the value of the '{@link CAEX.OrdinalScaled#getRequiredValue <em>Required Value</em>}' containment reference.
+	 * Sets the value of the '{@link CAEX.OrdinalScaled#getRequiredValue <em>Required Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Required Value</em>' containment reference.
+	 * @param value the new value of the '<em>Required Value</em>' attribute.
 	 * @see #getRequiredValue()
 	 * @generated
 	 */
-	void setRequiredValue(EObject value);
+	void setRequiredValue(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Required Min Value</b></em>' containment reference.
+	 * Returns the value of the '<em><b>Required Min Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * Element to define a minimum value of an attribute.
 	 * <!-- end-model-doc -->
-	 * @return the value of the '<em>Required Min Value</em>' containment reference.
-	 * @see #setRequiredMinValue(EObject)
+	 * @return the value of the '<em>Required Min Value</em>' attribute.
+	 * @see #setRequiredMinValue(String)
 	 * @see CAEX.CAEXPackage#getOrdinalScaled_RequiredMinValue()
-	 * @model containment="true"
-	 *        extendedMetaData="kind='element' name='RequiredMinValue' namespace='##targetNamespace'"
+	 * @model extendedMetaData="kind='element' name='RequiredMinValue' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EObject getRequiredMinValue();
+	String getRequiredMinValue();
 
 	/**
-	 * Sets the value of the '{@link CAEX.OrdinalScaled#getRequiredMinValue <em>Required Min Value</em>}' containment reference.
+	 * Sets the value of the '{@link CAEX.OrdinalScaled#getRequiredMinValue <em>Required Min Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Required Min Value</em>' containment reference.
+	 * @param value the new value of the '<em>Required Min Value</em>' attribute.
 	 * @see #getRequiredMinValue()
 	 * @generated
 	 */
-	void setRequiredMinValue(EObject value);
+	void setRequiredMinValue(String value);
 
 } // OrdinalScaled

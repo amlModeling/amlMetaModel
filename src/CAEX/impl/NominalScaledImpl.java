@@ -7,6 +7,7 @@ import CAEX.NominalScaled;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -15,6 +16,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
@@ -35,14 +37,23 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class NominalScaledImpl extends EObjectImpl implements NominalScaled {
 	/**
-	 * The cached value of the '{@link #getRequiredValue() <em>Required Value</em>}' containment reference list.
+	 * The default value of the '{@link #getRequiredValue() <em>Required Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRequiredValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<EObject> requiredValue;
+	protected static final String REQUIRED_VALUE_EDEFAULT = null;
+	/**
+	 * The cached value of the '{@link #getRequiredValue() <em>Required Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRequiredValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected String requiredValue = REQUIRED_VALUE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -68,10 +79,7 @@ public class NominalScaledImpl extends EObjectImpl implements NominalScaled {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<EObject> getRequiredValue() {
-		if (requiredValue == null) {
-			requiredValue = new EObjectContainmentEList<EObject>(EObject.class, this, CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE);
-		}
+	public String getRequiredValue() {
 		return requiredValue;
 	}
 
@@ -80,13 +88,11 @@ public class NominalScaledImpl extends EObjectImpl implements NominalScaled {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE:
-				return ((InternalEList<?>)getRequiredValue()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+	public void setRequiredValue(String newRequiredValue) {
+		String oldRequiredValue = requiredValue;
+		requiredValue = newRequiredValue;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE, oldRequiredValue, requiredValue));
 	}
 
 	/**
@@ -113,8 +119,7 @@ public class NominalScaledImpl extends EObjectImpl implements NominalScaled {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE:
-				getRequiredValue().clear();
-				getRequiredValue().addAll((Collection<? extends EObject>)newValue);
+				setRequiredValue((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -129,7 +134,7 @@ public class NominalScaledImpl extends EObjectImpl implements NominalScaled {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE:
-				getRequiredValue().clear();
+				setRequiredValue(REQUIRED_VALUE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -144,9 +149,25 @@ public class NominalScaledImpl extends EObjectImpl implements NominalScaled {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CAEXPackage.NOMINAL_SCALED__REQUIRED_VALUE:
-				return requiredValue != null && !requiredValue.isEmpty();
+				return REQUIRED_VALUE_EDEFAULT == null ? requiredValue != null : !REQUIRED_VALUE_EDEFAULT.equals(requiredValue);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (requiredValue: ");
+		result.append(requiredValue);
+		result.append(')');
+		return result.toString();
 	}
 
 } //NominalScaledImpl

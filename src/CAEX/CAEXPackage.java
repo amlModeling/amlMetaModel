@@ -396,31 +396,13 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE__NAME = CAEX_OBJECT__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Default Value</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTRIBUTE__DEFAULT_VALUE = CAEX_OBJECT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Value</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTRIBUTE__VALUE = CAEX_OBJECT_FEATURE_COUNT + 1;
-
-	/**
 	 * The feature id for the '<em><b>Ref Semantic</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE__REF_SEMANTIC = CAEX_OBJECT_FEATURE_COUNT + 2;
+	int ATTRIBUTE__REF_SEMANTIC = CAEX_OBJECT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Constraint</b></em>' containment reference list.
@@ -429,7 +411,7 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE__CONSTRAINT = CAEX_OBJECT_FEATURE_COUNT + 3;
+	int ATTRIBUTE__CONSTRAINT = CAEX_OBJECT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
@@ -438,7 +420,7 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE__ATTRIBUTE = CAEX_OBJECT_FEATURE_COUNT + 4;
+	int ATTRIBUTE__ATTRIBUTE = CAEX_OBJECT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Attribute Data Type</b></em>' attribute.
@@ -447,7 +429,7 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE__ATTRIBUTE_DATA_TYPE = CAEX_OBJECT_FEATURE_COUNT + 5;
+	int ATTRIBUTE__ATTRIBUTE_DATA_TYPE = CAEX_OBJECT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Unit</b></em>' attribute.
@@ -456,7 +438,25 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE__UNIT = CAEX_OBJECT_FEATURE_COUNT + 6;
+	int ATTRIBUTE__UNIT = CAEX_OBJECT_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__VALUE = CAEX_OBJECT_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Default Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__DEFAULT_VALUE = CAEX_OBJECT_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
@@ -2069,7 +2069,7 @@ public interface CAEXPackage extends EPackage {
 	int NOMINAL_SCALED = 19;
 
 	/**
-	 * The feature id for the '<em><b>Required Value</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Required Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2097,7 +2097,7 @@ public interface CAEXPackage extends EPackage {
 	int ORDINAL_SCALED = 20;
 
 	/**
-	 * The feature id for the '<em><b>Required Max Value</b></em>' containment reference.
+	 * The feature id for the '<em><b>Required Max Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2106,7 +2106,7 @@ public interface CAEXPackage extends EPackage {
 	int ORDINAL_SCALED__REQUIRED_MAX_VALUE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Required Value</b></em>' containment reference.
+	 * The feature id for the '<em><b>Required Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2115,7 +2115,7 @@ public interface CAEXPackage extends EPackage {
 	int ORDINAL_SCALED__REQUIRED_VALUE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Required Min Value</b></em>' containment reference.
+	 * The feature id for the '<em><b>Required Min Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3261,26 +3261,26 @@ public interface CAEXPackage extends EPackage {
 	EClass getAttribute();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link CAEX.Attribute#getDefaultValue <em>Default Value</em>}'.
+	 * Returns the meta object for the attribute '{@link CAEX.Attribute#getDefaultValue <em>Default Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Default Value</em>'.
+	 * @return the meta object for the attribute '<em>Default Value</em>'.
 	 * @see CAEX.Attribute#getDefaultValue()
 	 * @see #getAttribute()
 	 * @generated
 	 */
-	EReference getAttribute_DefaultValue();
+	EAttribute getAttribute_DefaultValue();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link CAEX.Attribute#getValue <em>Value</em>}'.
+	 * Returns the meta object for the attribute '{@link CAEX.Attribute#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Value</em>'.
+	 * @return the meta object for the attribute '<em>Value</em>'.
 	 * @see CAEX.Attribute#getValue()
 	 * @see #getAttribute()
 	 * @generated
 	 */
-	EReference getAttribute_Value();
+	EAttribute getAttribute_Value();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link CAEX.Attribute#getRefSemantic <em>Ref Semantic</em>}'.
@@ -3991,15 +3991,15 @@ public interface CAEXPackage extends EPackage {
 	EClass getNominalScaled();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link CAEX.NominalScaled#getRequiredValue <em>Required Value</em>}'.
+	 * Returns the meta object for the attribute '{@link CAEX.NominalScaled#getRequiredValue <em>Required Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Required Value</em>'.
+	 * @return the meta object for the attribute '<em>Required Value</em>'.
 	 * @see CAEX.NominalScaled#getRequiredValue()
 	 * @see #getNominalScaled()
 	 * @generated
 	 */
-	EReference getNominalScaled_RequiredValue();
+	EAttribute getNominalScaled_RequiredValue();
 
 	/**
 	 * Returns the meta object for class '{@link CAEX.OrdinalScaled <em>Ordinal Scaled</em>}'.
@@ -4012,37 +4012,37 @@ public interface CAEXPackage extends EPackage {
 	EClass getOrdinalScaled();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link CAEX.OrdinalScaled#getRequiredMaxValue <em>Required Max Value</em>}'.
+	 * Returns the meta object for the attribute '{@link CAEX.OrdinalScaled#getRequiredMaxValue <em>Required Max Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Required Max Value</em>'.
+	 * @return the meta object for the attribute '<em>Required Max Value</em>'.
 	 * @see CAEX.OrdinalScaled#getRequiredMaxValue()
 	 * @see #getOrdinalScaled()
 	 * @generated
 	 */
-	EReference getOrdinalScaled_RequiredMaxValue();
+	EAttribute getOrdinalScaled_RequiredMaxValue();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link CAEX.OrdinalScaled#getRequiredValue <em>Required Value</em>}'.
+	 * Returns the meta object for the attribute '{@link CAEX.OrdinalScaled#getRequiredValue <em>Required Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Required Value</em>'.
+	 * @return the meta object for the attribute '<em>Required Value</em>'.
 	 * @see CAEX.OrdinalScaled#getRequiredValue()
 	 * @see #getOrdinalScaled()
 	 * @generated
 	 */
-	EReference getOrdinalScaled_RequiredValue();
+	EAttribute getOrdinalScaled_RequiredValue();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link CAEX.OrdinalScaled#getRequiredMinValue <em>Required Min Value</em>}'.
+	 * Returns the meta object for the attribute '{@link CAEX.OrdinalScaled#getRequiredMinValue <em>Required Min Value</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Required Min Value</em>'.
+	 * @return the meta object for the attribute '<em>Required Min Value</em>'.
 	 * @see CAEX.OrdinalScaled#getRequiredMinValue()
 	 * @see #getOrdinalScaled()
 	 * @generated
 	 */
-	EReference getOrdinalScaled_RequiredMinValue();
+	EAttribute getOrdinalScaled_RequiredMinValue();
 
 	/**
 	 * Returns the meta object for class '{@link CAEX.RefSemantic <em>Ref Semantic</em>}'.
@@ -4554,20 +4554,20 @@ public interface CAEXPackage extends EPackage {
 		EClass ATTRIBUTE = eINSTANCE.getAttribute();
 
 		/**
-		 * The meta object literal for the '<em><b>Default Value</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Default Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ATTRIBUTE__DEFAULT_VALUE = eINSTANCE.getAttribute_DefaultValue();
+		EAttribute ATTRIBUTE__DEFAULT_VALUE = eINSTANCE.getAttribute_DefaultValue();
 
 		/**
-		 * The meta object literal for the '<em><b>Value</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ATTRIBUTE__VALUE = eINSTANCE.getAttribute_Value();
+		EAttribute ATTRIBUTE__VALUE = eINSTANCE.getAttribute_Value();
 
 		/**
 		 * The meta object literal for the '<em><b>Ref Semantic</b></em>' containment reference list feature.
@@ -5134,12 +5134,12 @@ public interface CAEXPackage extends EPackage {
 		EClass NOMINAL_SCALED = eINSTANCE.getNominalScaled();
 
 		/**
-		 * The meta object literal for the '<em><b>Required Value</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Required Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference NOMINAL_SCALED__REQUIRED_VALUE = eINSTANCE.getNominalScaled_RequiredValue();
+		EAttribute NOMINAL_SCALED__REQUIRED_VALUE = eINSTANCE.getNominalScaled_RequiredValue();
 
 		/**
 		 * The meta object literal for the '{@link CAEX.impl.OrdinalScaledImpl <em>Ordinal Scaled</em>}' class.
@@ -5152,28 +5152,28 @@ public interface CAEXPackage extends EPackage {
 		EClass ORDINAL_SCALED = eINSTANCE.getOrdinalScaled();
 
 		/**
-		 * The meta object literal for the '<em><b>Required Max Value</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Required Max Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDINAL_SCALED__REQUIRED_MAX_VALUE = eINSTANCE.getOrdinalScaled_RequiredMaxValue();
+		EAttribute ORDINAL_SCALED__REQUIRED_MAX_VALUE = eINSTANCE.getOrdinalScaled_RequiredMaxValue();
 
 		/**
-		 * The meta object literal for the '<em><b>Required Value</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Required Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDINAL_SCALED__REQUIRED_VALUE = eINSTANCE.getOrdinalScaled_RequiredValue();
+		EAttribute ORDINAL_SCALED__REQUIRED_VALUE = eINSTANCE.getOrdinalScaled_RequiredValue();
 
 		/**
-		 * The meta object literal for the '<em><b>Required Min Value</b></em>' containment reference feature.
+		 * The meta object literal for the '<em><b>Required Min Value</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ORDINAL_SCALED__REQUIRED_MIN_VALUE = eINSTANCE.getOrdinalScaled_RequiredMinValue();
+		EAttribute ORDINAL_SCALED__REQUIRED_MIN_VALUE = eINSTANCE.getOrdinalScaled_RequiredMinValue();
 
 		/**
 		 * The meta object literal for the '{@link CAEX.impl.RefSemanticImpl <em>Ref Semantic</em>}' class.

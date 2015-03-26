@@ -30,39 +30,19 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link CAEX.impl.AttributeImpl#getDefaultValue <em>Default Value</em>}</li>
- *   <li>{@link CAEX.impl.AttributeImpl#getValue <em>Value</em>}</li>
  *   <li>{@link CAEX.impl.AttributeImpl#getRefSemantic <em>Ref Semantic</em>}</li>
  *   <li>{@link CAEX.impl.AttributeImpl#getConstraint <em>Constraint</em>}</li>
  *   <li>{@link CAEX.impl.AttributeImpl#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link CAEX.impl.AttributeImpl#getAttributeDataType <em>Attribute Data Type</em>}</li>
  *   <li>{@link CAEX.impl.AttributeImpl#getUnit <em>Unit</em>}</li>
+ *   <li>{@link CAEX.impl.AttributeImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link CAEX.impl.AttributeImpl#getDefaultValue <em>Default Value</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
 public class AttributeImpl extends CAEXObjectImpl implements Attribute {
-	/**
-	 * The cached value of the '{@link #getDefaultValue() <em>Default Value</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDefaultValue()
-	 * @generated
-	 * @ordered
-	 */
-	protected EObject defaultValue;
-
-	/**
-	 * The cached value of the '{@link #getValue() <em>Value</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getValue()
-	 * @generated
-	 * @ordered
-	 */
-	protected EObject value;
-
 	/**
 	 * The cached value of the '{@link #getRefSemantic() <em>Ref Semantic</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -134,6 +114,46 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	protected String unit = UNIT_EDEFAULT;
 
 	/**
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALUE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected String value = VALUE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDefaultValue() <em>Default Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDefaultValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DEFAULT_VALUE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDefaultValue() <em>Default Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDefaultValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected String defaultValue = DEFAULT_VALUE_EDEFAULT;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -157,7 +177,7 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObject getDefaultValue() {
+	public String getDefaultValue() {
 		return defaultValue;
 	}
 
@@ -166,14 +186,11 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetDefaultValue(EObject newDefaultValue, NotificationChain msgs) {
-		EObject oldDefaultValue = defaultValue;
+	public void setDefaultValue(String newDefaultValue) {
+		String oldDefaultValue = defaultValue;
 		defaultValue = newDefaultValue;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CAEXPackage.ATTRIBUTE__DEFAULT_VALUE, oldDefaultValue, newDefaultValue);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ATTRIBUTE__DEFAULT_VALUE, oldDefaultValue, defaultValue));
 	}
 
 	/**
@@ -181,26 +198,7 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDefaultValue(EObject newDefaultValue) {
-		if (newDefaultValue != defaultValue) {
-			NotificationChain msgs = null;
-			if (defaultValue != null)
-				msgs = ((InternalEObject)defaultValue).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.ATTRIBUTE__DEFAULT_VALUE, null, msgs);
-			if (newDefaultValue != null)
-				msgs = ((InternalEObject)newDefaultValue).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.ATTRIBUTE__DEFAULT_VALUE, null, msgs);
-			msgs = basicSetDefaultValue(newDefaultValue, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ATTRIBUTE__DEFAULT_VALUE, newDefaultValue, newDefaultValue));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EObject getValue() {
+	public String getValue() {
 		return value;
 	}
 
@@ -209,33 +207,11 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetValue(EObject newValue, NotificationChain msgs) {
-		EObject oldValue = value;
+	public void setValue(String newValue) {
+		String oldValue = value;
 		value = newValue;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CAEXPackage.ATTRIBUTE__VALUE, oldValue, newValue);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setValue(EObject newValue) {
-		if (newValue != value) {
-			NotificationChain msgs = null;
-			if (value != null)
-				msgs = ((InternalEObject)value).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.ATTRIBUTE__VALUE, null, msgs);
-			if (newValue != null)
-				msgs = ((InternalEObject)newValue).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.ATTRIBUTE__VALUE, null, msgs);
-			msgs = basicSetValue(newValue, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ATTRIBUTE__VALUE, newValue, newValue));
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ATTRIBUTE__VALUE, oldValue, value));
 	}
 
 	/**
@@ -324,10 +300,6 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
-				return basicSetDefaultValue(null, msgs);
-			case CAEXPackage.ATTRIBUTE__VALUE:
-				return basicSetValue(null, msgs);
 			case CAEXPackage.ATTRIBUTE__REF_SEMANTIC:
 				return ((InternalEList<?>)getRefSemantic()).basicRemove(otherEnd, msgs);
 			case CAEXPackage.ATTRIBUTE__CONSTRAINT:
@@ -346,10 +318,6 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
-				return getDefaultValue();
-			case CAEXPackage.ATTRIBUTE__VALUE:
-				return getValue();
 			case CAEXPackage.ATTRIBUTE__REF_SEMANTIC:
 				return getRefSemantic();
 			case CAEXPackage.ATTRIBUTE__CONSTRAINT:
@@ -360,6 +328,10 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 				return getAttributeDataType();
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				return getUnit();
+			case CAEXPackage.ATTRIBUTE__VALUE:
+				return getValue();
+			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
+				return getDefaultValue();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -373,12 +345,6 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
-				setDefaultValue((EObject)newValue);
-				return;
-			case CAEXPackage.ATTRIBUTE__VALUE:
-				setValue((EObject)newValue);
-				return;
 			case CAEXPackage.ATTRIBUTE__REF_SEMANTIC:
 				getRefSemantic().clear();
 				getRefSemantic().addAll((Collection<? extends RefSemantic>)newValue);
@@ -397,6 +363,12 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				setUnit((String)newValue);
 				return;
+			case CAEXPackage.ATTRIBUTE__VALUE:
+				setValue((String)newValue);
+				return;
+			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
+				setDefaultValue((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -409,12 +381,6 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
-				setDefaultValue((EObject)null);
-				return;
-			case CAEXPackage.ATTRIBUTE__VALUE:
-				setValue((EObject)null);
-				return;
 			case CAEXPackage.ATTRIBUTE__REF_SEMANTIC:
 				getRefSemantic().clear();
 				return;
@@ -430,6 +396,12 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				setUnit(UNIT_EDEFAULT);
 				return;
+			case CAEXPackage.ATTRIBUTE__VALUE:
+				setValue(VALUE_EDEFAULT);
+				return;
+			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
+				setDefaultValue(DEFAULT_VALUE_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -442,10 +414,6 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
-				return defaultValue != null;
-			case CAEXPackage.ATTRIBUTE__VALUE:
-				return value != null;
 			case CAEXPackage.ATTRIBUTE__REF_SEMANTIC:
 				return refSemantic != null && !refSemantic.isEmpty();
 			case CAEXPackage.ATTRIBUTE__CONSTRAINT:
@@ -456,6 +424,10 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 				return ATTRIBUTE_DATA_TYPE_EDEFAULT == null ? attributeDataType != null : !ATTRIBUTE_DATA_TYPE_EDEFAULT.equals(attributeDataType);
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				return UNIT_EDEFAULT == null ? unit != null : !UNIT_EDEFAULT.equals(unit);
+			case CAEXPackage.ATTRIBUTE__VALUE:
+				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
+			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
+				return DEFAULT_VALUE_EDEFAULT == null ? defaultValue != null : !DEFAULT_VALUE_EDEFAULT.equals(defaultValue);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -474,6 +446,10 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 		result.append(attributeDataType);
 		result.append(", unit: ");
 		result.append(unit);
+		result.append(", value: ");
+		result.append(value);
+		result.append(", defaultValue: ");
+		result.append(defaultValue);
 		result.append(')');
 		return result.toString();
 	}

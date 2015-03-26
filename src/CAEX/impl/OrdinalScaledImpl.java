@@ -32,34 +32,64 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  */
 public class OrdinalScaledImpl extends EObjectImpl implements OrdinalScaled {
 	/**
-	 * The cached value of the '{@link #getRequiredMaxValue() <em>Required Max Value</em>}' containment reference.
+	 * The default value of the '{@link #getRequiredMaxValue() <em>Required Max Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRequiredMaxValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected EObject requiredMaxValue;
+	protected static final String REQUIRED_MAX_VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getRequiredValue() <em>Required Value</em>}' containment reference.
+	 * The cached value of the '{@link #getRequiredMaxValue() <em>Required Max Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRequiredMaxValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected String requiredMaxValue = REQUIRED_MAX_VALUE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getRequiredValue() <em>Required Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRequiredValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected EObject requiredValue;
+	protected static final String REQUIRED_VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getRequiredMinValue() <em>Required Min Value</em>}' containment reference.
+	 * The cached value of the '{@link #getRequiredValue() <em>Required Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRequiredValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected String requiredValue = REQUIRED_VALUE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getRequiredMinValue() <em>Required Min Value</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getRequiredMinValue()
 	 * @generated
 	 * @ordered
 	 */
-	protected EObject requiredMinValue;
+	protected static final String REQUIRED_MIN_VALUE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getRequiredMinValue() <em>Required Min Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRequiredMinValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected String requiredMinValue = REQUIRED_MIN_VALUE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,7 +115,7 @@ public class OrdinalScaledImpl extends EObjectImpl implements OrdinalScaled {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EObject getRequiredMaxValue() {
+	public String getRequiredMaxValue() {
 		return requiredMaxValue;
 	}
 
@@ -94,14 +124,11 @@ public class OrdinalScaledImpl extends EObjectImpl implements OrdinalScaled {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRequiredMaxValue(EObject newRequiredMaxValue, NotificationChain msgs) {
-		EObject oldRequiredMaxValue = requiredMaxValue;
+	public void setRequiredMaxValue(String newRequiredMaxValue) {
+		String oldRequiredMaxValue = requiredMaxValue;
 		requiredMaxValue = newRequiredMaxValue;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CAEXPackage.ORDINAL_SCALED__REQUIRED_MAX_VALUE, oldRequiredMaxValue, newRequiredMaxValue);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ORDINAL_SCALED__REQUIRED_MAX_VALUE, oldRequiredMaxValue, requiredMaxValue));
 	}
 
 	/**
@@ -109,26 +136,7 @@ public class OrdinalScaledImpl extends EObjectImpl implements OrdinalScaled {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRequiredMaxValue(EObject newRequiredMaxValue) {
-		if (newRequiredMaxValue != requiredMaxValue) {
-			NotificationChain msgs = null;
-			if (requiredMaxValue != null)
-				msgs = ((InternalEObject)requiredMaxValue).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.ORDINAL_SCALED__REQUIRED_MAX_VALUE, null, msgs);
-			if (newRequiredMaxValue != null)
-				msgs = ((InternalEObject)newRequiredMaxValue).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.ORDINAL_SCALED__REQUIRED_MAX_VALUE, null, msgs);
-			msgs = basicSetRequiredMaxValue(newRequiredMaxValue, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ORDINAL_SCALED__REQUIRED_MAX_VALUE, newRequiredMaxValue, newRequiredMaxValue));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EObject getRequiredValue() {
+	public String getRequiredValue() {
 		return requiredValue;
 	}
 
@@ -137,14 +145,11 @@ public class OrdinalScaledImpl extends EObjectImpl implements OrdinalScaled {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRequiredValue(EObject newRequiredValue, NotificationChain msgs) {
-		EObject oldRequiredValue = requiredValue;
+	public void setRequiredValue(String newRequiredValue) {
+		String oldRequiredValue = requiredValue;
 		requiredValue = newRequiredValue;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CAEXPackage.ORDINAL_SCALED__REQUIRED_VALUE, oldRequiredValue, newRequiredValue);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ORDINAL_SCALED__REQUIRED_VALUE, oldRequiredValue, requiredValue));
 	}
 
 	/**
@@ -152,26 +157,7 @@ public class OrdinalScaledImpl extends EObjectImpl implements OrdinalScaled {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setRequiredValue(EObject newRequiredValue) {
-		if (newRequiredValue != requiredValue) {
-			NotificationChain msgs = null;
-			if (requiredValue != null)
-				msgs = ((InternalEObject)requiredValue).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.ORDINAL_SCALED__REQUIRED_VALUE, null, msgs);
-			if (newRequiredValue != null)
-				msgs = ((InternalEObject)newRequiredValue).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.ORDINAL_SCALED__REQUIRED_VALUE, null, msgs);
-			msgs = basicSetRequiredValue(newRequiredValue, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ORDINAL_SCALED__REQUIRED_VALUE, newRequiredValue, newRequiredValue));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EObject getRequiredMinValue() {
+	public String getRequiredMinValue() {
 		return requiredMinValue;
 	}
 
@@ -180,51 +166,11 @@ public class OrdinalScaledImpl extends EObjectImpl implements OrdinalScaled {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetRequiredMinValue(EObject newRequiredMinValue, NotificationChain msgs) {
-		EObject oldRequiredMinValue = requiredMinValue;
+	public void setRequiredMinValue(String newRequiredMinValue) {
+		String oldRequiredMinValue = requiredMinValue;
 		requiredMinValue = newRequiredMinValue;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CAEXPackage.ORDINAL_SCALED__REQUIRED_MIN_VALUE, oldRequiredMinValue, newRequiredMinValue);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setRequiredMinValue(EObject newRequiredMinValue) {
-		if (newRequiredMinValue != requiredMinValue) {
-			NotificationChain msgs = null;
-			if (requiredMinValue != null)
-				msgs = ((InternalEObject)requiredMinValue).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.ORDINAL_SCALED__REQUIRED_MIN_VALUE, null, msgs);
-			if (newRequiredMinValue != null)
-				msgs = ((InternalEObject)newRequiredMinValue).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CAEXPackage.ORDINAL_SCALED__REQUIRED_MIN_VALUE, null, msgs);
-			msgs = basicSetRequiredMinValue(newRequiredMinValue, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ORDINAL_SCALED__REQUIRED_MIN_VALUE, newRequiredMinValue, newRequiredMinValue));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case CAEXPackage.ORDINAL_SCALED__REQUIRED_MAX_VALUE:
-				return basicSetRequiredMaxValue(null, msgs);
-			case CAEXPackage.ORDINAL_SCALED__REQUIRED_VALUE:
-				return basicSetRequiredValue(null, msgs);
-			case CAEXPackage.ORDINAL_SCALED__REQUIRED_MIN_VALUE:
-				return basicSetRequiredMinValue(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ORDINAL_SCALED__REQUIRED_MIN_VALUE, oldRequiredMinValue, requiredMinValue));
 	}
 
 	/**
@@ -254,13 +200,13 @@ public class OrdinalScaledImpl extends EObjectImpl implements OrdinalScaled {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CAEXPackage.ORDINAL_SCALED__REQUIRED_MAX_VALUE:
-				setRequiredMaxValue((EObject)newValue);
+				setRequiredMaxValue((String)newValue);
 				return;
 			case CAEXPackage.ORDINAL_SCALED__REQUIRED_VALUE:
-				setRequiredValue((EObject)newValue);
+				setRequiredValue((String)newValue);
 				return;
 			case CAEXPackage.ORDINAL_SCALED__REQUIRED_MIN_VALUE:
-				setRequiredMinValue((EObject)newValue);
+				setRequiredMinValue((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -275,13 +221,13 @@ public class OrdinalScaledImpl extends EObjectImpl implements OrdinalScaled {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case CAEXPackage.ORDINAL_SCALED__REQUIRED_MAX_VALUE:
-				setRequiredMaxValue((EObject)null);
+				setRequiredMaxValue(REQUIRED_MAX_VALUE_EDEFAULT);
 				return;
 			case CAEXPackage.ORDINAL_SCALED__REQUIRED_VALUE:
-				setRequiredValue((EObject)null);
+				setRequiredValue(REQUIRED_VALUE_EDEFAULT);
 				return;
 			case CAEXPackage.ORDINAL_SCALED__REQUIRED_MIN_VALUE:
-				setRequiredMinValue((EObject)null);
+				setRequiredMinValue(REQUIRED_MIN_VALUE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -296,13 +242,33 @@ public class OrdinalScaledImpl extends EObjectImpl implements OrdinalScaled {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case CAEXPackage.ORDINAL_SCALED__REQUIRED_MAX_VALUE:
-				return requiredMaxValue != null;
+				return REQUIRED_MAX_VALUE_EDEFAULT == null ? requiredMaxValue != null : !REQUIRED_MAX_VALUE_EDEFAULT.equals(requiredMaxValue);
 			case CAEXPackage.ORDINAL_SCALED__REQUIRED_VALUE:
-				return requiredValue != null;
+				return REQUIRED_VALUE_EDEFAULT == null ? requiredValue != null : !REQUIRED_VALUE_EDEFAULT.equals(requiredValue);
 			case CAEXPackage.ORDINAL_SCALED__REQUIRED_MIN_VALUE:
-				return requiredMinValue != null;
+				return REQUIRED_MIN_VALUE_EDEFAULT == null ? requiredMinValue != null : !REQUIRED_MIN_VALUE_EDEFAULT.equals(requiredMinValue);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (requiredMaxValue: ");
+		result.append(requiredMaxValue);
+		result.append(", requiredValue: ");
+		result.append(requiredValue);
+		result.append(", requiredMinValue: ");
+		result.append(requiredMinValue);
+		result.append(')');
+		return result.toString();
 	}
 
 } //OrdinalScaledImpl

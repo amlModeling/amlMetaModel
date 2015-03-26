@@ -358,16 +358,11 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		// Initialize simple dependencies
 		XMLTypePackage.eINSTANCE.eClass();
 
-		// Obtain or create and register interdependencies
-		//FilesystemPackageImpl theFilesystemPackage = (FilesystemPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(FilesystemPackage.eNS_URI) instanceof FilesystemPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(FilesystemPackage.eNS_URI) : FilesystemPackage.eINSTANCE);
-
 		// Create package meta-data objects
 		theCAEXPackage.createPackageContents();
-		//theFilesystemPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theCAEXPackage.initializePackageContents();
-		//theFilesystemPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theCAEXPackage.freeze();
@@ -419,8 +414,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getAttribute_DefaultValue() {
-		return (EReference)attributeEClass.getEStructuralFeatures().get(0);
+	public EAttribute getAttribute_DefaultValue() {
+		return (EAttribute)attributeEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -428,43 +423,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getAttribute_Value() {
-		return (EReference)attributeEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAttribute_RefSemantic() {
-		return (EReference)attributeEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAttribute_Constraint() {
-		return (EReference)attributeEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getAttribute_Attribute() {
-		return (EReference)attributeEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EAttribute getAttribute_AttributeDataType() {
+	public EAttribute getAttribute_Value() {
 		return (EAttribute)attributeEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -473,8 +432,44 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getAttribute_RefSemantic() {
+		return (EReference)attributeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttribute_Constraint() {
+		return (EReference)attributeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttribute_Attribute() {
+		return (EReference)attributeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAttribute_AttributeDataType() {
+		return (EAttribute)attributeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EAttribute getAttribute_Unit() {
-		return (EAttribute)attributeEClass.getEStructuralFeatures().get(6);
+		return (EAttribute)attributeEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -1031,8 +1026,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getNominalScaled_RequiredValue() {
-		return (EReference)nominalScaledEClass.getEStructuralFeatures().get(0);
+	public EAttribute getNominalScaled_RequiredValue() {
+		return (EAttribute)nominalScaledEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1049,8 +1044,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getOrdinalScaled_RequiredMaxValue() {
-		return (EReference)ordinalScaledEClass.getEStructuralFeatures().get(0);
+	public EAttribute getOrdinalScaled_RequiredMaxValue() {
+		return (EAttribute)ordinalScaledEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -1058,8 +1053,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getOrdinalScaled_RequiredValue() {
-		return (EReference)ordinalScaledEClass.getEStructuralFeatures().get(1);
+	public EAttribute getOrdinalScaled_RequiredValue() {
+		return (EAttribute)ordinalScaledEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1067,8 +1062,8 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getOrdinalScaled_RequiredMinValue() {
-		return (EReference)ordinalScaledEClass.getEStructuralFeatures().get(2);
+	public EAttribute getOrdinalScaled_RequiredMinValue() {
+		return (EAttribute)ordinalScaledEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -1482,13 +1477,13 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		createEAttribute(attributeNameMappingEClass, ATTRIBUTE_NAME_MAPPING__SYSTEM_UNIT_ATTRIBUTE_NAME);
 
 		attributeEClass = createEClass(ATTRIBUTE);
-		createEReference(attributeEClass, ATTRIBUTE__DEFAULT_VALUE);
-		createEReference(attributeEClass, ATTRIBUTE__VALUE);
 		createEReference(attributeEClass, ATTRIBUTE__REF_SEMANTIC);
 		createEReference(attributeEClass, ATTRIBUTE__CONSTRAINT);
 		createEReference(attributeEClass, ATTRIBUTE__ATTRIBUTE);
 		createEAttribute(attributeEClass, ATTRIBUTE__ATTRIBUTE_DATA_TYPE);
 		createEAttribute(attributeEClass, ATTRIBUTE__UNIT);
+		createEAttribute(attributeEClass, ATTRIBUTE__VALUE);
+		createEAttribute(attributeEClass, ATTRIBUTE__DEFAULT_VALUE);
 
 		attributeValueRequirementEClass = createEClass(ATTRIBUTE_VALUE_REQUIREMENT);
 		createEReference(attributeValueRequirementEClass, ATTRIBUTE_VALUE_REQUIREMENT__ORDINAL_SCALED_TYPE);
@@ -1568,12 +1563,12 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		createEReference(mappingEClass, MAPPING__INTERFACE_NAME_MAPPING);
 
 		nominalScaledEClass = createEClass(NOMINAL_SCALED);
-		createEReference(nominalScaledEClass, NOMINAL_SCALED__REQUIRED_VALUE);
+		createEAttribute(nominalScaledEClass, NOMINAL_SCALED__REQUIRED_VALUE);
 
 		ordinalScaledEClass = createEClass(ORDINAL_SCALED);
-		createEReference(ordinalScaledEClass, ORDINAL_SCALED__REQUIRED_MAX_VALUE);
-		createEReference(ordinalScaledEClass, ORDINAL_SCALED__REQUIRED_VALUE);
-		createEReference(ordinalScaledEClass, ORDINAL_SCALED__REQUIRED_MIN_VALUE);
+		createEAttribute(ordinalScaledEClass, ORDINAL_SCALED__REQUIRED_MAX_VALUE);
+		createEAttribute(ordinalScaledEClass, ORDINAL_SCALED__REQUIRED_VALUE);
+		createEAttribute(ordinalScaledEClass, ORDINAL_SCALED__REQUIRED_MIN_VALUE);
 
 		refSemanticEClass = createEClass(REF_SEMANTIC);
 		createEAttribute(refSemanticEClass, REF_SEMANTIC__CORRESPONDING_ATTRIBUTE_PATH);
@@ -1697,13 +1692,13 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		initEAttribute(getAttributeNameMapping_SystemUnitAttributeName(), theXMLTypePackage.getString(), "systemUnitAttributeName", null, 1, 1, AttributeNameMapping.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getAttribute_DefaultValue(), ecorePackage.getEObject(), null, "defaultValue", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getAttribute_Value(), ecorePackage.getEObject(), null, "value", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAttribute_RefSemantic(), this.getRefSemantic(), null, "refSemantic", null, 0, -1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAttribute_Constraint(), this.getAttributeValueRequirement(), null, "constraint", null, 0, -1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAttribute_Attribute(), this.getAttribute(), null, "attribute", null, 0, -1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttribute_AttributeDataType(), this.getAttributeDataType(), "attributeDataType", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttribute_Unit(), theXMLTypePackage.getString(), "unit", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAttribute_Value(), ecorePackage.getEString(), "value", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAttribute_DefaultValue(), ecorePackage.getEString(), "defaultValue", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(attributeValueRequirementEClass, AttributeValueRequirement.class, "AttributeValueRequirement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAttributeValueRequirement_OrdinalScaledType(), this.getOrdinalScaled(), null, "ordinalScaledType", null, 0, 1, AttributeValueRequirement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1783,12 +1778,12 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		initEReference(getMapping_InterfaceNameMapping(), this.getInterfaceNameMapping(), null, "interfaceNameMapping", null, 0, -1, Mapping.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(nominalScaledEClass, NominalScaled.class, "NominalScaled", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getNominalScaled_RequiredValue(), ecorePackage.getEObject(), null, "requiredValue", null, 0, -1, NominalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getNominalScaled_RequiredValue(), ecorePackage.getEString(), "requiredValue", null, 0, 1, NominalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(ordinalScaledEClass, OrdinalScaled.class, "OrdinalScaled", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getOrdinalScaled_RequiredMaxValue(), ecorePackage.getEObject(), null, "requiredMaxValue", null, 0, 1, OrdinalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrdinalScaled_RequiredValue(), ecorePackage.getEObject(), null, "requiredValue", null, 0, 1, OrdinalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getOrdinalScaled_RequiredMinValue(), ecorePackage.getEObject(), null, "requiredMinValue", null, 0, 1, OrdinalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOrdinalScaled_RequiredMaxValue(), ecorePackage.getEString(), "requiredMaxValue", null, 0, 1, OrdinalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOrdinalScaled_RequiredValue(), ecorePackage.getEString(), "requiredValue", null, 0, 1, OrdinalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOrdinalScaled_RequiredMinValue(), ecorePackage.getEString(), "requiredMinValue", null, 0, 1, OrdinalScaled.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(refSemanticEClass, RefSemantic.class, "RefSemantic", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getRefSemantic_CorrespondingAttributePath(), theXMLTypePackage.getString(), "correspondingAttributePath", null, 1, 1, RefSemantic.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1912,22 +1907,6 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
-		  (getAttribute_DefaultValue(), 
-		   source, 
-		   new String[] {
-			 "kind", "element",
-			 "name", "DefaultValue",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
-		  (getAttribute_Value(), 
-		   source, 
-		   new String[] {
-			 "kind", "element",
-			 "name", "Value",
-			 "namespace", "##targetNamespace"
-		   });	
-		addAnnotation
 		  (getAttribute_RefSemantic(), 
 		   source, 
 		   new String[] {
@@ -1965,6 +1944,22 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		   new String[] {
 			 "kind", "attribute",
 			 "name", "Unit",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getAttribute_Value(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Value",
+			 "namespace", "##targetNamespace"
+		   });	
+		addAnnotation
+		  (getAttribute_DefaultValue(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "DefaultValue",
 			 "namespace", "##targetNamespace"
 		   });	
 		addAnnotation
