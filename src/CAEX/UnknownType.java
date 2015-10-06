@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see CAEX.CAEXPackage#getUnknownType()
- * @model extendedMetaData="name='UnknownType_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='UnknownType' kind='elementOnly'"
  * @generated
  */
 public interface UnknownType extends EObject {

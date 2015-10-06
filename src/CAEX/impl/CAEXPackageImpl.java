@@ -1686,7 +1686,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		systemUnitClassEClass.getESuperTypes().add(this.getCAEXObject());
 		systemUnitFamilyEClass.getESuperTypes().add(this.getSystemUnitClass());
 
-		// Initialize classes and features; add operations and parameters
+		// Initialize classes, features, and operations; add parameters
 		initEClass(attributeNameMappingEClass, AttributeNameMapping.class, "AttributeNameMapping", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getAttributeNameMapping_RoleAttributeName(), theXMLTypePackage.getString(), "roleAttributeName", null, 1, 1, AttributeNameMapping.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getAttributeNameMapping_SystemUnitAttributeName(), theXMLTypePackage.getString(), "systemUnitAttributeName", null, 1, 1, AttributeNameMapping.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1873,14 +1873,14 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (attributeDataTypeEDataType, 
 		   source, 
 		   new String[] {
-			 "name", "AttributeDataType_._type",
+			 "name", "AttributeDataType",
 			 "baseType", "http://www.eclipse.org/emf/2003/XMLType#string"
 		   });	
 		addAnnotation
 		  (attributeNameMappingEClass, 
 		   source, 
 		   new String[] {
-			 "name", "AttributeNameMapping_._type",
+			 "name", "AttributeNameMapping",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2060,7 +2060,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (caexFileEClass, 
 		   source, 
 		   new String[] {
-			 "name", "CAEXFile_._type",
+			 "name", "CAEXFile",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2159,7 +2159,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (copyrightEClass, 
 		   source, 
 		   new String[] {
-			 "name", "Copyright_._type",
+			 "name", "Copyright",
 			 "kind", "simple"
 		   });	
 		addAnnotation
@@ -2181,7 +2181,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (descriptionEClass, 
 		   source, 
 		   new String[] {
-			 "name", "Description_._type",
+			 "name", "Description",
 			 "kind", "simple"
 		   });	
 		addAnnotation
@@ -2239,14 +2239,14 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (externalInterfaceEClass, 
 		   source, 
 		   new String[] {
-			 "name", "ExternalInterface_._type",
+			 "name", "ExternalInterface",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
 		  (externalReferenceEClass, 
 		   source, 
 		   new String[] {
-			 "name", "ExternalReference_._type",
+			 "name", "ExternalReference",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2269,7 +2269,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (instanceHierarchyEClass, 
 		   source, 
 		   new String[] {
-			 "name", "InstanceHierarchy_._type",
+			 "name", "InstanceHierarchy",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2284,7 +2284,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (interfaceClassLibEClass, 
 		   source, 
 		   new String[] {
-			 "name", "InterfaceClassLib_._type",
+			 "name", "InterfaceClassLib",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2337,7 +2337,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (interfaceNameMappingEClass, 
 		   source, 
 		   new String[] {
-			 "name", "InterfaceNameMapping_._type",
+			 "name", "InterfaceNameMapping",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2391,7 +2391,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (internalLinkEClass, 
 		   source, 
 		   new String[] {
-			 "name", "InternalLink_._type",
+			 "name", "InternalLink",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2437,7 +2437,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (nominalScaledEClass, 
 		   source, 
 		   new String[] {
-			 "name", "NominalScaledType_._type",
+			 "name", "NominalScaledType",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2452,7 +2452,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (ordinalScaledEClass, 
 		   source, 
 		   new String[] {
-			 "name", "OrdinalScaledType_._type",
+			 "name", "OrdinalScaledType",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2483,7 +2483,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (refSemanticEClass, 
 		   source, 
 		   new String[] {
-			 "name", "RefSemantic_._type",
+			 "name", "RefSemantic",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2498,7 +2498,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (revisionEClass, 
 		   source, 
 		   new String[] {
-			 "name", "Revision_._type",
+			 "name", "Revision",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2545,7 +2545,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (roleClassLibEClass, 
 		   source, 
 		   new String[] {
-			 "name", "RoleClassLib_._type",
+			 "name", "RoleClassLib",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2606,7 +2606,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (roleRequirementsEClass, 
 		   source, 
 		   new String[] {
-			 "name", "RoleRequirements_._type",
+			 "name", "RoleRequirements",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2637,7 +2637,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (supportedRoleClassEClass, 
 		   source, 
 		   new String[] {
-			 "name", "SupportedRoleClass_._type",
+			 "name", "SupportedRoleClass",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2660,7 +2660,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (systemUnitClassLibEClass, 
 		   source, 
 		   new String[] {
-			 "name", "SystemUnitClassLib_._type",
+			 "name", "SystemUnitClassLib",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2745,7 +2745,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (unknownTypeEClass, 
 		   source, 
 		   new String[] {
-			 "name", "UnknownType_._type",
+			 "name", "UnknownType",
 			 "kind", "elementOnly"
 		   });	
 		addAnnotation
@@ -2760,7 +2760,7 @@ public class CAEXPackageImpl extends EPackageImpl implements CAEXPackage {
 		  (versionEClass, 
 		   source, 
 		   new String[] {
-			 "name", "Version_._type",
+			 "name", "Version",
 			 "kind", "simple"
 		   });	
 		addAnnotation

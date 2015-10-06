@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CAEX.CAEXPackage#getInterfaceClassLib()
- * @model extendedMetaData="name='InterfaceClassLib_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='InterfaceClassLib' kind='elementOnly'"
  * @generated
  */
 public interface InterfaceClassLib extends CAEXObject {

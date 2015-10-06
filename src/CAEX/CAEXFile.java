@@ -23,7 +23,7 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CAEX.CAEXPackage#getCAEXFile()
- * @model extendedMetaData="name='CAEXFile_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='CAEXFile' kind='elementOnly'"
  * @generated
  */
 public interface CAEXFile extends CAEXBasicObject {

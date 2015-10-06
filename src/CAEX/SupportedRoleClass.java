@@ -17,7 +17,7 @@ package CAEX;
  * </p>
  *
  * @see CAEX.CAEXPackage#getSupportedRoleClass()
- * @model extendedMetaData="name='SupportedRoleClass_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='SupportedRoleClass' kind='elementOnly'"
  * @generated
  */
 public interface SupportedRoleClass extends CAEXBasicObject {

@@ -17,7 +17,7 @@ package CAEX;
  * </p>
  *
  * @see CAEX.CAEXPackage#getInterfaceNameMapping()
- * @model extendedMetaData="name='InterfaceNameMapping_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='InterfaceNameMapping' kind='elementOnly'"
  * @generated
  */
 public interface InterfaceNameMapping extends CAEXBasicObject {

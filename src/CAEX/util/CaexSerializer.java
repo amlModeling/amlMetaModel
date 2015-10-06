@@ -41,11 +41,12 @@ public class CaexSerializer {
 		options.put(XMLResource.OPTION_EXTENDED_META_DATA, extendedMetaData);
 		
 		URI xmlURI = URI.createFileURI(new File(xmlFile).getAbsolutePath());
-		CAEXResourceImpl gaeResource = new CAEXResourceImpl(xmiResource.getURI());
+		CAEXResourceImpl caexResource = new CAEXResourceImpl(xmiResource.getURI());
 		
-		gaeResource.getContents().add(EcoreUtil.copy(xmiResource.getContents().get(0)));
-		gaeResource.setURI(xmlURI);
-		gaeResource.save(options);
+		caexResource.getContents().add(EcoreUtil.copy(xmiResource.getContents().get(0)));
+		caexResource.setURI(xmlURI);
+		caexResource.save(options);
+		
 	}
 	
 	public void writeXMI(File xmlFile, ResourceSet resourceSet, String modelFile) throws IOException {

@@ -132,6 +132,15 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_BASIC_OBJECT_FEATURE_COUNT = 6;
 
 	/**
+	 * The number of operations of the '<em>Basic Object</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAEX_BASIC_OBJECT_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.AttributeNameMappingImpl <em>Attribute Name Mapping</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -223,6 +232,15 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_NAME_MAPPING_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 2;
 
 	/**
+	 * The number of operations of the '<em>Attribute Name Mapping</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_NAME_MAPPING_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.CAEXObjectImpl <em>Object</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -312,6 +330,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int CAEX_OBJECT_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Object</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAEX_OBJECT_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.AttributeImpl <em>Attribute</em>}' class.
@@ -468,6 +495,15 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 7;
 
 	/**
+	 * The number of operations of the '<em>Attribute</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_OPERATION_COUNT = CAEX_OBJECT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.AttributeValueRequirementImpl <em>Attribute Value Requirement</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -575,6 +611,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int ATTRIBUTE_VALUE_REQUIREMENT_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of operations of the '<em>Attribute Value Requirement</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_VALUE_REQUIREMENT_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.CAEXFileImpl <em>File</em>}' class.
@@ -713,6 +758,15 @@ public interface CAEXPackage extends EPackage {
 	int CAEX_FILE_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 7;
 
 	/**
+	 * The number of operations of the '<em>File</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAEX_FILE_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.CopyrightImpl <em>Copyright</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -750,6 +804,15 @@ public interface CAEXPackage extends EPackage {
 	int COPYRIGHT_FEATURE_COUNT = 2;
 
 	/**
+	 * The number of operations of the '<em>Copyright</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COPYRIGHT_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.DescriptionImpl <em>Description</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -785,6 +848,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int DESCRIPTION_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Description</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DESCRIPTION_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.DocumentRootImpl <em>Document Root</em>}' class.
@@ -840,6 +912,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int DOCUMENT_ROOT_FEATURE_COUNT = 4;
+
+	/**
+	 * The number of operations of the '<em>Document Root</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOCUMENT_ROOT_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.InterfaceClassImpl <em>Interface Class</em>}' class.
@@ -951,6 +1032,15 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 2;
 
 	/**
+	 * The number of operations of the '<em>Interface Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE_CLASS_OPERATION_COUNT = CAEX_OBJECT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.ExternalInterfaceImpl <em>External Interface</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1060,6 +1150,15 @@ public interface CAEXPackage extends EPackage {
 	int EXTERNAL_INTERFACE_FEATURE_COUNT = INTERFACE_CLASS_FEATURE_COUNT + 0;
 
 	/**
+	 * The number of operations of the '<em>External Interface</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_INTERFACE_OPERATION_COUNT = INTERFACE_CLASS_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.ExternalReferenceImpl <em>External Reference</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1149,6 +1248,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int EXTERNAL_REFERENCE_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>External Reference</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_REFERENCE_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.InstanceHierarchyImpl <em>Instance Hierarchy</em>}' class.
@@ -1251,6 +1359,15 @@ public interface CAEXPackage extends EPackage {
 	int INSTANCE_HIERARCHY_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 1;
 
 	/**
+	 * The number of operations of the '<em>Instance Hierarchy</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INSTANCE_HIERARCHY_OPERATION_COUNT = CAEX_OBJECT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.InterfaceClassLibImpl <em>Interface Class Lib</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1349,6 +1466,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERFACE_CLASS_LIB_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Interface Class Lib</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE_CLASS_LIB_OPERATION_COUNT = CAEX_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.InterfaceFamilyImpl <em>Interface Family</em>}' class.
@@ -1469,6 +1595,15 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_FAMILY_FEATURE_COUNT = INTERFACE_CLASS_FEATURE_COUNT + 1;
 
 	/**
+	 * The number of operations of the '<em>Interface Family</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE_FAMILY_OPERATION_COUNT = INTERFACE_CLASS_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.InterfaceNameMappingImpl <em>Interface Name Mapping</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1558,6 +1693,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTERFACE_NAME_MAPPING_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Interface Name Mapping</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE_NAME_MAPPING_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.SystemUnitClassImpl <em>System Unit Class</em>}' class.
@@ -1694,6 +1838,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int SYSTEM_UNIT_CLASS_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 5;
+
+	/**
+	 * The number of operations of the '<em>System Unit Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_UNIT_CLASS_OPERATION_COUNT = CAEX_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.InternalElementImpl <em>Internal Element</em>}' class.
@@ -1859,6 +2012,15 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_ELEMENT_FEATURE_COUNT = SYSTEM_UNIT_CLASS_FEATURE_COUNT + 3;
 
 	/**
+	 * The number of operations of the '<em>Internal Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ELEMENT_OPERATION_COUNT = SYSTEM_UNIT_CLASS_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.InternalLinkImpl <em>Internal Link</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1968,6 +2130,15 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_LINK_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 2;
 
 	/**
+	 * The number of operations of the '<em>Internal Link</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_LINK_OPERATION_COUNT = CAEX_OBJECT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.MappingImpl <em>Mapping</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2059,6 +2230,15 @@ public interface CAEXPackage extends EPackage {
 	int MAPPING_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 2;
 
 	/**
+	 * The number of operations of the '<em>Mapping</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MAPPING_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.NominalScaledImpl <em>Nominal Scaled</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2085,6 +2265,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int NOMINAL_SCALED_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Nominal Scaled</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOMINAL_SCALED_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.OrdinalScaledImpl <em>Ordinal Scaled</em>}' class.
@@ -2131,6 +2320,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int ORDINAL_SCALED_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Ordinal Scaled</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORDINAL_SCALED_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.RefSemanticImpl <em>Ref Semantic</em>}' class.
@@ -2213,6 +2411,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int REF_SEMANTIC_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Ref Semantic</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REF_SEMANTIC_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.RevisionImpl <em>Revision</em>}' class.
@@ -2333,6 +2540,15 @@ public interface CAEXPackage extends EPackage {
 	int REVISION_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 5;
 
 	/**
+	 * The number of operations of the '<em>Revision</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REVISION_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.RoleClassLibImpl <em>Role Class Lib</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2431,6 +2647,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int ROLE_CLASS_LIB_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>Role Class Lib</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_CLASS_LIB_OPERATION_COUNT = CAEX_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.RoleClassImpl <em>Role Class</em>}' class.
@@ -2549,6 +2774,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int ROLE_CLASS_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Role Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_CLASS_OPERATION_COUNT = CAEX_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.RoleFamilyImpl <em>Role Family</em>}' class.
@@ -2678,6 +2912,15 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_FAMILY_FEATURE_COUNT = ROLE_CLASS_FEATURE_COUNT + 1;
 
 	/**
+	 * The number of operations of the '<em>Role Family</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_FAMILY_OPERATION_COUNT = ROLE_CLASS_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.RoleRequirementsImpl <em>Role Requirements</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2778,6 +3021,15 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_REQUIREMENTS_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 3;
 
 	/**
+	 * The number of operations of the '<em>Role Requirements</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_REQUIREMENTS_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.SupportedRoleClassImpl <em>Supported Role Class</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2867,6 +3119,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int SUPPORTED_ROLE_CLASS_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of operations of the '<em>Supported Role Class</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPORTED_ROLE_CLASS_OPERATION_COUNT = CAEX_BASIC_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.SystemUnitClassLibImpl <em>System Unit Class Lib</em>}' class.
@@ -2967,6 +3228,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int SYSTEM_UNIT_CLASS_LIB_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of operations of the '<em>System Unit Class Lib</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_UNIT_CLASS_LIB_OPERATION_COUNT = CAEX_OBJECT_OPERATION_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.SystemUnitFamilyImpl <em>System Unit Family</em>}' class.
@@ -3123,6 +3393,15 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_FAMILY_FEATURE_COUNT = SYSTEM_UNIT_CLASS_FEATURE_COUNT + 2;
 
 	/**
+	 * The number of operations of the '<em>System Unit Family</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_UNIT_FAMILY_OPERATION_COUNT = SYSTEM_UNIT_CLASS_OPERATION_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link CAEX.impl.UnknownTypeImpl <em>Unknown Type</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3149,6 +3428,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int UNKNOWN_TYPE_FEATURE_COUNT = 1;
+
+	/**
+	 * The number of operations of the '<em>Unknown Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNKNOWN_TYPE_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.impl.VersionImpl <em>Version</em>}' class.
@@ -3186,6 +3474,15 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int VERSION_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Version</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VERSION_OPERATION_COUNT = 0;
 
 	/**
 	 * The meta object id for the '{@link CAEX.ChangeMode <em>Change Mode</em>}' enum.
@@ -4478,7 +4775,7 @@ public interface CAEXPackage extends EPackage {
 	 * @return the meta object for data type '<em>Attribute Data Type</em>'.
 	 * @see java.lang.String
 	 * @model instanceClass="java.lang.String"
-	 *        extendedMetaData="name='AttributeDataType_._type' baseType='http://www.eclipse.org/emf/2003/XMLType#string'"
+	 *        extendedMetaData="name='AttributeDataType' baseType='http://www.eclipse.org/emf/2003/XMLType#string'"
 	 * @generated
 	 */
 	EDataType getAttributeDataType();

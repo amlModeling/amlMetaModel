@@ -2,8 +2,6 @@
  */
 package CAEX;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -19,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see CAEX.CAEXPackage#getNominalScaled()
- * @model extendedMetaData="name='NominalScaledType_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='NominalScaledType' kind='elementOnly'"
  * @generated
  */
 public interface NominalScaled extends EObject {

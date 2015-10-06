@@ -14,6 +14,7 @@
       <supportedRoleClass refRoleClassPath="ManufacturingRoleClasses/Tool"/>
       <roleRequirements refBaseRoleClassPath="ManufacturingRoleClasses/Tool"/>
     </internalElement>
+    <internalElement iD="a426f569-e5d3-4468-84da-8e3b8de05d31" name="New IE 1"/>
   </instanceHierarchy>
   <interfaceClassLib name="MyInterfaces">
     <version value="1.0"/>

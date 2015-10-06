@@ -1,8 +1,6 @@
 package Test;
-import static org.junit.Assert.*;
 
 import java.io.File;
-import java.io.IOException;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.ResourceSet;
@@ -10,7 +8,6 @@ import org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.junit.Before;
-import org.junit.Test;
 
 import CAEX.util.CAEXResourceFactoryImpl;
 import CAEX.util.CaexPreprocessor;

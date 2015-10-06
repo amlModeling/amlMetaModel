@@ -17,7 +17,7 @@ package CAEX;
  * </p>
  *
  * @see CAEX.CAEXPackage#getInternalLink()
- * @model extendedMetaData="name='InternalLink_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='InternalLink' kind='elementOnly'"
  * @generated
  */
 public interface InternalLink extends CAEXObject {

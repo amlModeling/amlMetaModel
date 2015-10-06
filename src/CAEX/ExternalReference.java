@@ -17,7 +17,7 @@ package CAEX;
  * </p>
  *
  * @see CAEX.CAEXPackage#getExternalReference()
- * @model extendedMetaData="name='ExternalReference_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='ExternalReference' kind='elementOnly'"
  * @generated
  */
 public interface ExternalReference extends CAEXBasicObject {

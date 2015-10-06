@@ -21,7 +21,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * </p>
  *
  * @see CAEX.CAEXPackage#getRevision()
- * @model extendedMetaData="name='Revision_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='Revision' kind='elementOnly'"
  * @generated
  */
 public interface Revision extends CAEXBasicObject {

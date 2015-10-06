@@ -17,7 +17,7 @@ package CAEX;
  * </p>
  *
  * @see CAEX.CAEXPackage#getAttributeNameMapping()
- * @model extendedMetaData="name='AttributeNameMapping_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='AttributeNameMapping' kind='elementOnly'"
  * @generated
  */
 public interface AttributeNameMapping extends CAEXBasicObject {

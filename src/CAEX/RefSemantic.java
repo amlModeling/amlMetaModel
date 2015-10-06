@@ -16,7 +16,7 @@ package CAEX;
  * </p>
  *
  * @see CAEX.CAEXPackage#getRefSemantic()
- * @model extendedMetaData="name='RefSemantic_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='RefSemantic' kind='elementOnly'"
  * @generated
  */
 public interface RefSemantic extends CAEXBasicObject {

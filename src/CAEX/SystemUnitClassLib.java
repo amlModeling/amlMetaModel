@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CAEX.CAEXPackage#getSystemUnitClassLib()
- * @model extendedMetaData="name='SystemUnitClassLib_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='SystemUnitClassLib' kind='elementOnly'"
  * @generated
  */
 public interface SystemUnitClassLib extends CAEXObject {

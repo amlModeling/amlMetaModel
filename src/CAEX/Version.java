@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see CAEX.CAEXPackage#getVersion()
- * @model extendedMetaData="name='Version_._type' kind='simple'"
+ * @model extendedMetaData="name='Version' kind='simple'"
  * @generated
  */
 public interface Version extends EObject {

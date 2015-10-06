@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see CAEX.CAEXPackage#getOrdinalScaled()
- * @model extendedMetaData="name='OrdinalScaledType_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='OrdinalScaledType' kind='elementOnly'"
  * @generated
  */
 public interface OrdinalScaled extends EObject {

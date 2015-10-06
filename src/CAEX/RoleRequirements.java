@@ -19,7 +19,7 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CAEX.CAEXPackage#getRoleRequirements()
- * @model extendedMetaData="name='RoleRequirements_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='RoleRequirements' kind='elementOnly'"
  * @generated
  */
 public interface RoleRequirements extends CAEXBasicObject {

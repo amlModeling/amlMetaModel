@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see CAEX.CAEXPackage#getDescription()
- * @model extendedMetaData="name='Description_._type' kind='simple'"
+ * @model extendedMetaData="name='Description' kind='simple'"
  * @generated
  */
 public interface Description extends EObject {

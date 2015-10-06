@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/amlMetaModel/src" modelPluginID="amlMetaModel"
-    modelName="CAEX" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
-    copyrightFields="false">
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/amlMetaModel/src" modelPluginID="amlMetaModel"
+    modelName="CAEX2" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
   <foreignModel>CAEX.ecore</foreignModel>
-  <genPackages prefix="CAEX" disposableProviderFactory="true" ecorePackage="CAEX.ecore#/">
+  <genPackages prefix="CAEX" resource="XML" disposableProviderFactory="true" ecorePackage="CAEX.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="CAEX.ecore#//ChangeMode">
       <genEnumLiterals ecoreEnumLiteral="CAEX.ecore#//ChangeMode/state"/>
       <genEnumLiterals ecoreEnumLiteral="CAEX.ecore#//ChangeMode/create"/>
@@ -62,9 +63,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX.ecore#//Description/changeMode"/>
     </genClasses>
     <genClasses ecoreClass="CAEX.ecore#//DocumentRoot">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CAEX.ecore#//DocumentRoot/mixed"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX.ecore#//DocumentRoot/xMLNSPrefixMap"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute CAEX.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference CAEX.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference CAEX.ecore#//DocumentRoot/xSISchemaLocation"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CAEX.ecore#//DocumentRoot/cAEXFile"/>
     </genClasses>
     <genClasses ecoreClass="CAEX.ecore#//ExternalInterface"/>

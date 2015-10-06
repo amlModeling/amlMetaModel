@@ -18,7 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  *
  * @see CAEX.CAEXPackage#getCopyright()
- * @model extendedMetaData="name='Copyright_._type' kind='simple'"
+ * @model extendedMetaData="name='Copyright' kind='simple'"
  * @generated
  */
 public interface Copyright extends EObject {

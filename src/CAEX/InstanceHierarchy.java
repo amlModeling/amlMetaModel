@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CAEX.CAEXPackage#getInstanceHierarchy()
- * @model extendedMetaData="name='InstanceHierarchy_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='InstanceHierarchy' kind='elementOnly'"
  * @generated
  */
 public interface InstanceHierarchy extends CAEXObject {

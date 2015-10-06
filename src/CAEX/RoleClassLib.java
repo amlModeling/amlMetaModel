@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  *
  * @see CAEX.CAEXPackage#getRoleClassLib()
- * @model extendedMetaData="name='RoleClassLib_._type' kind='elementOnly'"
+ * @model extendedMetaData="name='RoleClassLib' kind='elementOnly'"
  * @generated
  */
 public interface RoleClassLib extends CAEXObject {

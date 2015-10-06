@@ -4,13 +4,10 @@ package CAEX.impl;
 
 import CAEX.CAEXPackage;
 import CAEX.UnknownType;
-
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +22,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *
  * @generated
  */
-public class UnknownTypeImpl extends EObjectImpl implements UnknownType {
+public class UnknownTypeImpl extends MinimalEObjectImpl.Container implements UnknownType {
 	/**
 	 * The default value of the '{@link #getRequirements() <em>Requirements</em>}' attribute.
 	 * <!-- begin-user-doc -->
