@@ -10,20 +10,16 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-/**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Copyright</b></em>'.
- * <!-- end-user-doc -->
- * <p>
- * The following features are implemented:
- * <ul>
- *   <li>{@link CAEX.impl.CopyrightImpl#getValue <em>Value</em>}</li>
- *   <li>{@link CAEX.impl.CopyrightImpl#getChangeMode <em>Change Mode</em>}</li>
- * </ul>
- * </p>
+/*******************************************************************************
+ * Copyright (c) 2015 Business Informatics Group at TU Wien
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * @generated
- */
+ * Contributors:
+ *     Manuel Wimmer and Emanuel Maetzler
+ *******************************************************************************/
 public class CopyrightImpl extends MinimalEObjectImpl.Container implements Copyright {
 	/**
 	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
