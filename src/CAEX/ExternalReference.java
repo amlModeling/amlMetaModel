@@ -20,11 +20,11 @@ package CAEX;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.ExternalReference#getAlias <em>Alias</em>}</li>
  *   <li>{@link CAEX.ExternalReference#getPath <em>Path</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getExternalReference()
  * @model extendedMetaData="name='ExternalReference' kind='elementOnly'"

@@ -21,6 +21,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.Revision#getRevisionDate <em>Revision Date</em>}</li>
  *   <li>{@link CAEX.Revision#getOldVersion <em>Old Version</em>}</li>
@@ -28,7 +29,6 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   <li>{@link CAEX.Revision#getAuthorName <em>Author Name</em>}</li>
  *   <li>{@link CAEX.Revision#getComment <em>Comment</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getRevision()
  * @model extendedMetaData="name='Revision' kind='elementOnly'"

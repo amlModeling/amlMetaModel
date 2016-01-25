@@ -21,11 +21,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.Description#getValue <em>Value</em>}</li>
  *   <li>{@link CAEX.Description#getChangeMode <em>Change Mode</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getDescription()
  * @model extendedMetaData="name='Description' kind='simple'"

@@ -21,10 +21,10 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.RoleClassLib#getRoleClass <em>Role Class</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getRoleClassLib()
  * @model extendedMetaData="name='RoleClassLib' kind='elementOnly'"
@@ -33,7 +33,7 @@ import org.eclipse.emf.common.util.EList;
 public interface RoleClassLib extends CAEXObject {
 	/**
 	 * Returns the value of the '<em><b>Role Class</b></em>' containment reference list.
-	 * The list contents are of type {@link CAEX.RoleFamily}.
+	 * The list contents are of type {@link CAEX.RoleClass}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -45,6 +45,6 @@ public interface RoleClassLib extends CAEXObject {
 	 *        extendedMetaData="kind='element' name='RoleClass' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<RoleFamily> getRoleClass();
+	EList<RoleClass> getRoleClass();
 
 } // RoleClassLib

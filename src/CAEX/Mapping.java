@@ -25,11 +25,11 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.Mapping#getAttributeNameMapping <em>Attribute Name Mapping</em>}</li>
  *   <li>{@link CAEX.Mapping#getInterfaceNameMapping <em>Interface Name Mapping</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getMapping()
  * @model extendedMetaData="name='MappingType' kind='elementOnly'"

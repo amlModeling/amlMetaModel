@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.CAEXBasicObjectImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link CAEX.impl.CAEXBasicObjectImpl#getVersion <em>Version</em>}</li>
@@ -35,7 +36,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link CAEX.impl.CAEXBasicObjectImpl#getAdditionalInformation <em>Additional Information</em>}</li>
  *   <li>{@link CAEX.impl.CAEXBasicObjectImpl#getChangeMode <em>Change Mode</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

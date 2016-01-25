@@ -20,11 +20,13 @@ package CAEX;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.InternalLink#getRefPartnerSideA <em>Ref Partner Side A</em>}</li>
  *   <li>{@link CAEX.InternalLink#getRefPartnerSideB <em>Ref Partner Side B</em>}</li>
+ *   <li>{@link CAEX.InternalLink#getPartnerSideA <em>Partner Side A</em>}</li>
+ *   <li>{@link CAEX.InternalLink#getPartnerSideB <em>Partner Side B</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getInternalLink()
  * @model extendedMetaData="name='InternalLink' kind='elementOnly'"
@@ -84,5 +86,57 @@ public interface InternalLink extends CAEXObject {
 	 * @generated
 	 */
 	void setRefPartnerSideB(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Partner Side A</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Partner Side A</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Partner Side A</em>' reference.
+	 * @see #setPartnerSideA(InterfaceClass)
+	 * @see CAEX.CAEXPackage#getInternalLink_PartnerSideA()
+	 * @model
+	 * @generated
+	 */
+	InterfaceClass getPartnerSideA();
+
+	/**
+	 * Sets the value of the '{@link CAEX.InternalLink#getPartnerSideA <em>Partner Side A</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Partner Side A</em>' reference.
+	 * @see #getPartnerSideA()
+	 * @generated
+	 */
+	void setPartnerSideA(InterfaceClass value);
+
+	/**
+	 * Returns the value of the '<em><b>Partner Side B</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Partner Side B</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Partner Side B</em>' reference.
+	 * @see #setPartnerSideB(InterfaceClass)
+	 * @see CAEX.CAEXPackage#getInternalLink_PartnerSideB()
+	 * @model
+	 * @generated
+	 */
+	InterfaceClass getPartnerSideB();
+
+	/**
+	 * Sets the value of the '{@link CAEX.InternalLink#getPartnerSideB <em>Partner Side B</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Partner Side B</em>' reference.
+	 * @see #getPartnerSideB()
+	 * @generated
+	 */
+	void setPartnerSideB(InterfaceClass value);
 
 } // InternalLink

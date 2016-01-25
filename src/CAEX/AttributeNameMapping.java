@@ -20,11 +20,11 @@ package CAEX;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.AttributeNameMapping#getRoleAttributeName <em>Role Attribute Name</em>}</li>
  *   <li>{@link CAEX.AttributeNameMapping#getSystemUnitAttributeName <em>System Unit Attribute Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getAttributeNameMapping()
  * @model extendedMetaData="name='AttributeNameMapping' kind='elementOnly'"

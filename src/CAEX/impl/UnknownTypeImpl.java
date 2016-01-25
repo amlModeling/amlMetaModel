@@ -25,10 +25,10 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.UnknownTypeImpl#getRequirements <em>Requirements</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

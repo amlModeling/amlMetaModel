@@ -41,6 +41,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.CAEXFileImpl#getExternalReference <em>External Reference</em>}</li>
  *   <li>{@link CAEX.impl.CAEXFileImpl#getInstanceHierarchy <em>Instance Hierarchy</em>}</li>
@@ -50,7 +51,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link CAEX.impl.CAEXFileImpl#getFileName <em>File Name</em>}</li>
  *   <li>{@link CAEX.impl.CAEXFileImpl#getSchemaVersion <em>Schema Version</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

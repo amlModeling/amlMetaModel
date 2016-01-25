@@ -13,9 +13,8 @@
 package CAEX.impl;
 
 import CAEX.CAEXPackage;
+import CAEX.RoleClass;
 import CAEX.RoleClassLib;
-import CAEX.RoleFamily;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -34,10 +33,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.RoleClassLibImpl#getRoleClass <em>Role Class</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -50,7 +49,7 @@ public class RoleClassLibImpl extends CAEXObjectImpl implements RoleClassLib {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<RoleFamily> roleClass;
+	protected EList<RoleClass> roleClass;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -76,9 +75,9 @@ public class RoleClassLibImpl extends CAEXObjectImpl implements RoleClassLib {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<RoleFamily> getRoleClass() {
+	public EList<RoleClass> getRoleClass() {
 		if (roleClass == null) {
-			roleClass = new EObjectContainmentEList<RoleFamily>(RoleFamily.class, this, CAEXPackage.ROLE_CLASS_LIB__ROLE_CLASS);
+			roleClass = new EObjectContainmentEList<RoleClass>(RoleClass.class, this, CAEXPackage.ROLE_CLASS_LIB__ROLE_CLASS);
 		}
 		return roleClass;
 	}
@@ -122,7 +121,7 @@ public class RoleClassLibImpl extends CAEXObjectImpl implements RoleClassLib {
 		switch (featureID) {
 			case CAEXPackage.ROLE_CLASS_LIB__ROLE_CLASS:
 				getRoleClass().clear();
-				getRoleClass().addAll((Collection<? extends RoleFamily>)newValue);
+				getRoleClass().addAll((Collection<? extends RoleClass>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

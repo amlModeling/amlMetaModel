@@ -24,13 +24,13 @@ package CAEX;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.AttributeValueRequirement#getOrdinalScaledType <em>Ordinal Scaled Type</em>}</li>
  *   <li>{@link CAEX.AttributeValueRequirement#getNominalScaledType <em>Nominal Scaled Type</em>}</li>
  *   <li>{@link CAEX.AttributeValueRequirement#getUnknownType <em>Unknown Type</em>}</li>
  *   <li>{@link CAEX.AttributeValueRequirement#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getAttributeValueRequirement()
  * @model extendedMetaData="name='AttributeValueRequirementType' kind='elementOnly'"

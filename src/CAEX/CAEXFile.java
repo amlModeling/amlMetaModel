@@ -21,6 +21,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.CAEXFile#getExternalReference <em>External Reference</em>}</li>
  *   <li>{@link CAEX.CAEXFile#getInstanceHierarchy <em>Instance Hierarchy</em>}</li>
@@ -30,7 +31,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link CAEX.CAEXFile#getFileName <em>File Name</em>}</li>
  *   <li>{@link CAEX.CAEXFile#getSchemaVersion <em>Schema Version</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getCAEXFile()
  * @model extendedMetaData="name='CAEXFile' kind='elementOnly'"

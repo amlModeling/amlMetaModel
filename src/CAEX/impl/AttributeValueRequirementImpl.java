@@ -32,13 +32,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.AttributeValueRequirementImpl#getOrdinalScaledType <em>Ordinal Scaled Type</em>}</li>
  *   <li>{@link CAEX.impl.AttributeValueRequirementImpl#getNominalScaledType <em>Nominal Scaled Type</em>}</li>
  *   <li>{@link CAEX.impl.AttributeValueRequirementImpl#getUnknownType <em>Unknown Type</em>}</li>
  *   <li>{@link CAEX.impl.AttributeValueRequirementImpl#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

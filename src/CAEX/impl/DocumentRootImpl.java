@@ -34,13 +34,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.DocumentRootImpl#getMixed <em>Mixed</em>}</li>
  *   <li>{@link CAEX.impl.DocumentRootImpl#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}</li>
  *   <li>{@link CAEX.impl.DocumentRootImpl#getXSISchemaLocation <em>XSI Schema Location</em>}</li>
  *   <li>{@link CAEX.impl.DocumentRootImpl#getCAEXFile <em>CAEX File</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

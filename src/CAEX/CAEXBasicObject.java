@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.CAEXBasicObject#getDescription <em>Description</em>}</li>
  *   <li>{@link CAEX.CAEXBasicObject#getVersion <em>Version</em>}</li>
@@ -25,7 +26,6 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link CAEX.CAEXBasicObject#getAdditionalInformation <em>Additional Information</em>}</li>
  *   <li>{@link CAEX.CAEXBasicObject#getChangeMode <em>Change Mode</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getCAEXBasicObject()
  * @model extendedMetaData="name='CAEXBasicObject' kind='elementOnly'"

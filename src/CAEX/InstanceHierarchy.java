@@ -21,10 +21,10 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.InstanceHierarchy#getInternalElement <em>Internal Element</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getInstanceHierarchy()
  * @model extendedMetaData="name='InstanceHierarchy' kind='elementOnly'"

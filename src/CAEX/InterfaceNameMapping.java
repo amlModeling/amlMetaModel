@@ -20,11 +20,11 @@ package CAEX;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.InterfaceNameMapping#getRoleInterfaceName <em>Role Interface Name</em>}</li>
  *   <li>{@link CAEX.InterfaceNameMapping#getSystemUnitInterfaceName <em>System Unit Interface Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getInterfaceNameMapping()
  * @model extendedMetaData="name='InterfaceNameMapping' kind='elementOnly'"

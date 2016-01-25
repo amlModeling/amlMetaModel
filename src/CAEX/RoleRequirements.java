@@ -21,12 +21,12 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.RoleRequirements#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link CAEX.RoleRequirements#getExternalInterface <em>External Interface</em>}</li>
  *   <li>{@link CAEX.RoleRequirements#getRefBaseRoleClassPath <em>Ref Base Role Class Path</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getRoleRequirements()
  * @model extendedMetaData="name='RoleRequirements' kind='elementOnly'"

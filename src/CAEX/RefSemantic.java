@@ -20,10 +20,10 @@ package CAEX;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.RefSemantic#getCorrespondingAttributePath <em>Corresponding Attribute Path</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getRefSemantic()
  * @model extendedMetaData="name='RefSemantic' kind='elementOnly'"

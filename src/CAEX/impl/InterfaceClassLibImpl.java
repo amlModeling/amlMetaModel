@@ -13,9 +13,8 @@
 package CAEX.impl;
 
 import CAEX.CAEXPackage;
+import CAEX.InterfaceClass;
 import CAEX.InterfaceClassLib;
-import CAEX.InterfaceFamily;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -34,10 +33,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.InterfaceClassLibImpl#getInterfaceClass <em>Interface Class</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -50,7 +49,7 @@ public class InterfaceClassLibImpl extends CAEXObjectImpl implements InterfaceCl
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<InterfaceFamily> interfaceClass;
+	protected EList<InterfaceClass> interfaceClass;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -76,9 +75,9 @@ public class InterfaceClassLibImpl extends CAEXObjectImpl implements InterfaceCl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<InterfaceFamily> getInterfaceClass() {
+	public EList<InterfaceClass> getInterfaceClass() {
 		if (interfaceClass == null) {
-			interfaceClass = new EObjectContainmentEList<InterfaceFamily>(InterfaceFamily.class, this, CAEXPackage.INTERFACE_CLASS_LIB__INTERFACE_CLASS);
+			interfaceClass = new EObjectContainmentEList<InterfaceClass>(InterfaceClass.class, this, CAEXPackage.INTERFACE_CLASS_LIB__INTERFACE_CLASS);
 		}
 		return interfaceClass;
 	}
@@ -122,7 +121,7 @@ public class InterfaceClassLibImpl extends CAEXObjectImpl implements InterfaceCl
 		switch (featureID) {
 			case CAEXPackage.INTERFACE_CLASS_LIB__INTERFACE_CLASS:
 				getInterfaceClass().clear();
-				getInterfaceClass().addAll((Collection<? extends InterfaceFamily>)newValue);
+				getInterfaceClass().addAll((Collection<? extends InterfaceClass>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

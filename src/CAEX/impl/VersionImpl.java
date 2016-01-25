@@ -26,11 +26,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.VersionImpl#getValue <em>Value</em>}</li>
  *   <li>{@link CAEX.impl.VersionImpl#getChangeMode <em>Change Mode</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

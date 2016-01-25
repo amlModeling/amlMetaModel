@@ -21,10 +21,10 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.InterfaceClassLib#getInterfaceClass <em>Interface Class</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getInterfaceClassLib()
  * @model extendedMetaData="name='InterfaceClassLib' kind='elementOnly'"
@@ -33,7 +33,7 @@ import org.eclipse.emf.common.util.EList;
 public interface InterfaceClassLib extends CAEXObject {
 	/**
 	 * Returns the value of the '<em><b>Interface Class</b></em>' containment reference list.
-	 * The list contents are of type {@link CAEX.InterfaceFamily}.
+	 * The list contents are of type {@link CAEX.InterfaceClass}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -45,6 +45,6 @@ public interface InterfaceClassLib extends CAEXObject {
 	 *        extendedMetaData="kind='element' name='InterfaceClass' namespace='##targetNamespace'"
 	 * @generated
 	 */
-	EList<InterfaceFamily> getInterfaceClass();
+	EList<InterfaceClass> getInterfaceClass();
 
 } // InterfaceClassLib

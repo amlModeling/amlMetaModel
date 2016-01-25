@@ -14,6 +14,7 @@ package CAEX.impl;
 
 import CAEX.CAEXPackage;
 import CAEX.Mapping;
+import CAEX.RoleClass;
 import CAEX.SupportedRoleClass;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -30,11 +31,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.SupportedRoleClassImpl#getMappingObject <em>Mapping Object</em>}</li>
  *   <li>{@link CAEX.impl.SupportedRoleClassImpl#getRefRoleClassPath <em>Ref Role Class Path</em>}</li>
+ *   <li>{@link CAEX.impl.SupportedRoleClassImpl#getRoleClass <em>Role Class</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -68,6 +70,16 @@ public class SupportedRoleClassImpl extends CAEXBasicObjectImpl implements Suppo
 	 * @ordered
 	 */
 	protected String refRoleClassPath = REF_ROLE_CLASS_PATH_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getRoleClass() <em>Role Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRoleClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected RoleClass roleClass;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -157,6 +169,44 @@ public class SupportedRoleClassImpl extends CAEXBasicObjectImpl implements Suppo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public RoleClass getRoleClass() {
+		if (roleClass != null && roleClass.eIsProxy()) {
+			InternalEObject oldRoleClass = (InternalEObject)roleClass;
+			roleClass = (RoleClass)eResolveProxy(oldRoleClass);
+			if (roleClass != oldRoleClass) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.SUPPORTED_ROLE_CLASS__ROLE_CLASS, oldRoleClass, roleClass));
+			}
+		}
+		return roleClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RoleClass basicGetRoleClass() {
+		return roleClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRoleClass(RoleClass newRoleClass) {
+		RoleClass oldRoleClass = roleClass;
+		roleClass = newRoleClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.SUPPORTED_ROLE_CLASS__ROLE_CLASS, oldRoleClass, roleClass));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -178,6 +228,9 @@ public class SupportedRoleClassImpl extends CAEXBasicObjectImpl implements Suppo
 				return getMappingObject();
 			case CAEXPackage.SUPPORTED_ROLE_CLASS__REF_ROLE_CLASS_PATH:
 				return getRefRoleClassPath();
+			case CAEXPackage.SUPPORTED_ROLE_CLASS__ROLE_CLASS:
+				if (resolve) return getRoleClass();
+				return basicGetRoleClass();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -195,6 +248,9 @@ public class SupportedRoleClassImpl extends CAEXBasicObjectImpl implements Suppo
 				return;
 			case CAEXPackage.SUPPORTED_ROLE_CLASS__REF_ROLE_CLASS_PATH:
 				setRefRoleClassPath((String)newValue);
+				return;
+			case CAEXPackage.SUPPORTED_ROLE_CLASS__ROLE_CLASS:
+				setRoleClass((RoleClass)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -214,6 +270,9 @@ public class SupportedRoleClassImpl extends CAEXBasicObjectImpl implements Suppo
 			case CAEXPackage.SUPPORTED_ROLE_CLASS__REF_ROLE_CLASS_PATH:
 				setRefRoleClassPath(REF_ROLE_CLASS_PATH_EDEFAULT);
 				return;
+			case CAEXPackage.SUPPORTED_ROLE_CLASS__ROLE_CLASS:
+				setRoleClass((RoleClass)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -230,6 +289,8 @@ public class SupportedRoleClassImpl extends CAEXBasicObjectImpl implements Suppo
 				return mappingObject != null;
 			case CAEXPackage.SUPPORTED_ROLE_CLASS__REF_ROLE_CLASS_PATH:
 				return REF_ROLE_CLASS_PATH_EDEFAULT == null ? refRoleClassPath != null : !REF_ROLE_CLASS_PATH_EDEFAULT.equals(refRoleClassPath);
+			case CAEXPackage.SUPPORTED_ROLE_CLASS__ROLE_CLASS:
+				return roleClass != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -25,12 +25,12 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.OrdinalScaledImpl#getRequiredMaxValue <em>Required Max Value</em>}</li>
  *   <li>{@link CAEX.impl.OrdinalScaledImpl#getRequiredValue <em>Required Value</em>}</li>
  *   <li>{@link CAEX.impl.OrdinalScaledImpl#getRequiredMinValue <em>Required Min Value</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

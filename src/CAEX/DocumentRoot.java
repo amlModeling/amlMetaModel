@@ -25,13 +25,13 @@ import org.eclipse.emf.ecore.util.FeatureMap;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.DocumentRoot#getMixed <em>Mixed</em>}</li>
  *   <li>{@link CAEX.DocumentRoot#getXMLNSPrefixMap <em>XMLNS Prefix Map</em>}</li>
  *   <li>{@link CAEX.DocumentRoot#getXSISchemaLocation <em>XSI Schema Location</em>}</li>
  *   <li>{@link CAEX.DocumentRoot#getCAEXFile <em>CAEX File</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getDocumentRoot()
  * @model extendedMetaData="name='' kind='mixed'"

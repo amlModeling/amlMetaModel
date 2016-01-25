@@ -423,49 +423,13 @@ public interface CAEXPackage extends EPackage {
 	int ATTRIBUTE__NAME = CAEX_OBJECT__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Ref Semantic</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Default Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE__REF_SEMANTIC = CAEX_OBJECT_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Constraint</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTRIBUTE__CONSTRAINT = CAEX_OBJECT_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTRIBUTE__ATTRIBUTE = CAEX_OBJECT_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Attribute Data Type</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTRIBUTE__ATTRIBUTE_DATA_TYPE = CAEX_OBJECT_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Unit</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ATTRIBUTE__UNIT = CAEX_OBJECT_FEATURE_COUNT + 4;
+	int ATTRIBUTE__DEFAULT_VALUE = CAEX_OBJECT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -474,16 +438,52 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE__VALUE = CAEX_OBJECT_FEATURE_COUNT + 5;
+	int ATTRIBUTE__VALUE = CAEX_OBJECT_FEATURE_COUNT + 1;
 
 	/**
-	 * The feature id for the '<em><b>Default Value</b></em>' attribute.
+	 * The feature id for the '<em><b>Ref Semantic</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ATTRIBUTE__DEFAULT_VALUE = CAEX_OBJECT_FEATURE_COUNT + 6;
+	int ATTRIBUTE__REF_SEMANTIC = CAEX_OBJECT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Constraint</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__CONSTRAINT = CAEX_OBJECT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Attribute</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__ATTRIBUTE = CAEX_OBJECT_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Unit</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__UNIT = CAEX_OBJECT_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Attribute Data Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__ATTRIBUTE_DATA_TYPE = CAEX_OBJECT_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
@@ -1023,13 +1023,31 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_CLASS__REF_BASE_CLASS_PATH = CAEX_OBJECT_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE_CLASS__BASE_CLASS = CAEX_OBJECT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Interface Class</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE_CLASS__INTERFACE_CLASS = CAEX_OBJECT_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Interface Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE_CLASS_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 2;
+	int INTERFACE_CLASS_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>Interface Class</em>' class.
@@ -1139,6 +1157,24 @@ public interface CAEXPackage extends EPackage {
 	 * @ordered
 	 */
 	int EXTERNAL_INTERFACE__REF_BASE_CLASS_PATH = INTERFACE_CLASS__REF_BASE_CLASS_PATH;
+
+	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_INTERFACE__BASE_CLASS = INTERFACE_CLASS__BASE_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>Interface Class</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXTERNAL_INTERFACE__INTERFACE_CLASS = INTERFACE_CLASS__INTERFACE_CLASS;
 
 	/**
 	 * The number of structural features of the '<em>External Interface</em>' class.
@@ -1577,13 +1613,22 @@ public interface CAEXPackage extends EPackage {
 	int INTERFACE_FAMILY__REF_BASE_CLASS_PATH = INTERFACE_CLASS__REF_BASE_CLASS_PATH;
 
 	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERFACE_FAMILY__BASE_CLASS = INTERFACE_CLASS__BASE_CLASS;
+
+	/**
 	 * The feature id for the '<em><b>Interface Class</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE_FAMILY__INTERFACE_CLASS = INTERFACE_CLASS_FEATURE_COUNT + 0;
+	int INTERFACE_FAMILY__INTERFACE_CLASS = INTERFACE_CLASS__INTERFACE_CLASS;
 
 	/**
 	 * The number of structural features of the '<em>Interface Family</em>' class.
@@ -1592,7 +1637,7 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INTERFACE_FAMILY_FEATURE_COUNT = INTERFACE_CLASS_FEATURE_COUNT + 1;
+	int INTERFACE_FAMILY_FEATURE_COUNT = INTERFACE_CLASS_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Interface Family</em>' class.
@@ -1831,13 +1876,40 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_CLASS__INTERNAL_LINK = CAEX_OBJECT_FEATURE_COUNT + 4;
 
 	/**
+	 * The feature id for the '<em><b>Ref Base Class Path</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_UNIT_CLASS__REF_BASE_CLASS_PATH = CAEX_OBJECT_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_UNIT_CLASS__BASE_CLASS = CAEX_OBJECT_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>System Unit Class</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_UNIT_CLASS__SYSTEM_UNIT_CLASS = CAEX_OBJECT_FEATURE_COUNT + 7;
+
+	/**
 	 * The number of structural features of the '<em>System Unit Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_UNIT_CLASS_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 5;
+	int SYSTEM_UNIT_CLASS_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of operations of the '<em>System Unit Class</em>' class.
@@ -1976,6 +2048,33 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_ELEMENT__INTERNAL_LINK = SYSTEM_UNIT_CLASS__INTERNAL_LINK;
 
 	/**
+	 * The feature id for the '<em><b>Ref Base Class Path</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ELEMENT__REF_BASE_CLASS_PATH = SYSTEM_UNIT_CLASS__REF_BASE_CLASS_PATH;
+
+	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ELEMENT__BASE_CLASS = SYSTEM_UNIT_CLASS__BASE_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>System Unit Class</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ELEMENT__SYSTEM_UNIT_CLASS = SYSTEM_UNIT_CLASS__SYSTEM_UNIT_CLASS;
+
+	/**
 	 * The feature id for the '<em><b>Role Requirements</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2003,13 +2102,22 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_ELEMENT__REF_BASE_SYSTEM_UNIT_PATH = SYSTEM_UNIT_CLASS_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Base System Unit</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_ELEMENT__BASE_SYSTEM_UNIT = SYSTEM_UNIT_CLASS_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Internal Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_ELEMENT_FEATURE_COUNT = SYSTEM_UNIT_CLASS_FEATURE_COUNT + 3;
+	int INTERNAL_ELEMENT_FEATURE_COUNT = SYSTEM_UNIT_CLASS_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>Internal Element</em>' class.
@@ -2121,13 +2229,31 @@ public interface CAEXPackage extends EPackage {
 	int INTERNAL_LINK__REF_PARTNER_SIDE_B = CAEX_OBJECT_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Partner Side A</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_LINK__PARTNER_SIDE_A = CAEX_OBJECT_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Partner Side B</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INTERNAL_LINK__PARTNER_SIDE_B = CAEX_OBJECT_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Internal Link</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int INTERNAL_LINK_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 2;
+	int INTERNAL_LINK_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>Internal Link</em>' class.
@@ -2767,13 +2893,31 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_CLASS__REF_BASE_CLASS_PATH = CAEX_OBJECT_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_CLASS__BASE_CLASS = CAEX_OBJECT_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Role Class</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_CLASS__ROLE_CLASS = CAEX_OBJECT_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Role Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_CLASS_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 3;
+	int ROLE_CLASS_FEATURE_COUNT = CAEX_OBJECT_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of operations of the '<em>Role Class</em>' class.
@@ -2894,13 +3038,22 @@ public interface CAEXPackage extends EPackage {
 	int ROLE_FAMILY__REF_BASE_CLASS_PATH = ROLE_CLASS__REF_BASE_CLASS_PATH;
 
 	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROLE_FAMILY__BASE_CLASS = ROLE_CLASS__BASE_CLASS;
+
+	/**
 	 * The feature id for the '<em><b>Role Class</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_FAMILY__ROLE_CLASS = ROLE_CLASS_FEATURE_COUNT + 0;
+	int ROLE_FAMILY__ROLE_CLASS = ROLE_CLASS__ROLE_CLASS;
 
 	/**
 	 * The number of structural features of the '<em>Role Family</em>' class.
@@ -2909,7 +3062,7 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_FAMILY_FEATURE_COUNT = ROLE_CLASS_FEATURE_COUNT + 1;
+	int ROLE_FAMILY_FEATURE_COUNT = ROLE_CLASS_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>Role Family</em>' class.
@@ -3112,13 +3265,22 @@ public interface CAEXPackage extends EPackage {
 	int SUPPORTED_ROLE_CLASS__REF_ROLE_CLASS_PATH = CAEX_BASIC_OBJECT_FEATURE_COUNT + 1;
 
 	/**
+	 * The feature id for the '<em><b>Role Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPORTED_ROLE_CLASS__ROLE_CLASS = CAEX_BASIC_OBJECT_FEATURE_COUNT + 2;
+
+	/**
 	 * The number of structural features of the '<em>Supported Role Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPORTED_ROLE_CLASS_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 2;
+	int SUPPORTED_ROLE_CLASS_FEATURE_COUNT = CAEX_BASIC_OBJECT_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of operations of the '<em>Supported Role Class</em>' class.
@@ -3366,22 +3528,31 @@ public interface CAEXPackage extends EPackage {
 	int SYSTEM_UNIT_FAMILY__INTERNAL_LINK = SYSTEM_UNIT_CLASS__INTERNAL_LINK;
 
 	/**
-	 * The feature id for the '<em><b>System Unit Class</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SYSTEM_UNIT_FAMILY__SYSTEM_UNIT_CLASS = SYSTEM_UNIT_CLASS_FEATURE_COUNT + 0;
-
-	/**
 	 * The feature id for the '<em><b>Ref Base Class Path</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_UNIT_FAMILY__REF_BASE_CLASS_PATH = SYSTEM_UNIT_CLASS_FEATURE_COUNT + 1;
+	int SYSTEM_UNIT_FAMILY__REF_BASE_CLASS_PATH = SYSTEM_UNIT_CLASS__REF_BASE_CLASS_PATH;
+
+	/**
+	 * The feature id for the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_UNIT_FAMILY__BASE_CLASS = SYSTEM_UNIT_CLASS__BASE_CLASS;
+
+	/**
+	 * The feature id for the '<em><b>System Unit Class</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SYSTEM_UNIT_FAMILY__SYSTEM_UNIT_CLASS = SYSTEM_UNIT_CLASS__SYSTEM_UNIT_CLASS;
 
 	/**
 	 * The number of structural features of the '<em>System Unit Family</em>' class.
@@ -3390,7 +3561,7 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_UNIT_FAMILY_FEATURE_COUNT = SYSTEM_UNIT_CLASS_FEATURE_COUNT + 2;
+	int SYSTEM_UNIT_FAMILY_FEATURE_COUNT = SYSTEM_UNIT_CLASS_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of operations of the '<em>System Unit Family</em>' class.
@@ -4118,6 +4289,28 @@ public interface CAEXPackage extends EPackage {
 	EAttribute getInterfaceClass_RefBaseClassPath();
 
 	/**
+	 * Returns the meta object for the reference '{@link CAEX.InterfaceClass#getBaseClass <em>Base Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Class</em>'.
+	 * @see CAEX.InterfaceClass#getBaseClass()
+	 * @see #getInterfaceClass()
+	 * @generated
+	 */
+	EReference getInterfaceClass_BaseClass();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link CAEX.InterfaceClass#getInterfaceClass <em>Interface Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Interface Class</em>'.
+	 * @see CAEX.InterfaceClass#getInterfaceClass()
+	 * @see #getInterfaceClass()
+	 * @generated
+	 */
+	EReference getInterfaceClass_InterfaceClass();
+
+	/**
 	 * Returns the meta object for class '{@link CAEX.InterfaceFamily <em>Interface Family</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4126,17 +4319,6 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getInterfaceFamily();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link CAEX.InterfaceFamily#getInterfaceClass <em>Interface Class</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Interface Class</em>'.
-	 * @see CAEX.InterfaceFamily#getInterfaceClass()
-	 * @see #getInterfaceFamily()
-	 * @generated
-	 */
-	EReference getInterfaceFamily_InterfaceClass();
 
 	/**
 	 * Returns the meta object for class '{@link CAEX.InterfaceNameMapping <em>Interface Name Mapping</em>}'.
@@ -4214,6 +4396,17 @@ public interface CAEXPackage extends EPackage {
 	EAttribute getInternalElement_RefBaseSystemUnitPath();
 
 	/**
+	 * Returns the meta object for the reference '{@link CAEX.InternalElement#getBaseSystemUnit <em>Base System Unit</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base System Unit</em>'.
+	 * @see CAEX.InternalElement#getBaseSystemUnit()
+	 * @see #getInternalElement()
+	 * @generated
+	 */
+	EReference getInternalElement_BaseSystemUnit();
+
+	/**
 	 * Returns the meta object for class '{@link CAEX.InternalLink <em>Internal Link</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4244,6 +4437,28 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getInternalLink_RefPartnerSideB();
+
+	/**
+	 * Returns the meta object for the reference '{@link CAEX.InternalLink#getPartnerSideA <em>Partner Side A</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Partner Side A</em>'.
+	 * @see CAEX.InternalLink#getPartnerSideA()
+	 * @see #getInternalLink()
+	 * @generated
+	 */
+	EReference getInternalLink_PartnerSideA();
+
+	/**
+	 * Returns the meta object for the reference '{@link CAEX.InternalLink#getPartnerSideB <em>Partner Side B</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Partner Side B</em>'.
+	 * @see CAEX.InternalLink#getPartnerSideB()
+	 * @see #getInternalLink()
+	 * @generated
+	 */
+	EReference getInternalLink_PartnerSideB();
 
 	/**
 	 * Returns the meta object for class '{@link CAEX.Mapping <em>Mapping</em>}'.
@@ -4492,6 +4707,28 @@ public interface CAEXPackage extends EPackage {
 	EAttribute getRoleClass_RefBaseClassPath();
 
 	/**
+	 * Returns the meta object for the reference '{@link CAEX.RoleClass#getBaseClass <em>Base Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Class</em>'.
+	 * @see CAEX.RoleClass#getBaseClass()
+	 * @see #getRoleClass()
+	 * @generated
+	 */
+	EReference getRoleClass_BaseClass();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link CAEX.RoleClass#getRoleClass <em>Role Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Role Class</em>'.
+	 * @see CAEX.RoleClass#getRoleClass()
+	 * @see #getRoleClass()
+	 * @generated
+	 */
+	EReference getRoleClass_RoleClass();
+
+	/**
 	 * Returns the meta object for class '{@link CAEX.RoleFamily <em>Role Family</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4500,17 +4737,6 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getRoleFamily();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link CAEX.RoleFamily#getRoleClass <em>Role Class</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Role Class</em>'.
-	 * @see CAEX.RoleFamily#getRoleClass()
-	 * @see #getRoleFamily()
-	 * @generated
-	 */
-	EReference getRoleFamily_RoleClass();
 
 	/**
 	 * Returns the meta object for class '{@link CAEX.RoleRequirements <em>Role Requirements</em>}'.
@@ -4586,6 +4812,17 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getSupportedRoleClass_RefRoleClassPath();
+
+	/**
+	 * Returns the meta object for the reference '{@link CAEX.SupportedRoleClass#getRoleClass <em>Role Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Role Class</em>'.
+	 * @see CAEX.SupportedRoleClass#getRoleClass()
+	 * @see #getSupportedRoleClass()
+	 * @generated
+	 */
+	EReference getSupportedRoleClass_RoleClass();
 
 	/**
 	 * Returns the meta object for class '{@link CAEX.SystemUnitClassLib <em>System Unit Class Lib</em>}'.
@@ -4674,6 +4911,39 @@ public interface CAEXPackage extends EPackage {
 	EReference getSystemUnitClass_InternalLink();
 
 	/**
+	 * Returns the meta object for the attribute '{@link CAEX.SystemUnitClass#getRefBaseClassPath <em>Ref Base Class Path</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Ref Base Class Path</em>'.
+	 * @see CAEX.SystemUnitClass#getRefBaseClassPath()
+	 * @see #getSystemUnitClass()
+	 * @generated
+	 */
+	EAttribute getSystemUnitClass_RefBaseClassPath();
+
+	/**
+	 * Returns the meta object for the reference '{@link CAEX.SystemUnitClass#getBaseClass <em>Base Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Base Class</em>'.
+	 * @see CAEX.SystemUnitClass#getBaseClass()
+	 * @see #getSystemUnitClass()
+	 * @generated
+	 */
+	EReference getSystemUnitClass_BaseClass();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link CAEX.SystemUnitClass#getSystemUnitClass <em>System Unit Class</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>System Unit Class</em>'.
+	 * @see CAEX.SystemUnitClass#getSystemUnitClass()
+	 * @see #getSystemUnitClass()
+	 * @generated
+	 */
+	EReference getSystemUnitClass_SystemUnitClass();
+
+	/**
 	 * Returns the meta object for class '{@link CAEX.SystemUnitFamily <em>System Unit Family</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4682,28 +4952,6 @@ public interface CAEXPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSystemUnitFamily();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link CAEX.SystemUnitFamily#getSystemUnitClass <em>System Unit Class</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>System Unit Class</em>'.
-	 * @see CAEX.SystemUnitFamily#getSystemUnitClass()
-	 * @see #getSystemUnitFamily()
-	 * @generated
-	 */
-	EReference getSystemUnitFamily_SystemUnitClass();
-
-	/**
-	 * Returns the meta object for the attribute '{@link CAEX.SystemUnitFamily#getRefBaseClassPath <em>Ref Base Class Path</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Ref Base Class Path</em>'.
-	 * @see CAEX.SystemUnitFamily#getRefBaseClassPath()
-	 * @see #getSystemUnitFamily()
-	 * @generated
-	 */
-	EAttribute getSystemUnitFamily_RefBaseClassPath();
 
 	/**
 	 * Returns the meta object for class '{@link CAEX.UnknownType <em>Unknown Type</em>}'.
@@ -5291,6 +5539,22 @@ public interface CAEXPackage extends EPackage {
 		EAttribute INTERFACE_CLASS__REF_BASE_CLASS_PATH = eINSTANCE.getInterfaceClass_RefBaseClassPath();
 
 		/**
+		 * The meta object literal for the '<em><b>Base Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTERFACE_CLASS__BASE_CLASS = eINSTANCE.getInterfaceClass_BaseClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Interface Class</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTERFACE_CLASS__INTERFACE_CLASS = eINSTANCE.getInterfaceClass_InterfaceClass();
+
+		/**
 		 * The meta object literal for the '{@link CAEX.impl.InterfaceFamilyImpl <em>Interface Family</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5299,14 +5563,6 @@ public interface CAEXPackage extends EPackage {
 		 * @generated
 		 */
 		EClass INTERFACE_FAMILY = eINSTANCE.getInterfaceFamily();
-
-		/**
-		 * The meta object literal for the '<em><b>Interface Class</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference INTERFACE_FAMILY__INTERFACE_CLASS = eINSTANCE.getInterfaceFamily_InterfaceClass();
 
 		/**
 		 * The meta object literal for the '{@link CAEX.impl.InterfaceNameMappingImpl <em>Interface Name Mapping</em>}' class.
@@ -5369,6 +5625,14 @@ public interface CAEXPackage extends EPackage {
 		EAttribute INTERNAL_ELEMENT__REF_BASE_SYSTEM_UNIT_PATH = eINSTANCE.getInternalElement_RefBaseSystemUnitPath();
 
 		/**
+		 * The meta object literal for the '<em><b>Base System Unit</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTERNAL_ELEMENT__BASE_SYSTEM_UNIT = eINSTANCE.getInternalElement_BaseSystemUnit();
+
+		/**
 		 * The meta object literal for the '{@link CAEX.impl.InternalLinkImpl <em>Internal Link</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5393,6 +5657,22 @@ public interface CAEXPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute INTERNAL_LINK__REF_PARTNER_SIDE_B = eINSTANCE.getInternalLink_RefPartnerSideB();
+
+		/**
+		 * The meta object literal for the '<em><b>Partner Side A</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTERNAL_LINK__PARTNER_SIDE_A = eINSTANCE.getInternalLink_PartnerSideA();
+
+		/**
+		 * The meta object literal for the '<em><b>Partner Side B</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference INTERNAL_LINK__PARTNER_SIDE_B = eINSTANCE.getInternalLink_PartnerSideB();
 
 		/**
 		 * The meta object literal for the '{@link CAEX.impl.MappingImpl <em>Mapping</em>}' class.
@@ -5593,6 +5873,22 @@ public interface CAEXPackage extends EPackage {
 		EAttribute ROLE_CLASS__REF_BASE_CLASS_PATH = eINSTANCE.getRoleClass_RefBaseClassPath();
 
 		/**
+		 * The meta object literal for the '<em><b>Base Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ROLE_CLASS__BASE_CLASS = eINSTANCE.getRoleClass_BaseClass();
+
+		/**
+		 * The meta object literal for the '<em><b>Role Class</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ROLE_CLASS__ROLE_CLASS = eINSTANCE.getRoleClass_RoleClass();
+
+		/**
 		 * The meta object literal for the '{@link CAEX.impl.RoleFamilyImpl <em>Role Family</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5601,14 +5897,6 @@ public interface CAEXPackage extends EPackage {
 		 * @generated
 		 */
 		EClass ROLE_FAMILY = eINSTANCE.getRoleFamily();
-
-		/**
-		 * The meta object literal for the '<em><b>Role Class</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference ROLE_FAMILY__ROLE_CLASS = eINSTANCE.getRoleFamily_RoleClass();
 
 		/**
 		 * The meta object literal for the '{@link CAEX.impl.RoleRequirementsImpl <em>Role Requirements</em>}' class.
@@ -5669,6 +5957,14 @@ public interface CAEXPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SUPPORTED_ROLE_CLASS__REF_ROLE_CLASS_PATH = eINSTANCE.getSupportedRoleClass_RefRoleClassPath();
+
+		/**
+		 * The meta object literal for the '<em><b>Role Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SUPPORTED_ROLE_CLASS__ROLE_CLASS = eINSTANCE.getSupportedRoleClass_RoleClass();
 
 		/**
 		 * The meta object literal for the '{@link CAEX.impl.SystemUnitClassLibImpl <em>System Unit Class Lib</em>}' class.
@@ -5739,6 +6035,30 @@ public interface CAEXPackage extends EPackage {
 		EReference SYSTEM_UNIT_CLASS__INTERNAL_LINK = eINSTANCE.getSystemUnitClass_InternalLink();
 
 		/**
+		 * The meta object literal for the '<em><b>Ref Base Class Path</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SYSTEM_UNIT_CLASS__REF_BASE_CLASS_PATH = eINSTANCE.getSystemUnitClass_RefBaseClassPath();
+
+		/**
+		 * The meta object literal for the '<em><b>Base Class</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM_UNIT_CLASS__BASE_CLASS = eINSTANCE.getSystemUnitClass_BaseClass();
+
+		/**
+		 * The meta object literal for the '<em><b>System Unit Class</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SYSTEM_UNIT_CLASS__SYSTEM_UNIT_CLASS = eINSTANCE.getSystemUnitClass_SystemUnitClass();
+
+		/**
 		 * The meta object literal for the '{@link CAEX.impl.SystemUnitFamilyImpl <em>System Unit Family</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -5747,22 +6067,6 @@ public interface CAEXPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SYSTEM_UNIT_FAMILY = eINSTANCE.getSystemUnitFamily();
-
-		/**
-		 * The meta object literal for the '<em><b>System Unit Class</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference SYSTEM_UNIT_FAMILY__SYSTEM_UNIT_CLASS = eINSTANCE.getSystemUnitFamily_SystemUnitClass();
-
-		/**
-		 * The meta object literal for the '<em><b>Ref Base Class Path</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute SYSTEM_UNIT_FAMILY__REF_BASE_CLASS_PATH = eINSTANCE.getSystemUnitFamily_RefBaseClassPath();
 
 		/**
 		 * The meta object literal for the '{@link CAEX.impl.UnknownTypeImpl <em>Unknown Type</em>}' class.

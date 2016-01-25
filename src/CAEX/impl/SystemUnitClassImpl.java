@@ -22,6 +22,7 @@ import CAEX.SystemUnitClass;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.common.util.EList;
@@ -29,6 +30,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
@@ -38,14 +40,17 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.SystemUnitClassImpl#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link CAEX.impl.SystemUnitClassImpl#getExternalInterface <em>External Interface</em>}</li>
  *   <li>{@link CAEX.impl.SystemUnitClassImpl#getInternalElement <em>Internal Element</em>}</li>
  *   <li>{@link CAEX.impl.SystemUnitClassImpl#getSupportedRoleClass <em>Supported Role Class</em>}</li>
  *   <li>{@link CAEX.impl.SystemUnitClassImpl#getInternalLink <em>Internal Link</em>}</li>
+ *   <li>{@link CAEX.impl.SystemUnitClassImpl#getRefBaseClassPath <em>Ref Base Class Path</em>}</li>
+ *   <li>{@link CAEX.impl.SystemUnitClassImpl#getBaseClass <em>Base Class</em>}</li>
+ *   <li>{@link CAEX.impl.SystemUnitClassImpl#getSystemUnitClass <em>System Unit Class</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -99,6 +104,46 @@ public class SystemUnitClassImpl extends CAEXObjectImpl implements SystemUnitCla
 	 * @ordered
 	 */
 	protected EList<InternalLink> internalLink;
+
+	/**
+	 * The default value of the '{@link #getRefBaseClassPath() <em>Ref Base Class Path</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRefBaseClassPath()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String REF_BASE_CLASS_PATH_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getRefBaseClassPath() <em>Ref Base Class Path</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRefBaseClassPath()
+	 * @generated
+	 * @ordered
+	 */
+	protected String refBaseClassPath = REF_BASE_CLASS_PATH_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getBaseClass() <em>Base Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBaseClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected SystemUnitClass baseClass;
+
+	/**
+	 * The cached value of the '{@link #getSystemUnitClass() <em>System Unit Class</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSystemUnitClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<SystemUnitClass> systemUnitClass;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -184,6 +229,77 @@ public class SystemUnitClassImpl extends CAEXObjectImpl implements SystemUnitCla
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getRefBaseClassPath() {
+		return refBaseClassPath;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRefBaseClassPath(String newRefBaseClassPath) {
+		String oldRefBaseClassPath = refBaseClassPath;
+		refBaseClassPath = newRefBaseClassPath;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.SYSTEM_UNIT_CLASS__REF_BASE_CLASS_PATH, oldRefBaseClassPath, refBaseClassPath));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SystemUnitClass getBaseClass() {
+		if (baseClass != null && baseClass.eIsProxy()) {
+			InternalEObject oldBaseClass = (InternalEObject)baseClass;
+			baseClass = (SystemUnitClass)eResolveProxy(oldBaseClass);
+			if (baseClass != oldBaseClass) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.SYSTEM_UNIT_CLASS__BASE_CLASS, oldBaseClass, baseClass));
+			}
+		}
+		return baseClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SystemUnitClass basicGetBaseClass() {
+		return baseClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBaseClass(SystemUnitClass newBaseClass) {
+		SystemUnitClass oldBaseClass = baseClass;
+		baseClass = newBaseClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.SYSTEM_UNIT_CLASS__BASE_CLASS, oldBaseClass, baseClass));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<SystemUnitClass> getSystemUnitClass() {
+		if (systemUnitClass == null) {
+			systemUnitClass = new EObjectContainmentEList<SystemUnitClass>(SystemUnitClass.class, this, CAEXPackage.SYSTEM_UNIT_CLASS__SYSTEM_UNIT_CLASS);
+		}
+		return systemUnitClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -197,6 +313,8 @@ public class SystemUnitClassImpl extends CAEXObjectImpl implements SystemUnitCla
 				return ((InternalEList<?>)getSupportedRoleClass()).basicRemove(otherEnd, msgs);
 			case CAEXPackage.SYSTEM_UNIT_CLASS__INTERNAL_LINK:
 				return ((InternalEList<?>)getInternalLink()).basicRemove(otherEnd, msgs);
+			case CAEXPackage.SYSTEM_UNIT_CLASS__SYSTEM_UNIT_CLASS:
+				return ((InternalEList<?>)getSystemUnitClass()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -219,6 +337,13 @@ public class SystemUnitClassImpl extends CAEXObjectImpl implements SystemUnitCla
 				return getSupportedRoleClass();
 			case CAEXPackage.SYSTEM_UNIT_CLASS__INTERNAL_LINK:
 				return getInternalLink();
+			case CAEXPackage.SYSTEM_UNIT_CLASS__REF_BASE_CLASS_PATH:
+				return getRefBaseClassPath();
+			case CAEXPackage.SYSTEM_UNIT_CLASS__BASE_CLASS:
+				if (resolve) return getBaseClass();
+				return basicGetBaseClass();
+			case CAEXPackage.SYSTEM_UNIT_CLASS__SYSTEM_UNIT_CLASS:
+				return getSystemUnitClass();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -252,6 +377,16 @@ public class SystemUnitClassImpl extends CAEXObjectImpl implements SystemUnitCla
 				getInternalLink().clear();
 				getInternalLink().addAll((Collection<? extends InternalLink>)newValue);
 				return;
+			case CAEXPackage.SYSTEM_UNIT_CLASS__REF_BASE_CLASS_PATH:
+				setRefBaseClassPath((String)newValue);
+				return;
+			case CAEXPackage.SYSTEM_UNIT_CLASS__BASE_CLASS:
+				setBaseClass((SystemUnitClass)newValue);
+				return;
+			case CAEXPackage.SYSTEM_UNIT_CLASS__SYSTEM_UNIT_CLASS:
+				getSystemUnitClass().clear();
+				getSystemUnitClass().addAll((Collection<? extends SystemUnitClass>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -279,6 +414,15 @@ public class SystemUnitClassImpl extends CAEXObjectImpl implements SystemUnitCla
 			case CAEXPackage.SYSTEM_UNIT_CLASS__INTERNAL_LINK:
 				getInternalLink().clear();
 				return;
+			case CAEXPackage.SYSTEM_UNIT_CLASS__REF_BASE_CLASS_PATH:
+				setRefBaseClassPath(REF_BASE_CLASS_PATH_EDEFAULT);
+				return;
+			case CAEXPackage.SYSTEM_UNIT_CLASS__BASE_CLASS:
+				setBaseClass((SystemUnitClass)null);
+				return;
+			case CAEXPackage.SYSTEM_UNIT_CLASS__SYSTEM_UNIT_CLASS:
+				getSystemUnitClass().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -301,8 +445,30 @@ public class SystemUnitClassImpl extends CAEXObjectImpl implements SystemUnitCla
 				return supportedRoleClass != null && !supportedRoleClass.isEmpty();
 			case CAEXPackage.SYSTEM_UNIT_CLASS__INTERNAL_LINK:
 				return internalLink != null && !internalLink.isEmpty();
+			case CAEXPackage.SYSTEM_UNIT_CLASS__REF_BASE_CLASS_PATH:
+				return REF_BASE_CLASS_PATH_EDEFAULT == null ? refBaseClassPath != null : !REF_BASE_CLASS_PATH_EDEFAULT.equals(refBaseClassPath);
+			case CAEXPackage.SYSTEM_UNIT_CLASS__BASE_CLASS:
+				return baseClass != null;
+			case CAEXPackage.SYSTEM_UNIT_CLASS__SYSTEM_UNIT_CLASS:
+				return systemUnitClass != null && !systemUnitClass.isEmpty();
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (refBaseClassPath: ");
+		result.append(refBaseClassPath);
+		result.append(')');
+		return result.toString();
 	}
 
 } //SystemUnitClassImpl

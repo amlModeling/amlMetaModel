@@ -25,14 +25,17 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.SystemUnitClass#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link CAEX.SystemUnitClass#getExternalInterface <em>External Interface</em>}</li>
  *   <li>{@link CAEX.SystemUnitClass#getInternalElement <em>Internal Element</em>}</li>
  *   <li>{@link CAEX.SystemUnitClass#getSupportedRoleClass <em>Supported Role Class</em>}</li>
  *   <li>{@link CAEX.SystemUnitClass#getInternalLink <em>Internal Link</em>}</li>
+ *   <li>{@link CAEX.SystemUnitClass#getRefBaseClassPath <em>Ref Base Class Path</em>}</li>
+ *   <li>{@link CAEX.SystemUnitClass#getBaseClass <em>Base Class</em>}</li>
+ *   <li>{@link CAEX.SystemUnitClass#getSystemUnitClass <em>System Unit Class</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getSystemUnitClass()
  * @model extendedMetaData="name='SystemUnitClassType' kind='elementOnly'"
@@ -118,5 +121,73 @@ public interface SystemUnitClass extends CAEXObject {
 	 * @generated
 	 */
 	EList<InternalLink> getInternalLink();
+
+	/**
+	 * Returns the value of the '<em><b>Ref Base Class Path</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Stores the reference of a class to its base class. References contain the full path to the refered class object.
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>Ref Base Class Path</em>' attribute.
+	 * @see #setRefBaseClassPath(String)
+	 * @see CAEX.CAEXPackage#getSystemUnitClass_RefBaseClassPath()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.String"
+	 *        extendedMetaData="kind='attribute' name='RefBaseClassPath' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	String getRefBaseClassPath();
+
+	/**
+	 * Sets the value of the '{@link CAEX.SystemUnitClass#getRefBaseClassPath <em>Ref Base Class Path</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Ref Base Class Path</em>' attribute.
+	 * @see #getRefBaseClassPath()
+	 * @generated
+	 */
+	void setRefBaseClassPath(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Base Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Base Class</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Base Class</em>' reference.
+	 * @see #setBaseClass(SystemUnitClass)
+	 * @see CAEX.CAEXPackage#getSystemUnitClass_BaseClass()
+	 * @model
+	 * @generated
+	 */
+	SystemUnitClass getBaseClass();
+
+	/**
+	 * Sets the value of the '{@link CAEX.SystemUnitClass#getBaseClass <em>Base Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Base Class</em>' reference.
+	 * @see #getBaseClass()
+	 * @generated
+	 */
+	void setBaseClass(SystemUnitClass value);
+
+	/**
+	 * Returns the value of the '<em><b>System Unit Class</b></em>' containment reference list.
+	 * The list contents are of type {@link CAEX.SystemUnitClass}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * Element that allows definition of child SystemUnitClasses within the class hierarchy. The parent child relation between two SystemUnitClasses has no semantic.
+	 * <!-- end-model-doc -->
+	 * @return the value of the '<em>System Unit Class</em>' containment reference list.
+	 * @see CAEX.CAEXPackage#getSystemUnitClass_SystemUnitClass()
+	 * @model containment="true"
+	 *        extendedMetaData="kind='element' name='SystemUnitClass' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	EList<SystemUnitClass> getSystemUnitClass();
 
 } // SystemUnitClass

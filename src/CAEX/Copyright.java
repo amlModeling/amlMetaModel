@@ -11,11 +11,11 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.Copyright#getValue <em>Value</em>}</li>
  *   <li>{@link CAEX.Copyright#getChangeMode <em>Change Mode</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getCopyright()
  * @model extendedMetaData="name='Copyright' kind='simple'"
