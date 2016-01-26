@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated genericAnyType -->
+      <package
+            uri="genAnyType"
+            class="GenericAnyType.GenericAnyTypePackage"
+            genModel="model/genericAnyType.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated GenericAnyType -->
+      <parser
+            type="genericanytype"
+            class="GenericAnyType.util.GenericAnyTypeResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated genericAnyType -->
+      <package
+            uri="http://www.eclipse.org/emf/2003/XMLType"
+            class="type.TypePackage"
+            genModel="model/genericAnyType.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CAEX -->
+      <package
+            uri="http://caex"
+            class="CAEX.CAEXPackage"
+            genModel="model/CAEX.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated CAEX -->
+      <parser
+            type="caex"
+            class="CAEX.util.CAEXResourceFactoryImpl"/>
+   </extension>
+</plugin>

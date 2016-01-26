@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FileName="AutomationMLInterfaceClassLib.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd">
+	
+	
+	<InterfaceClassLib Name="AutomationMLInterfaceClassLib">
+		<Description>Standard Automation Markup Language Interface Class Library</Description>
+		<Version>2.2.0</Version>
+		<InterfaceClass Name="AutomationMLBaseInterface">
+			<InterfaceClass Name="Order" RefBaseClassPath="AutomationMLBaseInterface">
+				<Attribute AttributeDataType="xs:string" Name="Direction"/>
+			</InterfaceClass>
+			<InterfaceClass Name="PortConnector" RefBaseClassPath="AutomationMLBaseInterface"/>
+			<InterfaceClass Name="InterlockingConnector" RefBaseClassPath="AutomationMLBaseInterface"/>
+			<InterfaceClass Name="PPRConnector" RefBaseClassPath="AutomationMLBaseInterface"/>
+			<InterfaceClass Name="ExternalDataConnector" RefBaseClassPath="AutomationMLBaseInterface">
+				<Attribute AttributeDataType="xs:anyURI" Name="refURI"/>
+				<InterfaceClass Name="COLLADAInterface" RefBaseClassPath="ExternalDataConnector"/>
+				<InterfaceClass Name="PLCopenXMLInterface" RefBaseClassPath="ExternalDataConnector"/>
+			</InterfaceClass>
+			<InterfaceClass Name="Communication" RefBaseClassPath="AutomationMLBaseInterface">
+				<InterfaceClass Name="SignalInterface" RefBaseClassPath="Communication"/>
+				</InterfaceClass>
+			</InterfaceClass>
+	</InterfaceClassLib>
+</CAEXFile>

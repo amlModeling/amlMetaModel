@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="caex" nsURI="http://www.dke.de/CAEX" nsPrefix="caex">
+  <eClassifiers xsi:type="ecore:EDataType" name="AttributeDataTypeType" instanceClassName="java.lang.String"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeNameMappingType" eSuperTypes="#//CAEXBasicObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roleAttributeName" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="systemUnitAttributeName"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeType" eSuperTypes="#//CAEXObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defaultValue" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refSemantic" upperBound="-1"
+        eType="#//RefSemanticType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constraint" upperBound="-1"
+        eType="#//AttributeValueRequirementType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" upperBound="-1"
+        eType="#//AttributeType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeDataType" eType="#//AttributeDataTypeType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeValueRequirementType" eSuperTypes="#//CAEXBasicObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ordinalScaledType" eType="#//OrdinalScaledTypeType"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nominalScaledType" eType="#//NominalScaledTypeType"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="unknownType" eType="#//UnknownTypeType"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CAEXBasicObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="changeMode" eType="#//ChangeMode"
+        defaultValueLiteral="state" unsettable="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CAEXFileType" eSuperTypes="#//CAEXBasicObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalReference" upperBound="-1"
+        eType="#//ExternalReferenceType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="instanceHierarchy" upperBound="-1"
+        eType="#//InstanceHierarchyType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceClassLib" upperBound="-1"
+        eType="#//InterfaceClassLibType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roleClassLib" upperBound="-1"
+        eType="#//RoleClassLibType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="systemUnitClassLib" upperBound="-1"
+        eType="#//SystemUnitClassLibType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fileName" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="schemaVersion" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String" defaultValueLiteral="2.15"
+        unsettable="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CAEXObject" eSuperTypes="#//CAEXBasicObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="iD" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ChangeMode">
+    <eLiterals name="state"/>
+    <eLiterals name="create" value="1"/>
+    <eLiterals name="delete" value="2"/>
+    <eLiterals name="change" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" name="ChangeModeObject" instanceClassName="org.eclipse.emf.common.util.Enumerator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentRoot">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mixed" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFeatureMapEntry"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xMLNSPrefixMap" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+        transient="true" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="xSISchemaLocation" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStringToStringMapEntry"
+        transient="true" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cAEXFile" upperBound="-2"
+        eType="#//CAEXFileType" volatile="true" transient="true" derived="true" containment="true"
+        resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalInterfaceType" eSuperTypes="#//InterfaceClassType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalReferenceType" eSuperTypes="#//CAEXBasicObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alias" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InstanceHierarchyType" eSuperTypes="#//CAEXObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internalElement" upperBound="-1"
+        eType="#//InternalElementType" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InterfaceClassLibType" eSuperTypes="#//CAEXObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceClass" upperBound="-1"
+        eType="#//InterfaceFamilyType" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InterfaceClassType" eSuperTypes="#//CAEXObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" upperBound="-1"
+        eType="#//AttributeType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refBaseClassPath" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InterfaceFamilyType" eSuperTypes="#//InterfaceClassType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceClass" upperBound="-1"
+        eType="#//InterfaceFamilyType" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InterfaceNameMappingType" eSuperTypes="#//CAEXBasicObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roleInterfaceName" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="systemUnitInterfaceName"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InternalElementType" eSuperTypes="#//SystemUnitClassType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roleRequirements" eType="#//RoleRequirementsType"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mappingObject" eType="#//MappingType"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refBaseSystemUnitPath"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InternalLinkType" eSuperTypes="#//CAEXObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refPartnerSideA" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refPartnerSideB" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MappingType" eSuperTypes="#//CAEXBasicObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributeNameMapping" upperBound="-1"
+        eType="#//AttributeNameMappingType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaceNameMapping" upperBound="-1"
+        eType="#//InterfaceNameMappingType" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NominalScaledTypeType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiredValue" upperBound="-1"
+        eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject" containment="true"
+        resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OrdinalScaledTypeType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiredMaxValue" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiredValue" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiredMinValue" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RefSemanticType" eSuperTypes="#//CAEXBasicObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="correspondingAttributePath"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RoleClassLibType" eSuperTypes="#//CAEXObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roleClass" upperBound="-1"
+        eType="#//RoleFamilyType" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RoleClassType" eSuperTypes="#//CAEXObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" upperBound="-1"
+        eType="#//AttributeType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalInterface" upperBound="-1"
+        eType="#//ExternalInterfaceType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refBaseClassPath" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RoleFamilyType" eSuperTypes="#//RoleClassType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="roleClass" upperBound="-1"
+        eType="#//RoleFamilyType" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RoleRequirementsType" eSuperTypes="#//CAEXBasicObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" upperBound="-1"
+        eType="#//AttributeType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalInterface" upperBound="-1"
+        eType="#//InterfaceClassType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refBaseRoleClassPath" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SupportedRoleClassType" eSuperTypes="#//CAEXBasicObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mappingObject" eType="#//MappingType"
+        containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refRoleClassPath" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemUnitClassLibType" eSuperTypes="#//CAEXObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="systemUnitClass" upperBound="-1"
+        eType="#//SystemUnitFamilyType" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemUnitClassType" eSuperTypes="#//CAEXObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" upperBound="-1"
+        eType="#//AttributeType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="externalInterface" upperBound="-1"
+        eType="#//InterfaceClassType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internalElement" upperBound="-1"
+        eType="#//InternalElementType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="supportedRoleClass" upperBound="-1"
+        eType="#//SupportedRoleClassType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internalLink" upperBound="-1"
+        eType="#//InternalLinkType" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemUnitFamilyType" eSuperTypes="#//SystemUnitClassType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="systemUnitClass" upperBound="-1"
+        eType="#//SystemUnitFamilyType" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="refBaseClassPath" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UnknownTypeType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="requirements" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+</ecore:EPackage>

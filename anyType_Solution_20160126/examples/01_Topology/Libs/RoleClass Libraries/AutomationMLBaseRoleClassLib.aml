@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FileName="AutomationMLBaseRoleClassLib.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd">
+	
+	
+	<ExternalReference Alias="AutomationMLInterfaceClassLib" Path="../InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+	<RoleClassLib Name="AutomationMLBaseRoleClassLib">
+		<Description>AutomationML base role library</Description>
+		<Version>2.1.2</Version>
+		<RoleClass Name="AutomationMLBaseRole">
+			<RoleClass Name="Group" RefBaseClassPath="AutomationMLBaseRole">
+				<Attribute AttributeDataType="xs:string" Name="AssociatedFacet"/>
+			</RoleClass>
+			<RoleClass Name="Facet" RefBaseClassPath="AutomationMLBaseRole"/>
+			<RoleClass Name="Port" RefBaseClassPath="AutomationMLBaseRole">
+				<Attribute AttributeDataType="xs:string" Name="Direction"/>
+				<Attribute Name="Cardinality">
+					<Attribute AttributeDataType="xs:unsignedInt" Name="MinOccur"/>
+					<Attribute AttributeDataType="xs:unsignedInt" Name="MaxOccur"/>
+				</Attribute>
+				<Attribute AttributeDataType="xs:string" Name="Category"/>
+				<ExternalInterface ID="1c6a2bb9-8f93-4394-8fae-ef0e0074716a" Name="ConnectionPoint" RefBaseClassPath="AutomationMLInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+			</RoleClass>
+			<RoleClass Name="Resource" RefBaseClassPath="AutomationMLBaseRole"/>
+			<RoleClass Name="Product" RefBaseClassPath="AutomationMLBaseRole"/>
+			<RoleClass Name="Process" RefBaseClassPath="AutomationMLBaseRole"/>
+			<RoleClass Name="Structure" RefBaseClassPath="AutomationMLBaseRole">
+				<RoleClass Name="ProductStructure" RefBaseClassPath="Structure"/>
+				<RoleClass Name="ProcessStructure" RefBaseClassPath="Structure"/>
+				<RoleClass Name="ResourceStructure" RefBaseClassPath="Structure">
+					<RoleClass Name="Cell" RefBaseClassPath="ResourceStructure"/>
+					<RoleClass Name="MainGroup" RefBaseClassPath="ResourceStructure"/>
+					<RoleClass Name="FunctionGroup" RefBaseClassPath="ResourceStructure"/>
+					<RoleClass Name="SubFunctionGroup" RefBaseClassPath="ResourceStructure"/>
+					<RoleClass Name="MechatronicAssembly" RefBaseClassPath="ResourceStructure"/>
+					<RoleClass Name="MechanicalAssembly" RefBaseClassPath="ResourceStructure"/>
+					<RoleClass Name="MechanicalPart" RefBaseClassPath="ResourceStructure"/>
+					<RoleClass Name="Device" RefBaseClassPath="ResourceStructure"/>
+				</RoleClass>
+			</RoleClass>
+			<RoleClass Name="PropertySet" RefBaseClassPath="AutomationMLBaseRole"/>
+		</RoleClass>
+	</RoleClassLib>
+</CAEXFile>

@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="ASCII"?>
+<CAEX:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:CAEX="http://caex" fileName="IAF_AMLModel_renamed.aml" schemaVersion="2.15">
+  <additionalInformation>
+    <attributes name="AutomationMLVersion" value="2.0"/>
+    <AutomationMLVersion>2.0</AutomationMLVersion>
+  </additionalInformation>
+  <additionalInformation>
+    <nestedElements name="WriterHeader" value="">
+      <nestedElements name="WriterName" value="AutomationML Editor"/>
+      <nestedElements name="WriterID" value="916578CA-FE0D-474E-A4FC-9E1719892369"/>
+      <nestedElements name="WriterVendor" value="AutomationML e.V."/>
+      <nestedElements name="WriterVendorURL" value="www.AutomationML.org"/>
+      <nestedElements name="WriterVersion" value="4.1.5"/>
+      <nestedElements name="WriterRelease" value="4.1.5.0"/>
+      <nestedElements name="LastWritingDateTime" value="2015-05-06T23:38:24"/>
+      <nestedElements name="WriterProjectTitle" value="unspecified"/>
+      <nestedElements name="WriterProjectID" value="unspecified"/>
+    </nestedElements>
+  </additionalInformation>
+  <externalReference alias="AutomationMLBaseRoleClassLib" path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+  <externalReference alias="AutomationMLInterfaceClassLib" path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+  <instanceHierarchy name="IAFDemonstrationPlant">
+    <internalElement iD="b52e1030-bc63-4fbd-a628-0b6c6640009a" name="FlexibleManufacturingSystem">
+      <internalElement iD="f5f57ce0-e7c0-49b0-83c1-6ea6f4e65d42" name="TransportationLine">
+        <internalElement iD="32055d0b-5402-4924-bdf9-d21670244469" name="Turntable" refBaseSystemUnitPath="PlantComponents/Turntable">
+          <attribute name="Hersteller-Name" value="Fischertechnik" attributeDataType="xs:string">
+            <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+            <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+          </attribute>
+          <attribute name="Herstellerartikelnummer" value="xxxxxxx" attributeDataType="xs:string">
+            <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+            <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+          </attribute>
+          <internalElement iD="f71c8ed6-bc9d-466b-bc11-13c3357df2e3" name="Motor" refBaseSystemUnitPath="PlantComponents/Motor">
+            <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+            <attribute name="eClassReferenceFeatureGroupID" value="27022501" attributeDataType="xs:string"/>
+            <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+            <attribute name="Hersteller-Name" value="Fischertechnik" attributeDataType="xs:string">
+              <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+            </attribute>
+            <attribute name="Herstellerartikelnummer" value="35481 " attributeDataType="xs:string">
+              <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+            </attribute>
+            <attribute name="Min. Rotation Speed" value="5800" unit="1/s" attributeDataType="xs:integer">
+              <description value="Kleinstm&#xf6;gliche Drehzahl, bei der ein Motor im thermisch zul&#xe4;ssigen Bemessungsbetriebspunkt dauernd betrieben werden kann"/>
+            </attribute>
+            <attribute name="Nominal Speed" value="8746" unit="1/s" attributeDataType="xs:float">
+              <description value=" Drehzahl die den Nenndaten des verwendeten Motors entspricht"/>
+            </attribute>
+            <externalInterface iD="1700730e-8e12-4f03-9eca-1bae092eb8d2" name="MotorAn_PinA" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <supportedRoleClass refRoleClassPath="27-02-25-01 DC-Motor (IEC)"/>
+            <supportedRoleClass refRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure/Device"/>
+          </internalElement>
+          <internalElement iD="a4ebc30f-9db2-4b09-a25d-d16896ed83fb" name="InductiveSensor" refBaseSystemUnitPath="PlantComponents/InductiveSensor">
+            <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+            <attribute name="eClassReferenceFeatureGroupID" value="27270101" attributeDataType="xs:string"/>
+            <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+            <attribute name="Umgebungstemperatur min" value="0" unit="&#xb0;C" attributeDataType="xs:float">
+              <description value="Umgebungstemperatur min ist die niedrigste Umgebungstemperatur, der das Ger&#xe4;t ausgesetzt ist und f&#xfc;r die es seine Spezifikation einhalten soll bzw. ist die minimal zul&#xe4;ssige Temperatur der Umgebung, unabh&#xe4;ngig von der Mediumstemperatur, bei der das Ger&#xe4;t noch bestimmungsgem&#xe4;&#xdf;, d. h. mit den vom Hersteller angegebenen Genauigkeitsspezifikationen arbeitet oder ist die maximal zul&#xe4;ssige Temperatur aufgrund weiterer Vorgaben, wie gesetzlicher Bestimmungen oder von Zulassungsbestimmungen (die Beziehung ergibt sich aus dem Kontext der Verwendung von Umgebungstemperatur min)"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAS160#001"/>
+            </attribute>
+            <attribute name="min. Versorgungsspannung" value="10" unit="V" attributeDataType="xs:float">
+              <description value="kleinster Grenzwert der Spannung, die am Versorgungseingang eines elektrischen Betriebsmittels zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC962#006"/>
+            </attribute>
+            <attribute name="Umgebungstemperatur max" value="55" unit="&#xb0;C" attributeDataType="xs:float">
+              <description value=" Umgebungstemperatur max ist die h&#xf6;chste Umgebungstemperatur, der das Ger&#xe4;t ausgesetzt ist und f&#xfc;r die es seine Spezifikation einhalten soll bzw. ist die maximal zul&#xe4;ssige Temperatur der Umgebung, unabh&#xe4;ngig von der Mediumstemperatur, bei der das Ger&#xe4;t noch bestimmungsgem&#xe4;&#xdf;, d. h. mit den vom Hersteller angegebenen Genauigkeitsspezifikationen arbeitet oder ist die maximal zul&#xe4;ssige Temperatur aufgrund weiterer Vorgaben, wie gesetzlicher Bestimmungen oder von Zulassungsbestimmungen (die Beziehung ergibt sich aus dem Kontext der Verwendung von Umgebungstemperatur max)"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAS155#001"/>
+            </attribute>
+            <attribute name="max. Versorgungsspannung" value="30" unit="V" attributeDataType="xs:float">
+              <description value=" h&#xf6;chster Grenzwert der Spannung, die am Versorgungseingang eines elektrischen Betriebsmittels zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC965#006"/>
+            </attribute>
+            <attribute name="Geh&#xe4;usebauform" value="Quader" attributeDataType="xs:string">
+              <description value=" Gibt an, welcher geometrische Grundk&#xf6;rper die &#xe4;u&#xdf;ere Gestalt des Ger&#xe4;tes bestimmt bzw. ob es sich um eine genormte Bauform handelt"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAD840#006"/>
+            </attribute>
+            <attribute name="Hersteller-Name" value="Fischertechnik" attributeDataType="xs:string">
+              <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+            </attribute>
+            <attribute name="Herstellerartikelnummer" value="xxxxxxx" attributeDataType="xs:string">
+              <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+            </attribute>
+            <externalInterface iD="166c283a-4897-48d3-9422-fb7626a8ef16" name="SensorValue_Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-27 Binat Sensor Technology/27-27-01 Proximity Switch/27-27-01-01 Inductive Proximity Switch"/>
+            <supportedRoleClass refRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure/Device"/>
+          </internalElement>
+          <supportedRoleClass refRoleClassPath="MechatronicAssembly"/>
+        </internalElement>
+      </internalElement>
+      <internalElement iD="4412cb6d-c7a5-41b5-bb79-40a3f2617c2c" name="ControlCabinet">
+        <internalElement iD="46dadaea-74ac-4247-b4a6-74cf6877fd75" name="WagoIOA" refBaseSystemUnitPath="PhysicalCommunicationDevices/WagoIOSystem">
+          <internalElement iD="a9bae3ec-5113-431e-a47b-5554a399c541" name="IOMapperApplication" refBaseSystemUnitPath="LogicalCommunicationDevices/IOMapperApplication">
+            <externalInterface iD="462b10fc-461c-47d8-ac65-57b6573acd00" name="ReadInputRegister" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSlaveResponce"/>
+            <externalInterface iD="9cabf767-eb28-42c7-91b4-6a2b7ff54479" name="WriteOutputRegister" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSlaveResponce"/>
+          </internalElement>
+          <internalElement iD="d312ffba-3f9c-44ca-9374-cebf18b94cea" name="Koppler750-341" refBaseSystemUnitPath="PhysicalCommunicationDevices/WagoIOBK750-341">
+            <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+            <attribute name="eClassReferenceFeatureGroupID" value="27242607" attributeDataType="xs:string"/>
+            <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+            <attribute name="MACaddress" attributeDataType="xs:string">
+              <description value="MAC address of the device"/>
+            </attribute>
+            <attribute name="IPAddress" value="192.168.1.12" attributeDataType="xs:string">
+              <description value="IP adress of the device"/>
+            </attribute>
+            <attribute name="Web-Server vorhanden" value="Ja" attributeDataType="xs:string">
+              <description value=" Angabe, ob ein Web-Server vorhanden ist oder nicht"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAF768#004"/>
+            </attribute>
+            <attribute name="unterst&#xfc;tztes Protokoll" value="TCP/IP" attributeDataType="xs:string">
+              <description value="exakte, normierte Vereinbarungen, nach der Daten zwischen Ger&#xe4;ten bzw. Prozessen ausgetauscht werden, die durch ein Netz miteinander verbunden sind"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAM479#004"/>
+            </attribute>
+            <attribute name="Anzahl der HW-Schnittstellen (Industrial Ethernet)" value="1" attributeDataType="xs:integer">
+              <description value=" quantitative Angabe zur Menge der Anschlussm&#xf6;glichkeiten zur Daten&#xfc;bertragung gem&#xe4;&#xdf; der IEEE 802.3 standardisierten Ausf&#xfc;hrung des Basisband-LAN"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO494#002"/>
+            </attribute>
+            <attribute name="min. Eingangsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+              <description value=" gr&#xf6;&#xdf;tm&#xf6;glicher Wert der Gleichspannung, die am Eingang eines Betriebsmittels angelegt werden kann"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB977#007"/>
+            </attribute>
+            <attribute name="max. Eingangsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+              <description value=" gr&#xf6;&#xdf;tm&#xf6;glicher Wert der Gleichspannung, die am Eingang eines Betriebsmittels angelegt werden kann"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB848#006"/>
+            </attribute>
+            <attribute name="Art der Eingangsspannung" value="DC" attributeDataType="xs:string">
+              <description value="Form der Eingangsspannung, die bestimmt, wie sich die elektrischen Ladungen aufgrund der anliegenden Spannung im zeitlichen Verlauf bewegen"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAC065#006"/>
+            </attribute>
+            <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+              <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+            </attribute>
+            <attribute name="Herstellerartikelnummer" value="750-341" attributeDataType="xs:string">
+              <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+            </attribute>
+            <externalInterface iD="0d162a0f-e99c-4410-b6e2-f6cbfdebaabf" name="EthernetSocket" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSocket"/>
+            <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-07 Feldbus, Dez. Peripherie - Grundger&#xe4;t"/>
+            <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPPhysicalDevice"/>
+          </internalElement>
+          <internalElement iD="a3191e96-f7f1-4c05-9aad-3d2beeb88a24" name="DI1 750-437" refBaseSystemUnitPath="PhysicalCommunicationDevices/WagoIOInput750-437">
+            <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+            <attribute name="eClassReferenceFeatureGroupID" value="27242604" attributeDataType="xs:string"/>
+            <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+            <attribute name="Anzahl der digitalen Ausg&#xe4;nge" attributeDataType="xs:integer">
+              <description value=" quantitative Angabe zur Menge der Ausg&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP610#001"/>
+            </attribute>
+            <attribute name="Anzahl der digitalen Eing&#xe4;nge" attributeDataType="xs:integer">
+              <description value=" quantitative Angabe zur Menge der Eing&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP508#003"/>
+            </attribute>
+            <attribute name="min. Versorgungsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+              <description value="kleinster Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC025#006"/>
+            </attribute>
+            <attribute name="max. Versorgungsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+              <description value=" gr&#xf6;&#xdf;ter Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB909#006"/>
+            </attribute>
+            <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+              <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+            </attribute>
+            <attribute name="Herstellerartikelnummer" value="750-437" attributeDataType="xs:string">
+              <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+            </attribute>
+            <externalInterface iD="7cf4e46d-a010-471e-9cbd-7972ade261c9" name="Pin0" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="f33671e6-21be-41f8-a794-006a4823195b" name="Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="aa076748-7ba4-4d8c-a175-bebbe44cba63" name="Pin2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="cb637718-c8be-4f67-b551-09483187bd5a" name="Pin3" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="1d74589a-997f-4fa6-a2c8-5b843dafae0b" name="Pin4" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="ff2221d4-0eb5-4c60-b73b-1d509d3c6599" name="Pin5" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="ac2e5a47-ac34-4c1a-a118-e683a9ba117b" name="Pin6" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="7a76eb50-a5df-4d48-a2ed-8053aadab410" name="Pin7" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-04 Feldbus, Dez. Peripherie - Digitales EinAusgangs-Modul"/>
+            <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+            <internalLink name="MappingRegister2DI1Pin7" refPartnerSideA="a3191e96-f7f1-4c05-9aad-3d2beeb88a24:Pin7" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI1Pin6" refPartnerSideA="a3191e96-f7f1-4c05-9aad-3d2beeb88a24:Pin6" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI1Pin5" refPartnerSideA="a3191e96-f7f1-4c05-9aad-3d2beeb88a24:Pin5" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI1Pin4" refPartnerSideA="a3191e96-f7f1-4c05-9aad-3d2beeb88a24:Pin4" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI1Pin3" refPartnerSideA="a3191e96-f7f1-4c05-9aad-3d2beeb88a24:Pin3" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI1Pin2" refPartnerSideA="a3191e96-f7f1-4c05-9aad-3d2beeb88a24:Pin2" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI1Pin1" refPartnerSideA="a3191e96-f7f1-4c05-9aad-3d2beeb88a24:Pin1" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI1Pin0" refPartnerSideA="a3191e96-f7f1-4c05-9aad-3d2beeb88a24:Pin0" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+          </internalElement>
+          <internalElement iD="3552d934-34fd-4385-a996-710228c67f0a" name="DI2 750-437" refBaseSystemUnitPath="PhysicalCommunicationDevices/WagoIOInput750-437">
+            <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+            <attribute name="eClassReferenceFeatureGroupID" value="27242604" attributeDataType="xs:string"/>
+            <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+            <attribute name="Anzahl der digitalen Ausg&#xe4;nge" attributeDataType="xs:integer">
+              <description value=" quantitative Angabe zur Menge der Ausg&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP610#001"/>
+            </attribute>
+            <attribute name="Anzahl der digitalen Eing&#xe4;nge" attributeDataType="xs:integer">
+              <description value=" quantitative Angabe zur Menge der Eing&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP508#003"/>
+            </attribute>
+            <attribute name="min. Versorgungsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+              <description value="kleinster Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC025#006"/>
+            </attribute>
+            <attribute name="max. Versorgungsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+              <description value=" gr&#xf6;&#xdf;ter Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB909#006"/>
+            </attribute>
+            <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+              <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+            </attribute>
+            <attribute name="Herstellerartikelnummer" value="750-437" attributeDataType="xs:string">
+              <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+            </attribute>
+            <externalInterface iD="006a789e-b93c-4b54-945e-826d2d3e174e" name="Pin0" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="c47eb2fb-9255-4bfa-b3e2-fe426eff441d" name="Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="f8f3a555-2b48-497b-a898-a9046753ac33" name="Pin2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="384e0851-b2e4-4db8-8002-76f877290971" name="Pin3" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="46bff680-efc8-4629-81b1-e54845b6960e" name="Pin4" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="78231533-f388-4227-88e9-0829dc431fbd" name="Pin5" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="4296798a-2b72-44ac-9326-a0710dc6345d" name="Pin6" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="9d10ef60-3ffd-4d80-bb63-7ca1cabb534e" name="Pin7" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-04 Feldbus, Dez. Peripherie - Digitales EinAusgangs-Modul"/>
+            <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+            <internalLink name="MappingRegister2DI2Pin7" refPartnerSideA="3552d934-34fd-4385-a996-710228c67f0a:Pin7" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI2Pin6" refPartnerSideA="3552d934-34fd-4385-a996-710228c67f0a:Pin6" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI2Pin5" refPartnerSideA="3552d934-34fd-4385-a996-710228c67f0a:Pin5" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI2Pin4" refPartnerSideA="3552d934-34fd-4385-a996-710228c67f0a:Pin4" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI2Pin3" refPartnerSideA="3552d934-34fd-4385-a996-710228c67f0a:Pin3" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI2Pin2" refPartnerSideA="3552d934-34fd-4385-a996-710228c67f0a:Pin2" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI2Pin1" refPartnerSideA="3552d934-34fd-4385-a996-710228c67f0a:Pin1" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+            <internalLink name="MappingRegister2DI2Pin0" refPartnerSideA="3552d934-34fd-4385-a996-710228c67f0a:Pin0" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+          </internalElement>
+          <internalElement iD="1314cf82-0962-4415-8663-aa7dc8332fc5" name="DO1 750-530" refBaseSystemUnitPath="PhysicalCommunicationDevices/WagoIOOutput750-530">
+            <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+            <attribute name="eClassReferenceFeatureGroupID" value="27242604" attributeDataType="xs:string"/>
+            <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+            <attribute name="Anzahl der digitalen Ausg&#xe4;nge" value="8" attributeDataType="xs:integer">
+              <description value=" quantitative Angabe zur Menge der Ausg&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP610#001"/>
+            </attribute>
+            <attribute name="Anzahl der digitalen Eing&#xe4;nge" value="0" attributeDataType="xs:integer">
+              <description value=" quantitative Angabe zur Menge der Eing&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP508#003"/>
+            </attribute>
+            <attribute name="min. Versorgungsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+              <description value="kleinster Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC025#006"/>
+            </attribute>
+            <attribute name="max. Versorgungsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+              <description value=" gr&#xf6;&#xdf;ter Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB909#006"/>
+            </attribute>
+            <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+              <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+            </attribute>
+            <attribute name="Herstellerartikelnummer" value="750-530" attributeDataType="xs:string">
+              <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+            </attribute>
+            <externalInterface iD="4508882c-82da-404b-8713-e58ddb22bb78" name="Pin0" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="238c9281-b4bc-4edf-a755-e610bb4923c2" name="Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="f6016d7c-09d9-4450-8d74-17037849b288" name="Pin2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="fcbe10db-693a-42dc-a118-d358ad7a648a" name="Pin3" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="074ce2b3-9a15-4608-a712-0ee4521d9d63" name="Pin4" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="054245ad-c998-4f30-91e1-d4cb58bf483e" name="Pin5" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="62843490-441d-4ac2-911e-622944dceb91" name="Pin6" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="9815cc61-39d2-4893-919a-e856b52caec8" name="Pin7" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-04 Feldbus, Dez. Peripherie - Digitales EinAusgangs-Modul"/>
+            <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+            <internalLink name="MappingRegister2DO1Pin7" refPartnerSideA="1314cf82-0962-4415-8663-aa7dc8332fc5:Pin7" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO1Pin6" refPartnerSideA="1314cf82-0962-4415-8663-aa7dc8332fc5:Pin6" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO1Pin5" refPartnerSideA="1314cf82-0962-4415-8663-aa7dc8332fc5:Pin5" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO1Pin4" refPartnerSideA="1314cf82-0962-4415-8663-aa7dc8332fc5:Pin4" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO1Pin3" refPartnerSideA="1314cf82-0962-4415-8663-aa7dc8332fc5:Pin3" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO1Pin2" refPartnerSideA="1314cf82-0962-4415-8663-aa7dc8332fc5:Pin2" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO1Pin1" refPartnerSideA="1314cf82-0962-4415-8663-aa7dc8332fc5:Pin1" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO1Pin0" refPartnerSideA="1314cf82-0962-4415-8663-aa7dc8332fc5:Pin0" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+          </internalElement>
+          <internalElement iD="f26282a4-9c99-4871-96ff-01c90f81942b" name="DO2 750-530" refBaseSystemUnitPath="PhysicalCommunicationDevices/WagoIOOutput750-530">
+            <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+            <attribute name="eClassReferenceFeatureGroupID" value="27242604" attributeDataType="xs:string"/>
+            <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+            <attribute name="Anzahl der digitalen Ausg&#xe4;nge" value="8" attributeDataType="xs:integer">
+              <description value=" quantitative Angabe zur Menge der Ausg&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP610#001"/>
+            </attribute>
+            <attribute name="Anzahl der digitalen Eing&#xe4;nge" value="0" attributeDataType="xs:integer">
+              <description value=" quantitative Angabe zur Menge der Eing&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP508#003"/>
+            </attribute>
+            <attribute name="min. Versorgungsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+              <description value="kleinster Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC025#006"/>
+            </attribute>
+            <attribute name="max. Versorgungsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+              <description value=" gr&#xf6;&#xdf;ter Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB909#006"/>
+            </attribute>
+            <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+              <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+            </attribute>
+            <attribute name="Herstellerartikelnummer" value="750-530" attributeDataType="xs:string">
+              <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+            </attribute>
+            <externalInterface iD="eea98252-d86a-4e6d-9ea5-e9eb92d1b6dc" name="Pin0" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="0b25e197-4aa5-4ef9-b861-faf67aad4c03" name="Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="2c7a0e7a-ed92-46b9-ac86-8c3bb030bef0" name="Pin2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="01030480-8cfb-4f51-8bb8-2fc210227edc" name="Pin3" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="1dd475ee-637e-4e97-b732-cee4017c44b1" name="Pin4" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="13fa1d0d-7b6c-44aa-9335-6b14736c0221" name="Pin5" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="6c984a53-892d-4954-9841-9cfaa8b57c83" name="Pin6" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <externalInterface iD="48af09a3-c27b-4d46-9f65-f58c78156baf" name="Pin7" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+            <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-04 Feldbus, Dez. Peripherie - Digitales EinAusgangs-Modul"/>
+            <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+            <internalLink name="MappingRegister2DO2Pin7" refPartnerSideA="f26282a4-9c99-4871-96ff-01c90f81942b:Pin7" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO2Pin6" refPartnerSideA="f26282a4-9c99-4871-96ff-01c90f81942b:Pin6" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO2Pin5" refPartnerSideA="f26282a4-9c99-4871-96ff-01c90f81942b:Pin5" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO2Pin4" refPartnerSideA="f26282a4-9c99-4871-96ff-01c90f81942b:Pin4" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO2Pin3" refPartnerSideA="f26282a4-9c99-4871-96ff-01c90f81942b:Pin3" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO2Pin2" refPartnerSideA="f26282a4-9c99-4871-96ff-01c90f81942b:Pin2" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO2Pin1" refPartnerSideA="f26282a4-9c99-4871-96ff-01c90f81942b:Pin1" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+            <internalLink name="MappingRegister2DO2Pin0" refPartnerSideA="f26282a4-9c99-4871-96ff-01c90f81942b:Pin0" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister"/>
+          </internalElement>
+          <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+        </internalElement>
+        <internalElement iD="2225aa34-8492-45cd-83d0-391afb61afc6" name="PIBasedController1" refBaseSystemUnitPath="PhysicalCommunicationDevices/PIBasedController">
+          <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+          <attribute name="eClassReferenceFeatureGroupID" value="27240690" attributeDataType="xs:string"/>
+          <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+          <attribute name="Hersteller-Name" attributeDataType="xs:string">
+            <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+            <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+          </attribute>
+          <attribute name="Herstellerartikelnummer" attributeDataType="xs:string">
+            <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+            <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+          </attribute>
+          <internalElement iD="5059289f-061d-4216-a806-893a2cca6733" name="MyPiProgram" refBaseSystemUnitPath="LogicalCommunicationDevices/PiProgram">
+            <externalInterface iD="15415577-9f4c-40e2-9d55-a998fa54d5bc" name="MotorAn" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/VariableInterface">
+              <attribute name="refURI" attributeDataType="xs:anyURI"/>
+            </externalInterface>
+            <externalInterface iD="dd4f524c-e2ec-45ed-a35f-610ec52fbd06" name="SensorValue" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/VariableInterface">
+              <attribute name="refURI" attributeDataType="xs:anyURI"/>
+            </externalInterface>
+            <externalInterface iD="2fcac9e2-2669-4083-b5be-195b785cb210" name="ReadRegisterSensorState" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPMasterRequest"/>
+            <externalInterface iD="fa7fc6e4-41fc-4ae0-86c2-7cb6d68be51e" name="WriteRegisterMotorAn" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPMasterRequest"/>
+            <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/LogicalDevice"/>
+            <internalLink name="MappingSensorValue2ReadRegister" refPartnerSideA="5059289f-061d-4216-a806-893a2cca6733:SensorValue" refPartnerSideB="5059289f-061d-4216-a806-893a2cca6733:ReadRegisterSensorState"/>
+            <internalLink name="MappingMotorAn2WriteRegister" refPartnerSideA="5059289f-061d-4216-a806-893a2cca6733:MotorAn" refPartnerSideB="5059289f-061d-4216-a806-893a2cca6733:WriteRegisterMotorAn"/>
+          </internalElement>
+          <internalElement iD="353ca6cc-fc06-44be-b3c3-15d8ed790bd5" name="MyPINetworkCard" refBaseSystemUnitPath="PhysicalCommunicationDevices/PINetworkCard">
+            <attribute name="MACaddress" attributeDataType="xs:string">
+              <description value="MAC address of the device"/>
+            </attribute>
+            <attribute name="IPAddress" value="192.168.1.12" attributeDataType="xs:string">
+              <description value="IP adress of the device"/>
+            </attribute>
+            <externalInterface iD="6ebd6abe-3654-456b-8c15-9b9e9d63ac85" name="EthernetSocket" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSocket"/>
+            <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPPhysicalDevice"/>
+          </internalElement>
+          <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-06 PC-basierte Steuerungen/27-24-06-90 PC-basierte Steuerungen (nicht spezifiziert)"/>
+          <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+        </internalElement>
+        <internalElement iD="5a145578-a2ff-4306-b3ef-90a0c2c7a44f" name="ModbusPhysicalCommunicationNetwork">
+          <internalElement iD="6490d7cb-aaaa-4482-9ec8-5f166f29be7f" name="EthernetCableX1" refBaseSystemUnitPath="PhysicalCommunicationDevices/ModbusTCPCable">
+            <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+            <attribute name="eClassReferenceFeatureGroupID" value="27060307" attributeDataType="xs:string"/>
+            <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+            <attribute name="Anzahl der Adern" value="8" attributeDataType="xs:integer">
+              <description value=" Quantitative Angabe zur Menge der Adern (Ader = Leiter mit seiner Isolierung einschlie&#xdf;lich etwa vorhandener Leitschichten)"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP775#001"/>
+            </attribute>
+            <attribute name="min. Betriebstemperatur" value="0" unit="&#xb0;C" attributeDataType="xs:float">
+              <description value="kleinster Grenzwert der sich durch den Nennbetrieb typischerweise ergebende Temperatur im nahem Umfeld des Betriebsmittels"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC820#005"/>
+            </attribute>
+            <attribute name="Werkstoff" value="Kupfer" attributeDataType="xs:string">
+              <description value="Materialzusammensetzung, aus der ein einzelnes Bauteil hergestellt ist, als Ergebnis eines Herstellungsprozesses, in dem der/die Rohstoff(e) durch Extrusion, Verformung, Schwei&#xdf;en usw. in die endg&#xfc;ltige Form gebracht werden"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAB664#011"/>
+            </attribute>
+            <attribute name="max. Betriebstemperatur" value="65" unit="&#xb0;C" attributeDataType="xs:float">
+              <description value="gr&#xf6;&#xdf;ter Grenzwert der sich durch den Nennbetrieb typischerweise ergebende Temperatur im nahem Umfeld des Betriebsmittels"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC821#005"/>
+            </attribute>
+            <attribute name="Hersteller-Name" value="GOOD CONNECTIONS" attributeDataType="xs:string">
+              <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+            </attribute>
+            <attribute name="Herstellerartikelnummer" value="4014619323814" attributeDataType="xs:string">
+              <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+              <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+            </attribute>
+            <externalInterface iD="21c8423b-9b2b-400e-99af-311158538de5" name="RJ45Plug1" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPPlug"/>
+            <externalInterface iD="04138fc4-0efc-493d-8c09-c67cb0393ae3" name="RJ45Plug2" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPPlug"/>
+            <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-06 Cable, Wire/27-06-03 Konfektionierte Leitung/27-06-03-07 Bus-Kabel"/>
+            <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPPhysicalConnection"/>
+          </internalElement>
+          <roleRequirements refBaseRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPPhysicalNetwork"/>
+        </internalElement>
+        <internalElement iD="98a8bb81-9539-4baf-b7a8-9c063ff80a50" name="ControlApplicationDataExchange">
+          <internalElement iD="a36c27cf-2290-46d6-ac21-b818081dc232" name="ReadInputRegister" refBaseSystemUnitPath="LogicalCommunicationDevices/ModbusLogicalConnection">
+            <attribute name="QoS">
+              <description value="Quality of Service Features required"/>
+              <attribute name="PackageSize" value="7" unit="Byte" attributeDataType="xs:integer">
+                <description value="Size of package in Byte"/>
+              </attribute>
+              <attribute name="Cycletime" value="0.1" unit="s" attributeDataType="xs:float">
+                <description value="duration between two subsequent request packages"/>
+              </attribute>
+            </attribute>
+            <externalInterface iD="bc2dfc2c-a5f4-4762-b8ef-ec467a9e04df" name="ModbusTCPSlaveResponce" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSlaveResponce"/>
+            <externalInterface iD="387b2d87-4ecf-456c-a3fe-3e1f0d8af161" name="ModbusTCPMasterRequest" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPMasterRequest"/>
+            <internalElement iD="13b4801a-843b-43e5-895c-a2190059ec16" name="ModbusResponcePackageReadRegister" refBaseSystemUnitPath="LogicalCommunicationDevices/ModbusResponcePackage">
+              <attribute name="RequestAddress" value="00 00 00 02" attributeDataType="xs:string">
+                <description value="Position of the requested data in the data array"/>
+              </attribute>
+              <attribute name="RequestType" value="04" attributeDataType="xs:string">
+                <description value="Funktionscode of Modbus TCP request"/>
+              </attribute>
+              <externalInterface iD="251f0621-9ba6-4292-bb39-ef57ec4987ad" name="RespondedRegisterPart" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPDatagrammObject"/>
+              <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPCommunicationPackage"/>
+            </internalElement>
+            <internalElement iD="9a4850aa-ca50-4146-9e3a-0212f1e59863" name="ModbusRequestPackageReadRegister" refBaseSystemUnitPath="LogicalCommunicationDevices/ModbusRequestPackage">
+              <attribute name="RequestAddress" value="00 00 00 02" attributeDataType="xs:string">
+                <description value="Position of the requested data in the data array"/>
+              </attribute>
+              <attribute name="RequestType" value="04" attributeDataType="xs:string">
+                <description value="Funktionscode of Modbus TCP request"/>
+              </attribute>
+              <externalInterface iD="82ae2eca-71ad-4050-a9ee-0812c285df2c" name="RequestedRegisterPart" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPDatagrammObject"/>
+              <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPCommunicationPackage"/>
+            </internalElement>
+            <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPLogicalConnection"/>
+          </internalElement>
+          <internalElement iD="eb2b26b6-54fc-46f7-a599-0424727fe9b0" name="WriteOutputRegister" refBaseSystemUnitPath="LogicalCommunicationDevices/ModbusLogicalConnection">
+            <attribute name="QoS">
+              <description value="Quality of Service Features required"/>
+              <attribute name="PackageSize" value="7" unit="Byte" attributeDataType="xs:integer">
+                <description value="Size of package in Byte"/>
+              </attribute>
+              <attribute name="Cycletime" value="0.1" unit="s" attributeDataType="xs:float">
+                <description value="duration between two subsequent request packages"/>
+              </attribute>
+            </attribute>
+            <externalInterface iD="f83eb33b-6970-434b-ae4a-b72b080e086c" name="ModbusTCPSlaveResponce" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSlaveResponce"/>
+            <externalInterface iD="379ea3b9-809d-42f6-9989-3b49d72f963b" name="ModbusTCPMasterRequest" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPMasterRequest"/>
+            <internalElement iD="7222b975-8974-485c-9808-6d31259832b1" name="ModbusResponcePackageWriteRegister" refBaseSystemUnitPath="LogicalCommunicationDevices/ModbusResponcePackage">
+              <attribute name="RequestAddress" value="00 00 00 02" attributeDataType="xs:string">
+                <description value="Position of the requested data in the data array"/>
+              </attribute>
+              <attribute name="RequestType" value="06" attributeDataType="xs:string">
+                <description value="Funktionscode of Modbus TCP request"/>
+              </attribute>
+              <externalInterface iD="b1a9545f-7e37-4732-8967-01487951c7e5" name="RespondedRegisterPart" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPDatagrammObject"/>
+              <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPCommunicationPackage"/>
+            </internalElement>
+            <internalElement iD="413ce4b8-0a01-4f2c-b9a1-bd6440efa98d" name="ModbusRequestPackageWriteRegister" refBaseSystemUnitPath="LogicalCommunicationDevices/ModbusRequestPackage">
+              <attribute name="RequestAddress" value="00 00 00 02" attributeDataType="xs:string">
+                <description value="Position of the requested data in the data array"/>
+              </attribute>
+              <attribute name="RequestType" value="06" attributeDataType="xs:string">
+                <description value="Funktionscode of Modbus TCP request"/>
+              </attribute>
+              <externalInterface iD="136eb65b-5dc6-4ec2-907c-a6936fae32f1" name="RequestedRegisterPart" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPDatagrammObject"/>
+              <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPCommunicationPackage"/>
+            </internalElement>
+            <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPLogicalConnection"/>
+          </internalElement>
+          <roleRequirements refBaseRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPLogicalNetwork"/>
+        </internalElement>
+        <internalLink name="Link_MotorAn2PackagePart" refPartnerSideA="5059289f-061d-4216-a806-893a2cca6733:WriteRegisterMotorAn" refPartnerSideB="413ce4b8-0a01-4f2c-b9a1-bd6440efa98d:RequestedRegisterPart"/>
+        <internalLink name="Link_LogicalConnection_PiBasedController1_WriteRegister" refPartnerSideA="5059289f-061d-4216-a806-893a2cca6733:WriteRegisterMotorAn" refPartnerSideB="eb2b26b6-54fc-46f7-a599-0424727fe9b0:ModbusTCPMasterRequest"/>
+        <internalLink name="Link_LogicalConnection_WagoIO1_WriteRegister" refPartnerSideA="a9bae3ec-5113-431e-a47b-5554a399c541:WriteOutputRegister" refPartnerSideB="eb2b26b6-54fc-46f7-a599-0424727fe9b0:ModbusTCPSlaveResponce"/>
+        <internalLink name="Link_SensorValue2PackagePart" refPartnerSideA="5059289f-061d-4216-a806-893a2cca6733:SensorValue" refPartnerSideB="13b4801a-843b-43e5-895c-a2190059ec16:RespondedRegisterPart"/>
+        <internalLink name="Link_LogicalConnection_WagoIO1_ReadRegister" refPartnerSideA="a36c27cf-2290-46d6-ac21-b818081dc232:ModbusTCPSlaveResponce" refPartnerSideB="a9bae3ec-5113-431e-a47b-5554a399c541:ReadInputRegister"/>
+        <internalLink name="Link_LogicalConnection_PiBasedController1_ReadRegister" refPartnerSideA="5059289f-061d-4216-a806-893a2cca6733:ReadRegisterSensorState" refPartnerSideB="a36c27cf-2290-46d6-ac21-b818081dc232:ModbusTCPMasterRequest"/>
+        <internalLink name="Link_EthernetKabel_PIBasedController1" refPartnerSideA="6490d7cb-aaaa-4482-9ec8-5f166f29be7f:RJ45Plug2" refPartnerSideB="353ca6cc-fc06-44be-b3c3-15d8ed790bd5:EthernetSocket"/>
+        <internalLink name="Link_EthernetKabel_WagoIOSystem1" refPartnerSideA="6490d7cb-aaaa-4482-9ec8-5f166f29be7f:RJ45Plug1" refPartnerSideB="d312ffba-3f9c-44ca-9374-cebf18b94cea:EthernetSocket"/>
+      </internalElement>
+      <internalElement iD="edfa2bb8-f01f-4694-9abd-60dd273d6e42" name="IOWiring">
+        <internalElement iD="2884ff5b-fb5c-442a-b0d7-29215e5ee0d4" name="IOCable_M1_IS1" refBaseSystemUnitPath="PhysicalCommunicationDevices/IOCabel">
+          <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+          <attribute name="eClassReferenceFeatureGroupID" value="27060311" attributeDataType="xs:string"/>
+          <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+          <attribute name="Polzahl" value="1" attributeDataType="xs:integer">
+            <description value="quantitative Angabe zur Menge der Strompfade (Pole)"/>
+            <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAT080#001"/>
+          </attribute>
+          <attribute name="min. zul&#xe4;ssige Kabelau&#xdf;entemperatur (fest verlegt)" value="-50" unit="&#xb0;C" attributeDataType="xs:float">
+            <description value="unter den ung&#xfc;nstigsten Betriebsbedingungen kleinst zul&#xe4;ssiger Grenzwert, der nie &#xfc;berschritten werden darf, um Personen- und/oder Sachsch&#xe4;den zu vermeiden, der Temperatur der au&#xdf;en liegenden Oberfl&#xe4;chen des Kabels, zu der die umgebende Atmosph&#xe4;re gelangen kann, wobei dieses Kabel auf bestimmte Stelle(n) angebracht und befestigt ist"/>
+            <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC028#007"/>
+          </attribute>
+          <attribute name="max. zul&#xe4;ssige Kabelau&#xdf;entemperatur (fest verlegt)" value="180" unit="&#xb0;C" attributeDataType="xs:float">
+            <description value="unter den ung&#xfc;nstigsten Betriebsbedingungen h&#xf6;chst zul&#xe4;ssiger Grenzwert, der nie &#xfc;berschritten werden darf, um Personen- und/oder Sachsch&#xe4;den zu vermeiden, der Temperatur der au&#xdf;en liegenden Oberfl&#xe4;chen des Kabels, zu der die umgebende Atmosph&#xe4;re gelangen kann, wobei dieses Kabel auf bestimmte Stelle(n) angebracht und befestigt ist"/>
+            <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB912#007"/>
+          </attribute>
+          <attribute name="Hersteller-Name" value="Beispielhersteller1" attributeDataType="xs:string">
+            <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+            <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+          </attribute>
+          <attribute name="Herstellerartikelnummer" value="irgenteineNummer" attributeDataType="xs:string">
+            <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+            <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+          </attribute>
+          <externalInterface iD="9693eae8-2c70-4d15-9999-61b4e5e0998e" name="Plug1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+          <externalInterface iD="812c29fe-7b76-479c-b893-25902d9c2c48" name="Plug2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+          <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalConnection"/>
+          <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-06 Cable, Wire/27-06-03 Konfektionierte Leitung/27-06-03-11 Konfektionierte Sensor-Aktor-Leitung"/>
+        </internalElement>
+        <roleRequirements refBaseRoleClassPath="CommunicationRoleClassLib/PhysicalNetwork"/>
+      </internalElement>
+      <internalLink name="Link_IOCable_Motor" refPartnerSideA="2884ff5b-fb5c-442a-b0d7-29215e5ee0d4:Plug1" refPartnerSideB="a3191e96-f7f1-4c05-9aad-3d2beeb88a24:Motor"/>
+      <internalLink name="Link_IOCable_Sensor" refPartnerSideA="a4ebc30f-9db2-4b09-a25d-d16896ed83fb:SensorValue_Pin1" refPartnerSideB="2884ff5b-fb5c-442a-b0d7-29215e5ee0d4:Plug1"/>
+      <roleRequirements refBaseRoleClassPath="Resource"/>
+    </internalElement>
+  </instanceHierarchy>
+  <interfaceClassLib name="CommunicationInterfaceClassLib">
+    <description value="AutomationML Communication Interface Class Library"/>
+    <version value="0.9"/>
+    <interfaceClass name="PhysicalEndPoint" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication"/>
+    <interfaceClass name="LogicalEndPoint" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication"/>
+    <interfaceClass name="DatagrammObject" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication"/>
+  </interfaceClassLib>
+  <interfaceClassLib name="ModbusTCPInterfaceClassLib">
+    <description value="Modbus Library developed by Gecko Project (proprietary)"/>
+    <version value="0.9"/>
+    <interfaceClass name="ModbusTCPPlug" refBaseClassPath="CommunicationInterfaceClassLib/PhysicalEndPoint"/>
+    <interfaceClass iD="7484a9f6-fb42-40e7-8318-8d554e648f90" name="ModbusTCPSocket" refBaseClassPath="CommunicationInterfaceClassLib/PhysicalEndPoint"/>
+    <interfaceClass iD="5e9e9728-619a-48f1-91b0-978f58284852" name="ModbusTCPMasterRequest" refBaseClassPath="CommunicationInterfaceClassLib/LogicalEndPoint"/>
+    <interfaceClass iD="b6ad0ec3-f746-49b9-8155-164fc38d22c9" name="ModbusTCPSlaveResponce" refBaseClassPath="CommunicationInterfaceClassLib/LogicalEndPoint"/>
+    <interfaceClass iD="5f7fdc18-71dc-4099-acc4-7dcddffceea1" name="ModbusTCPDatagrammObject" refBaseClassPath="CommunicationInterfaceClassLib/DatagrammObject"/>
+  </interfaceClassLib>
+  <interfaceClassLib name="AutomationMLInterfaceClassLib">
+    <description value="Standard Automation Markup Language Interface Class Library"/>
+    <version value="2.2.0"/>
+    <interfaceClass name="AutomationMLBaseInterface">
+      <interfaceClass name="Order" refBaseClassPath="AutomationMLBaseInterface">
+        <attribute name="Direction" attributeDataType="xs:string"/>
+      </interfaceClass>
+      <interfaceClass name="PortConnector" refBaseClassPath="AutomationMLBaseInterface"/>
+      <interfaceClass name="InterlockingConnector" refBaseClassPath="AutomationMLBaseInterface"/>
+      <interfaceClass name="PPRConnector" refBaseClassPath="AutomationMLBaseInterface"/>
+      <interfaceClass name="ExternalDataConnector" refBaseClassPath="AutomationMLBaseInterface">
+        <attribute name="refURI" attributeDataType="xs:anyURI"/>
+        <interfaceClass name="COLLADAInterface" refBaseClassPath="ExternalDataConnector"/>
+        <interfaceClass name="PLCopenXMLInterface" refBaseClassPath="ExternalDataConnector"/>
+      </interfaceClass>
+      <interfaceClass name="Communication" refBaseClassPath="AutomationMLBaseInterface">
+        <interfaceClass name="SignalInterface" refBaseClassPath="Communication"/>
+      </interfaceClass>
+    </interfaceClass>
+  </interfaceClassLib>
+  <roleClassLib name="AutomationMLBaseRoleClassLib">
+    <description value="AutomationML base role library"/>
+    <version value="2.1.2"/>
+    <roleClass name="AutomationMLBaseRole">
+      <roleClass name="Group" refBaseClassPath="AutomationMLBaseRole">
+        <attribute name="AssociatedFacet" attributeDataType="xs:string"/>
+      </roleClass>
+      <roleClass name="Facet" refBaseClassPath="AutomationMLBaseRole"/>
+      <roleClass name="Port" refBaseClassPath="AutomationMLBaseRole">
+        <attribute name="Direction" attributeDataType="xs:string"/>
+        <attribute name="Cardinality">
+          <attribute name="MinOccur" attributeDataType="xs:unsignedInt"/>
+          <attribute name="MaxOccur" attributeDataType="xs:unsignedInt"/>
+        </attribute>
+        <attribute name="Category" attributeDataType="xs:string"/>
+        <externalInterface iD="1c6a2bb9-8f93-4394-8fae-ef0e0074716a" name="ConnectionPoint" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+      </roleClass>
+      <roleClass name="Resource" refBaseClassPath="AutomationMLBaseRole"/>
+      <roleClass name="Product" refBaseClassPath="AutomationMLBaseRole"/>
+      <roleClass name="Process" refBaseClassPath="AutomationMLBaseRole"/>
+      <roleClass name="Structure" refBaseClassPath="AutomationMLBaseRole">
+        <roleClass name="ProductStructure" refBaseClassPath="Structure"/>
+        <roleClass name="ProcessStructure" refBaseClassPath="Structure"/>
+        <roleClass name="ResourceStructure" refBaseClassPath="Structure">
+          <roleClass name="Cell" refBaseClassPath="ResourceStructure"/>
+          <roleClass name="MainGroup" refBaseClassPath="ResourceStructure"/>
+          <roleClass name="FunctionGroup" refBaseClassPath="ResourceStructure"/>
+          <roleClass name="SubFunctionGroup" refBaseClassPath="ResourceStructure"/>
+          <roleClass name="MechatronicAssembly" refBaseClassPath="ResourceStructure"/>
+          <roleClass name="MechanicalAssembly" refBaseClassPath="ResourceStructure"/>
+          <roleClass name="MechanicalPart" refBaseClassPath="ResourceStructure"/>
+          <roleClass name="Device" refBaseClassPath="ResourceStructure"/>
+        </roleClass>
+      </roleClass>
+      <roleClass name="PropertySet" refBaseClassPath="AutomationMLBaseRole"/>
+    </roleClass>
+  </roleClassLib>
+  <roleClassLib name="CommunicationRoleClassLib">
+    <description value="AutomationML Communication Role Class Library"/>
+    <version value="0.9"/>
+    <roleClass name="PhysicalDevice" refBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole">
+      <roleClass name="PhysicalEndpointlist" refBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole"/>
+    </roleClass>
+    <roleClass name="PhysicalConnection" refBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole"/>
+    <roleClass name="PhysicalNetwork" refBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole"/>
+    <roleClass name="LogicalDevice" refBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole">
+      <roleClass name="LogicalEndpointlist" refBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole"/>
+    </roleClass>
+    <roleClass name="LogicalConnection" refBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole"/>
+    <roleClass name="LogicalNetwork" refBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole"/>
+    <roleClass name="CommunicationPackage" refBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole"/>
+    <roleClass name="RoleClass1"/>
+  </roleClassLib>
+  <roleClassLib name="ModbusTCPRoleClassLib">
+    <description value="Modbus Library developed by Gecko Project (proprietary)"/>
+    <version value="0.9"/>
+    <roleClass name="ModbusTCPPhysicalDevice" refBaseClassPath="CommunicationRoleClassLib/PhysicalDevice">
+      <attribute name="MACaddress" attributeDataType="xs:string">
+        <description value="MAC address of the device"/>
+      </attribute>
+      <attribute name="IPAddress" attributeDataType="xs:string">
+        <description value="IP adress of the device"/>
+      </attribute>
+      <roleClass name="ModbusTCPPhysicalEndpointlist" refBaseClassPath="CommunicationRoleClassLib/PhysicalDevice/PhysicalEndpointlist"/>
+    </roleClass>
+    <roleClass name="ModbusTCPPhysicalConnection" refBaseClassPath="CommunicationRoleClassLib/PhysicalConnection"/>
+    <roleClass name="ModbusTCPPhysicalNetwork" refBaseClassPath="CommunicationRoleClassLib/PhysicalNetwork"/>
+    <roleClass name="ModbusTCPLogicalDevice" refBaseClassPath="CommunicationRoleClassLib/LogicalDevice">
+      <roleClass name="ModbusTCPLogicalEndpointlist" refBaseClassPath="CommunicationRoleClassLib/LogicalDevice/LogicalEndpointlist"/>
+    </roleClass>
+    <roleClass name="ModbusTCPLogicalConnection" refBaseClassPath="CommunicationRoleClassLib/LogicalConnection"/>
+    <roleClass name="ModbusTCPLogicalNetwork" refBaseClassPath="CommunicationRoleClassLib/LogicalNetwork"/>
+    <roleClass name="ModbusTCPCommunicationPackage" refBaseClassPath="CommunicationRoleClassLib/CommunicationPackage"/>
+  </roleClassLib>
+  <roleClassLib name="EClassRoleClassLib">
+    <description value="Component roles developed by Gecko Project (propretiary)"/>
+    <version value="0.9"/>
+    <roleClass name="EClassClassification" refBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole">
+      <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+      <attribute name="eClassReferenceFeatureGroupID" attributeDataType="xs:string"/>
+      <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+      <roleClass name="27" refBaseClassPath="EClassRoleClassLib/EClassClassification">
+        <roleClass name="27-02 Electrical Drive" refBaseClassPath="EClassRoleClassLib/EClassClassification/27">
+          <roleClass name="27-02-25 DC-Motor" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-02 Electrical Drive">
+            <roleClass name="27-02-25-01 DC-Motor (IEC)" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-02 Electrical Drive/27-02-25 DC-Motor">
+              <attribute name="Hersteller-Name" attributeDataType="xs:string">
+                <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+              </attribute>
+              <attribute name="Herstellerartikelnummer" attributeDataType="xs:string">
+                <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+              </attribute>
+              <attribute name="Min. Rotation Speed" unit="1/s" attributeDataType="xs:integer">
+                <description value="Kleinstm&#xf6;gliche Drehzahl, bei der ein Motor im thermisch zul&#xe4;ssigen Bemessungsbetriebspunkt dauernd betrieben werden kann"/>
+              </attribute>
+              <attribute name="Nominal Speed" unit="1/s" attributeDataType="xs:float">
+                <description value=" Drehzahl die den Nenndaten des verwendeten Motors entspricht"/>
+              </attribute>
+            </roleClass>
+          </roleClass>
+        </roleClass>
+        <roleClass name="27-06 Cable, Wire" refBaseClassPath="EClassRoleClassLib/EClassClassification/27">
+          <roleClass name="27-06-18 Kommunikationskabel" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-06 Cable, Wire">
+            <roleClass name="27-06-18-01 Datenkabel" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-06 Cable, Wire/27-06-18 Kommunikationskabel">
+              <attribute name="min. Umgebungstemperatur w&#xe4;hrend Betriebsphase" unit="&#xb0;C" attributeDataType="xs:float">
+                <description value="unter festgelegten Bedingungen bestimmte Temperatur der das Betriebsmittel umgebenden Atmosph&#xe4;re / Zeitdauer, in deren Verlauf etwas stattfindet: Zeitraum des Aktiv-seins / kleinster Grenzwert einer physikalischen Gr&#xf6;&#xdf;e, deren Wert nicht mehr unterschritten werden kann oder darf"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAF526#002"/>
+              </attribute>
+              <attribute name="max. Zugbelastung" unit="N" attributeDataType="xs:float">
+                <description value="gr&#xf6;&#xdf;ter Grenzwert der Deformationskraft, die eine Dehnung verursacht, indem sie danach strebt, einen K&#xf6;rper auseinander zu ziehen, welcher durch entgegengesetzt gerichtete Koh&#xe4;sionskr&#xe4;fte zusammengehalten wird"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAF511#001"/>
+              </attribute>
+              <attribute name="Anzahl der Adern" attributeDataType="xs:integer">
+                <description value=" Quantitative Angabe zur Menge der Adern (Ader = Leiter mit seiner Isolierung einschlie&#xdf;lich etwa vorhandener Leitschichten)"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP775#001"/>
+              </attribute>
+              <attribute name="Werkstoff des Mantels" attributeDataType="xs:string">
+                <description value="Substanz, aus welcher der Kabelmantel hergestellt ist"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAE029#006"/>
+              </attribute>
+              <attribute name="max. Umgebungstemperatur w&#xe4;hrend Betriebsphase" unit="&#xb0;C" attributeDataType="xs:float">
+                <description value="unter festgelegten Bedingungen bestimmte Temperatur der das Betriebsmittel umgebenden Atmosph&#xe4;re / Zeitdauer, in deren Verlauf etwas stattfindet: Zeitraum des Aktiv-seins / gr&#xf6;&#xdf;ter Grenzwert einer physikalischen Gr&#xf6;&#xdf;e, deren Wert nicht &#xfc;berschritten werden kann oder darf"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAF525#002"/>
+              </attribute>
+              <attribute name="Hersteller-Name" attributeDataType="xs:string">
+                <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+              </attribute>
+              <attribute name="Herstellerartikelnummer" attributeDataType="xs:string">
+                <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+              </attribute>
+            </roleClass>
+          </roleClass>
+          <roleClass name="27-06-03 Konfektionierte Leitung" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-06 Cable, Wire">
+            <roleClass name="27-06-03-07 Bus-Kabel" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-06 Cable, Wire/27-06-03 Konfektionierte Leitung">
+              <attribute name="Anzahl der Adern" attributeDataType="xs:integer">
+                <description value=" Quantitative Angabe zur Menge der Adern (Ader = Leiter mit seiner Isolierung einschlie&#xdf;lich etwa vorhandener Leitschichten)"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP775#001"/>
+              </attribute>
+              <attribute name="min. Betriebstemperatur" unit="&#xb0;C" attributeDataType="xs:float">
+                <description value="kleinster Grenzwert der sich durch den Nennbetrieb typischerweise ergebende Temperatur im nahem Umfeld des Betriebsmittels"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC820#005"/>
+              </attribute>
+              <attribute name="Werkstoff" attributeDataType="xs:string">
+                <description value="Materialzusammensetzung, aus der ein einzelnes Bauteil hergestellt ist, als Ergebnis eines Herstellungsprozesses, in dem der/die Rohstoff(e) durch Extrusion, Verformung, Schwei&#xdf;en usw. in die endg&#xfc;ltige Form gebracht werden"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAB664#011"/>
+              </attribute>
+              <attribute name="max. Betriebstemperatur" unit="&#xb0;C" attributeDataType="xs:float">
+                <description value="gr&#xf6;&#xdf;ter Grenzwert der sich durch den Nennbetrieb typischerweise ergebende Temperatur im nahem Umfeld des Betriebsmittels"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC821#005"/>
+              </attribute>
+              <attribute name="Hersteller-Name" attributeDataType="xs:string">
+                <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+              </attribute>
+              <attribute name="Herstellerartikelnummer" attributeDataType="xs:string">
+                <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+              </attribute>
+            </roleClass>
+            <roleClass name="27-06-03-11 Konfektionierte Sensor-Aktor-Leitung" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-06 Cable, Wire/27-06-03 Konfektionierte Leitung">
+              <attribute name="Polzahl" attributeDataType="xs:integer">
+                <description value="quantitative Angabe zur Menge der Strompfade (Pole)"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAT080#001"/>
+              </attribute>
+              <attribute name="min. zul&#xe4;ssige Kabelau&#xdf;entemperatur (fest verlegt)" unit="&#xb0;C" attributeDataType="xs:float">
+                <description value="unter den ung&#xfc;nstigsten Betriebsbedingungen kleinst zul&#xe4;ssiger Grenzwert, der nie &#xfc;berschritten werden darf, um Personen- und/oder Sachsch&#xe4;den zu vermeiden, der Temperatur der au&#xdf;en liegenden Oberfl&#xe4;chen des Kabels, zu der die umgebende Atmosph&#xe4;re gelangen kann, wobei dieses Kabel auf bestimmte Stelle(n) angebracht und befestigt ist"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC028#007"/>
+              </attribute>
+              <attribute name="max. zul&#xe4;ssige Kabelau&#xdf;entemperatur (fest verlegt)" unit="&#xb0;C" attributeDataType="xs:float">
+                <description value="unter den ung&#xfc;nstigsten Betriebsbedingungen h&#xf6;chst zul&#xe4;ssiger Grenzwert, der nie &#xfc;berschritten werden darf, um Personen- und/oder Sachsch&#xe4;den zu vermeiden, der Temperatur der au&#xdf;en liegenden Oberfl&#xe4;chen des Kabels, zu der die umgebende Atmosph&#xe4;re gelangen kann, wobei dieses Kabel auf bestimmte Stelle(n) angebracht und befestigt ist"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB912#007"/>
+              </attribute>
+              <attribute name="Hersteller-Name" attributeDataType="xs:string">
+                <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+              </attribute>
+              <attribute name="Herstellerartikelnummer" attributeDataType="xs:string">
+                <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+              </attribute>
+            </roleClass>
+          </roleClass>
+        </roleClass>
+        <roleClass name="27-24 Control" refBaseClassPath="EClassRoleClassLib/EClassClassification/27">
+          <roleClass name="27-24-06 PC-basierte Steuerungen" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control">
+            <roleClass name="27-24-06-90 PC-basierte Steuerungen (nicht spezifiziert)" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-06 PC-basierte Steuerungen">
+              <attribute name="Hersteller-Name" attributeDataType="xs:string">
+                <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+              </attribute>
+              <attribute name="Herstellerartikelnummer" attributeDataType="xs:string">
+                <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+              </attribute>
+            </roleClass>
+          </roleClass>
+          <roleClass name="27-24-26 Feldbus, Dezentrale Peripherie" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control">
+            <roleClass name="27-24-26-04 Feldbus, Dez. Peripherie - Digitales EinAusgangs-Modul" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie">
+              <attribute name="Anzahl der digitalen Ausg&#xe4;nge" attributeDataType="xs:integer">
+                <description value=" quantitative Angabe zur Menge der Ausg&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP610#001"/>
+              </attribute>
+              <attribute name="Anzahl der digitalen Eing&#xe4;nge" attributeDataType="xs:integer">
+                <description value=" quantitative Angabe zur Menge der Eing&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP508#003"/>
+              </attribute>
+              <attribute name="min. Versorgungsspannung (bei DC)" unit="V" attributeDataType="xs:float">
+                <description value="kleinster Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC025#006"/>
+              </attribute>
+              <attribute name="max. Versorgungsspannung (bei DC)" unit="V" attributeDataType="xs:float">
+                <description value=" gr&#xf6;&#xdf;ter Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB909#006"/>
+              </attribute>
+              <attribute name="Hersteller-Name" attributeDataType="xs:string">
+                <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+              </attribute>
+              <attribute name="Herstellerartikelnummer" attributeDataType="xs:string">
+                <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+              </attribute>
+            </roleClass>
+            <roleClass name="27-24-26-07 Feldbus, Dez. Peripherie - Grundger&#xe4;t" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie">
+              <attribute name="Web-Server vorhanden" attributeDataType="xs:string">
+                <description value=" Angabe, ob ein Web-Server vorhanden ist oder nicht"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAF768#004"/>
+              </attribute>
+              <attribute name="unterst&#xfc;tztes Protokoll" attributeDataType="xs:string">
+                <description value="exakte, normierte Vereinbarungen, nach der Daten zwischen Ger&#xe4;ten bzw. Prozessen ausgetauscht werden, die durch ein Netz miteinander verbunden sind"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAM479#004"/>
+              </attribute>
+              <attribute name="Anzahl der HW-Schnittstellen (Industrial Ethernet)" attributeDataType="xs:integer">
+                <description value=" quantitative Angabe zur Menge der Anschlussm&#xf6;glichkeiten zur Daten&#xfc;bertragung gem&#xe4;&#xdf; der IEEE 802.3 standardisierten Ausf&#xfc;hrung des Basisband-LAN"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO494#002"/>
+              </attribute>
+              <attribute name="min. Eingangsspannung (bei DC)" unit="V" attributeDataType="xs:float">
+                <description value=" gr&#xf6;&#xdf;tm&#xf6;glicher Wert der Gleichspannung, die am Eingang eines Betriebsmittels angelegt werden kann"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB977#007"/>
+              </attribute>
+              <attribute name="max. Eingangsspannung (bei DC)" unit="V" attributeDataType="xs:float">
+                <description value=" gr&#xf6;&#xdf;tm&#xf6;glicher Wert der Gleichspannung, die am Eingang eines Betriebsmittels angelegt werden kann"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB848#006"/>
+              </attribute>
+              <attribute name="Art der Eingangsspannung" attributeDataType="xs:string">
+                <description value="Form der Eingangsspannung, die bestimmt, wie sich die elektrischen Ladungen aufgrund der anliegenden Spannung im zeitlichen Verlauf bewegen"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAC065#006"/>
+              </attribute>
+              <attribute name="Hersteller-Name" attributeDataType="xs:string">
+                <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+              </attribute>
+              <attribute name="Herstellerartikelnummer" attributeDataType="xs:string">
+                <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+              </attribute>
+            </roleClass>
+          </roleClass>
+        </roleClass>
+        <roleClass name="27-27 Binat Sensor Technology" refBaseClassPath="EClassRoleClassLib/EClassClassification/27">
+          <roleClass name="27-27-01 Proximity Switch" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-27 Binat Sensor Technology">
+            <roleClass name="27-27-01-01 Inductive Proximity Switch" refBaseClassPath="EClassRoleClassLib/EClassClassification/27/27-27 Binat Sensor Technology/27-27-01 Proximity Switch">
+              <attribute name="Umgebungstemperatur min" unit="&#xb0;C" attributeDataType="xs:float">
+                <description value="Umgebungstemperatur min ist die niedrigste Umgebungstemperatur, der das Ger&#xe4;t ausgesetzt ist und f&#xfc;r die es seine Spezifikation einhalten soll bzw. ist die minimal zul&#xe4;ssige Temperatur der Umgebung, unabh&#xe4;ngig von der Mediumstemperatur, bei der das Ger&#xe4;t noch bestimmungsgem&#xe4;&#xdf;, d. h. mit den vom Hersteller angegebenen Genauigkeitsspezifikationen arbeitet oder ist die maximal zul&#xe4;ssige Temperatur aufgrund weiterer Vorgaben, wie gesetzlicher Bestimmungen oder von Zulassungsbestimmungen (die Beziehung ergibt sich aus dem Kontext der Verwendung von Umgebungstemperatur min)"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAS160#001"/>
+              </attribute>
+              <attribute name="min. Versorgungsspannung" unit="V" attributeDataType="xs:float">
+                <description value="kleinster Grenzwert der Spannung, die am Versorgungseingang eines elektrischen Betriebsmittels zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC962#006"/>
+              </attribute>
+              <attribute name="Umgebungstemperatur max" unit="&#xb0;C" attributeDataType="xs:float">
+                <description value=" Umgebungstemperatur max ist die h&#xf6;chste Umgebungstemperatur, der das Ger&#xe4;t ausgesetzt ist und f&#xfc;r die es seine Spezifikation einhalten soll bzw. ist die maximal zul&#xe4;ssige Temperatur der Umgebung, unabh&#xe4;ngig von der Mediumstemperatur, bei der das Ger&#xe4;t noch bestimmungsgem&#xe4;&#xdf;, d. h. mit den vom Hersteller angegebenen Genauigkeitsspezifikationen arbeitet oder ist die maximal zul&#xe4;ssige Temperatur aufgrund weiterer Vorgaben, wie gesetzlicher Bestimmungen oder von Zulassungsbestimmungen (die Beziehung ergibt sich aus dem Kontext der Verwendung von Umgebungstemperatur max)"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAS155#001"/>
+              </attribute>
+              <attribute name="max. Versorgungsspannung" unit="V" attributeDataType="xs:float">
+                <description value=" h&#xf6;chster Grenzwert der Spannung, die am Versorgungseingang eines elektrischen Betriebsmittels zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC965#006"/>
+              </attribute>
+              <attribute name="Geh&#xe4;usebauform" attributeDataType="xs:string">
+                <description value=" Gibt an, welcher geometrische Grundk&#xf6;rper die &#xe4;u&#xdf;ere Gestalt des Ger&#xe4;tes bestimmt bzw. ob es sich um eine genormte Bauform handelt"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAD840#006"/>
+              </attribute>
+              <attribute name="Hersteller-Name" attributeDataType="xs:string">
+                <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+                <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+              </attribute>
+              <attribute name="Herstellerartikelnummer" attributeDataType="xs:string">
+                <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+              </attribute>
+            </roleClass>
+          </roleClass>
+        </roleClass>
+      </roleClass>
+    </roleClass>
+  </roleClassLib>
+  <systemUnitClassLib name="PhysicalCommunicationDevices">
+    <description value="Physical communication system component library developed by Gecko Project (proprietary)"/>
+    <version value="0.9"/>
+    <copyright value=""/>
+    <systemUnitClass name="PINetworkCard">
+      <attribute name="MACaddress" attributeDataType="xs:string">
+        <description value="MAC address of the device"/>
+      </attribute>
+      <attribute name="IPAddress" attributeDataType="xs:string">
+        <description value="IP adress of the device"/>
+      </attribute>
+      <externalInterface iD="4ba496a6-acf4-4c0f-a998-1623c6204f30" name="EthernetSocket" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSocket"/>
+      <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPPhysicalDevice"/>
+    </systemUnitClass>
+    <systemUnitClass name="PIBasedController">
+      <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+      <attribute name="eClassReferenceFeatureGroupID" value="27240690" attributeDataType="xs:string"/>
+      <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+      <attribute name="Hersteller-Name" attributeDataType="xs:string">
+        <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+      </attribute>
+      <attribute name="Herstellerartikelnummer" attributeDataType="xs:string">
+        <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+      </attribute>
+      <internalElement iD="a166b952-c709-4bdc-b78f-4955c6f895a8" name="MyPiProgram" refBaseSystemUnitPath="LogicalCommunicationDevices/PiProgram">
+        <externalInterface iD="84827b1c-1f69-4c52-b9e6-9a61423269a2" name="MotorAn" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/VariableInterface">
+          <attribute name="refURI" attributeDataType="xs:anyURI"/>
+        </externalInterface>
+        <externalInterface iD="7c7fca20-7400-479f-9c46-4ba630d2b1f4" name="SensorValue" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/VariableInterface">
+          <attribute name="refURI" attributeDataType="xs:anyURI"/>
+        </externalInterface>
+        <externalInterface iD="bdf5d9dd-c127-4f73-b9a5-7fb38fee1e73" name="ReadRegisterSensorState" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPMasterRequest"/>
+        <externalInterface iD="4193d6a3-f0d5-49ce-8d86-06fe8968d06a" name="WriteRegisterMotorAn" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPMasterRequest"/>
+        <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/LogicalDevice"/>
+        <internalLink name="MappingSensorValue2ReadRegister" refPartnerSideA="a166b952-c709-4bdc-b78f-4955c6f895a8:SensorValue" refPartnerSideB="a166b952-c709-4bdc-b78f-4955c6f895a8:ReadRegisterSensorState"/>
+        <internalLink name="MappingMotorAn2WriteRegister" refPartnerSideA="a166b952-c709-4bdc-b78f-4955c6f895a8:MotorAn" refPartnerSideB="a166b952-c709-4bdc-b78f-4955c6f895a8:WriteRegisterMotorAn"/>
+      </internalElement>
+      <internalElement iD="f53e84b5-9d05-4e9b-b8ff-87d1647fbd14" name="MyPINetworkCard" refBaseSystemUnitPath="PhysicalCommunicationDevices/PINetworkCard">
+        <attribute name="MACaddress" attributeDataType="xs:string">
+          <description value="MAC address of the device"/>
+        </attribute>
+        <attribute name="IPAddress" attributeDataType="xs:string">
+          <description value="IP adress of the device"/>
+        </attribute>
+        <externalInterface iD="5917d8e8-56c8-4d8e-96d9-89ec53600e92" name="EthernetSocket" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSocket"/>
+        <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPPhysicalDevice"/>
+      </internalElement>
+      <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-06 PC-basierte Steuerungen/27-24-06-90 PC-basierte Steuerungen (nicht spezifiziert)"/>
+      <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+    </systemUnitClass>
+    <systemUnitClass name="WagoIOSystem">
+      <internalElement iD="c4227ac8-2a99-48fe-98a9-28bce101f6f4" name="IOMapperApplication" refBaseSystemUnitPath="LogicalCommunicationDevices/IOMapperApplication">
+        <externalInterface iD="9b1241fc-3b91-4d71-995c-e8d67bdd30a2" name="ReadInputRegister" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSlaveResponce"/>
+        <externalInterface iD="9627778d-d816-4fa0-b947-2f4b2df0eb60" name="WriteOutputRegister" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSlaveResponce"/>
+      </internalElement>
+      <internalElement iD="ff217255-c163-4f63-8572-3b80b954e939" name="Koppler750-341" refBaseSystemUnitPath="PhysicalCommunicationDevices/WagoIOBK750-341">
+        <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+        <attribute name="eClassReferenceFeatureGroupID" value="27242607" attributeDataType="xs:string"/>
+        <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+        <attribute name="MACaddress" attributeDataType="xs:string">
+          <description value="MAC address of the device"/>
+        </attribute>
+        <attribute name="IPAddress" attributeDataType="xs:string">
+          <description value="IP adress of the device"/>
+        </attribute>
+        <attribute name="Web-Server vorhanden" value="Ja" attributeDataType="xs:string">
+          <description value=" Angabe, ob ein Web-Server vorhanden ist oder nicht"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAF768#004"/>
+        </attribute>
+        <attribute name="unterst&#xfc;tztes Protokoll" value="TCP/IP" attributeDataType="xs:string">
+          <description value="exakte, normierte Vereinbarungen, nach der Daten zwischen Ger&#xe4;ten bzw. Prozessen ausgetauscht werden, die durch ein Netz miteinander verbunden sind"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAM479#004"/>
+        </attribute>
+        <attribute name="Anzahl der HW-Schnittstellen (Industrial Ethernet)" value="1" attributeDataType="xs:integer">
+          <description value=" quantitative Angabe zur Menge der Anschlussm&#xf6;glichkeiten zur Daten&#xfc;bertragung gem&#xe4;&#xdf; der IEEE 802.3 standardisierten Ausf&#xfc;hrung des Basisband-LAN"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO494#002"/>
+        </attribute>
+        <attribute name="min. Eingangsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+          <description value=" gr&#xf6;&#xdf;tm&#xf6;glicher Wert der Gleichspannung, die am Eingang eines Betriebsmittels angelegt werden kann"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB977#007"/>
+        </attribute>
+        <attribute name="max. Eingangsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+          <description value=" gr&#xf6;&#xdf;tm&#xf6;glicher Wert der Gleichspannung, die am Eingang eines Betriebsmittels angelegt werden kann"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB848#006"/>
+        </attribute>
+        <attribute name="Art der Eingangsspannung" value="DC" attributeDataType="xs:string">
+          <description value="Form der Eingangsspannung, die bestimmt, wie sich die elektrischen Ladungen aufgrund der anliegenden Spannung im zeitlichen Verlauf bewegen"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAC065#006"/>
+        </attribute>
+        <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+          <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+        </attribute>
+        <attribute name="Herstellerartikelnummer" value="750-341" attributeDataType="xs:string">
+          <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        </attribute>
+        <externalInterface iD="f53d0a3c-9c99-4f71-a143-3107b1ca9d91" name="EthernetSocket" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSocket"/>
+        <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-07 Feldbus, Dez. Peripherie - Grundger&#xe4;t"/>
+        <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPPhysicalDevice"/>
+      </internalElement>
+      <internalElement iD="cf33f53d-ee43-470e-8cb0-c3f086d58d70" name="DI1 750-437" refBaseSystemUnitPath="PhysicalCommunicationDevices/WagoIOInput750-437">
+        <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+        <attribute name="eClassReferenceFeatureGroupID" value="27242604" attributeDataType="xs:string"/>
+        <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+        <attribute name="Anzahl der digitalen Ausg&#xe4;nge" attributeDataType="xs:integer">
+          <description value=" quantitative Angabe zur Menge der Ausg&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP610#001"/>
+        </attribute>
+        <attribute name="Anzahl der digitalen Eing&#xe4;nge" attributeDataType="xs:integer">
+          <description value=" quantitative Angabe zur Menge der Eing&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP508#003"/>
+        </attribute>
+        <attribute name="min. Versorgungsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+          <description value="kleinster Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC025#006"/>
+        </attribute>
+        <attribute name="max. Versorgungsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+          <description value=" gr&#xf6;&#xdf;ter Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB909#006"/>
+        </attribute>
+        <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+          <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+        </attribute>
+        <attribute name="Herstellerartikelnummer" value="750-437" attributeDataType="xs:string">
+          <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        </attribute>
+        <externalInterface iD="4bf799ba-bacc-4bfd-a760-013577713a81" name="Pin0" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="4b962408-4b06-4fc3-9ebb-0abcb303a4e1" name="Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="27238fcb-03c7-487b-9598-2109c3204d09" name="Pin2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="e339d1c7-70ef-4605-b7cf-f9f0634019ba" name="Pin3" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="05b120f9-fa73-4f6c-aee4-5843c234c2b7" name="Pin4" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="3fa430ed-2bd3-4e34-ab94-151e4507757c" name="Pin5" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="ab9c6e5c-2630-4552-993d-b5a6936681d8" name="Pin6" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="63d2d406-2197-44ff-9377-a7dca6594629" name="Pin7" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-04 Feldbus, Dez. Peripherie - Digitales EinAusgangs-Modul"/>
+        <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+        <internalLink name="MappingRegister2DI1Pin7" refPartnerSideA="cf33f53d-ee43-470e-8cb0-c3f086d58d70:Pin7" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI1Pin6" refPartnerSideA="cf33f53d-ee43-470e-8cb0-c3f086d58d70:Pin6" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI1Pin5" refPartnerSideA="cf33f53d-ee43-470e-8cb0-c3f086d58d70:Pin5" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI1Pin4" refPartnerSideA="cf33f53d-ee43-470e-8cb0-c3f086d58d70:Pin4" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI1Pin3" refPartnerSideA="cf33f53d-ee43-470e-8cb0-c3f086d58d70:Pin3" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI1Pin2" refPartnerSideA="cf33f53d-ee43-470e-8cb0-c3f086d58d70:Pin2" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI1Pin1" refPartnerSideA="cf33f53d-ee43-470e-8cb0-c3f086d58d70:Pin1" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI1Pin0" refPartnerSideA="cf33f53d-ee43-470e-8cb0-c3f086d58d70:Pin0" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+      </internalElement>
+      <internalElement iD="15049b4f-96b0-4102-9d66-5e5ac7667474" name="DI2 750-437" refBaseSystemUnitPath="PhysicalCommunicationDevices/WagoIOInput750-437">
+        <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+        <attribute name="eClassReferenceFeatureGroupID" value="27242604" attributeDataType="xs:string"/>
+        <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+        <attribute name="Anzahl der digitalen Ausg&#xe4;nge" attributeDataType="xs:integer">
+          <description value=" quantitative Angabe zur Menge der Ausg&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP610#001"/>
+        </attribute>
+        <attribute name="Anzahl der digitalen Eing&#xe4;nge" attributeDataType="xs:integer">
+          <description value=" quantitative Angabe zur Menge der Eing&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP508#003"/>
+        </attribute>
+        <attribute name="min. Versorgungsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+          <description value="kleinster Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC025#006"/>
+        </attribute>
+        <attribute name="max. Versorgungsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+          <description value=" gr&#xf6;&#xdf;ter Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB909#006"/>
+        </attribute>
+        <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+          <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+        </attribute>
+        <attribute name="Herstellerartikelnummer" value="750-437" attributeDataType="xs:string">
+          <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        </attribute>
+        <externalInterface iD="ff136bb9-66fb-4872-b2ae-3597b51743c0" name="Pin0" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="ad5c4df2-62da-485e-88b3-ef8c3ec3abec" name="Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="bc090298-5b00-486f-b721-e325427e5883" name="Pin2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="ac848933-8e9d-44d0-8df4-76167db71975" name="Pin3" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="ae44a261-6b86-4b89-9abd-76708b986a3b" name="Pin4" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="d15df945-4e67-4778-af86-dcbcceea0124" name="Pin5" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="e4053857-7bed-42c3-9ef2-8dc691bf807e" name="Pin6" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="93e80192-a761-466c-832e-3715f50e47f5" name="Pin7" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-04 Feldbus, Dez. Peripherie - Digitales EinAusgangs-Modul"/>
+        <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+        <internalLink name="MappingRegister2DI2Pin7" refPartnerSideA="15049b4f-96b0-4102-9d66-5e5ac7667474:Pin7" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI2Pin6" refPartnerSideA="15049b4f-96b0-4102-9d66-5e5ac7667474:Pin6" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI2Pin5" refPartnerSideA="15049b4f-96b0-4102-9d66-5e5ac7667474:Pin5" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI2Pin4" refPartnerSideA="15049b4f-96b0-4102-9d66-5e5ac7667474:Pin4" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI2Pin3" refPartnerSideA="15049b4f-96b0-4102-9d66-5e5ac7667474:Pin3" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI2Pin2" refPartnerSideA="15049b4f-96b0-4102-9d66-5e5ac7667474:Pin2" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI2Pin1" refPartnerSideA="15049b4f-96b0-4102-9d66-5e5ac7667474:Pin1" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+        <internalLink name="MappingRegister2DI2Pin0" refPartnerSideA="15049b4f-96b0-4102-9d66-5e5ac7667474:Pin0" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:ReadInputRegister"/>
+      </internalElement>
+      <internalElement iD="65f757c5-2f62-4c2b-9909-77877d6a71a4" name="DO1 750-530" refBaseSystemUnitPath="PhysicalCommunicationDevices/WagoIOOutput750-530">
+        <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+        <attribute name="eClassReferenceFeatureGroupID" value="27242604" attributeDataType="xs:string"/>
+        <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+        <attribute name="Anzahl der digitalen Ausg&#xe4;nge" value="8" attributeDataType="xs:integer">
+          <description value=" quantitative Angabe zur Menge der Ausg&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP610#001"/>
+        </attribute>
+        <attribute name="Anzahl der digitalen Eing&#xe4;nge" value="0" attributeDataType="xs:integer">
+          <description value=" quantitative Angabe zur Menge der Eing&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP508#003"/>
+        </attribute>
+        <attribute name="min. Versorgungsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+          <description value="kleinster Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC025#006"/>
+        </attribute>
+        <attribute name="max. Versorgungsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+          <description value=" gr&#xf6;&#xdf;ter Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB909#006"/>
+        </attribute>
+        <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+          <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+        </attribute>
+        <attribute name="Herstellerartikelnummer" value="750-530" attributeDataType="xs:string">
+          <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        </attribute>
+        <externalInterface iD="a93c148a-7b0d-402e-90de-3931307e9f6e" name="Pin0" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="49b107e8-634b-4932-8ddf-1cd0c70f5772" name="Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="0cdd6785-ecdc-4b41-9da8-43a26a6fba0c" name="Pin2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="42ef4694-81ad-4938-a458-4ba96427dbdd" name="Pin3" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="5efc67f2-0d1e-4c84-aa22-3753d2791d2e" name="Pin4" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="7ff43a60-c1b6-4fe0-b4d8-f8e23b7978dd" name="Pin5" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="18641760-ff42-4302-92f3-9efb437bec6c" name="Pin6" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="075b826e-2955-4018-bed6-460b2cc4bf23" name="Pin7" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-04 Feldbus, Dez. Peripherie - Digitales EinAusgangs-Modul"/>
+        <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+        <internalLink name="MappingRegister2DO1Pin7" refPartnerSideA="65f757c5-2f62-4c2b-9909-77877d6a71a4:Pin7" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO1Pin6" refPartnerSideA="65f757c5-2f62-4c2b-9909-77877d6a71a4:Pin6" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO1Pin5" refPartnerSideA="65f757c5-2f62-4c2b-9909-77877d6a71a4:Pin5" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO1Pin4" refPartnerSideA="65f757c5-2f62-4c2b-9909-77877d6a71a4:Pin4" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO1Pin3" refPartnerSideA="65f757c5-2f62-4c2b-9909-77877d6a71a4:Pin3" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO1Pin2" refPartnerSideA="65f757c5-2f62-4c2b-9909-77877d6a71a4:Pin2" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO1Pin1" refPartnerSideA="65f757c5-2f62-4c2b-9909-77877d6a71a4:Pin1" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO1Pin0" refPartnerSideA="65f757c5-2f62-4c2b-9909-77877d6a71a4:Pin0" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+      </internalElement>
+      <internalElement iD="27fad11b-070c-48fc-988c-780fdc13d909" name="DO2 750-530" refBaseSystemUnitPath="PhysicalCommunicationDevices/WagoIOOutput750-530">
+        <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+        <attribute name="eClassReferenceFeatureGroupID" value="27242604" attributeDataType="xs:string"/>
+        <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+        <attribute name="Anzahl der digitalen Ausg&#xe4;nge" value="8" attributeDataType="xs:integer">
+          <description value=" quantitative Angabe zur Menge der Ausg&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP610#001"/>
+        </attribute>
+        <attribute name="Anzahl der digitalen Eing&#xe4;nge" value="0" attributeDataType="xs:integer">
+          <description value=" quantitative Angabe zur Menge der Eing&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP508#003"/>
+        </attribute>
+        <attribute name="min. Versorgungsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+          <description value="kleinster Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC025#006"/>
+        </attribute>
+        <attribute name="max. Versorgungsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+          <description value=" gr&#xf6;&#xdf;ter Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB909#006"/>
+        </attribute>
+        <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+          <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+        </attribute>
+        <attribute name="Herstellerartikelnummer" value="750-530" attributeDataType="xs:string">
+          <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        </attribute>
+        <externalInterface iD="5a4a8856-9124-4292-941f-e0ee405f860e" name="Pin0" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="75894c23-e323-4cf9-af06-f8c49f9ea4b7" name="Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="7794167d-640f-49fb-97ff-18c31423dff3" name="Pin2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="14b9a44c-458f-4164-b5a4-bbb0089cbf8d" name="Pin3" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="760054d0-e1dc-48f0-8925-7163cc28e7ee" name="Pin4" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="a1fed62e-8c23-4dee-8be8-8e561faf4358" name="Pin5" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="11b756c2-5332-4c2e-97e2-2075d82d5c20" name="Pin6" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <externalInterface iD="97117138-3928-4ab9-99fe-daea45ebd684" name="Pin7" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-04 Feldbus, Dez. Peripherie - Digitales EinAusgangs-Modul"/>
+        <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+        <internalLink name="MappingRegister2DO2Pin7" refPartnerSideA="27fad11b-070c-48fc-988c-780fdc13d909:Pin7" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO2Pin6" refPartnerSideA="27fad11b-070c-48fc-988c-780fdc13d909:Pin6" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO2Pin5" refPartnerSideA="27fad11b-070c-48fc-988c-780fdc13d909:Pin5" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO2Pin4" refPartnerSideA="27fad11b-070c-48fc-988c-780fdc13d909:Pin4" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO2Pin3" refPartnerSideA="27fad11b-070c-48fc-988c-780fdc13d909:Pin3" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO2Pin2" refPartnerSideA="27fad11b-070c-48fc-988c-780fdc13d909:Pin2" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO2Pin1" refPartnerSideA="27fad11b-070c-48fc-988c-780fdc13d909:Pin1" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+        <internalLink name="MappingRegister2DO2Pin0" refPartnerSideA="27fad11b-070c-48fc-988c-780fdc13d909:Pin0" refPartnerSideB="c4227ac8-2a99-48fe-98a9-28bce101f6f4:WriteOutputRegister"/>
+      </internalElement>
+      <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+    </systemUnitClass>
+    <systemUnitClass name="WagoIOBK750-341">
+      <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+      <attribute name="eClassReferenceFeatureGroupID" value="27242607" attributeDataType="xs:string"/>
+      <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+      <attribute name="MACaddress" attributeDataType="xs:string">
+        <description value="MAC address of the device"/>
+      </attribute>
+      <attribute name="IPAddress" attributeDataType="xs:string">
+        <description value="IP adress of the device"/>
+      </attribute>
+      <attribute name="Web-Server vorhanden" value="Ja" attributeDataType="xs:string">
+        <description value=" Angabe, ob ein Web-Server vorhanden ist oder nicht"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAF768#004"/>
+      </attribute>
+      <attribute name="unterst&#xfc;tztes Protokoll" value="TCP/IP" attributeDataType="xs:string">
+        <description value="exakte, normierte Vereinbarungen, nach der Daten zwischen Ger&#xe4;ten bzw. Prozessen ausgetauscht werden, die durch ein Netz miteinander verbunden sind"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAM479#004"/>
+      </attribute>
+      <attribute name="Anzahl der HW-Schnittstellen (Industrial Ethernet)" value="1" attributeDataType="xs:integer">
+        <description value=" quantitative Angabe zur Menge der Anschlussm&#xf6;glichkeiten zur Daten&#xfc;bertragung gem&#xe4;&#xdf; der IEEE 802.3 standardisierten Ausf&#xfc;hrung des Basisband-LAN"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO494#002"/>
+      </attribute>
+      <attribute name="min. Eingangsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+        <description value=" gr&#xf6;&#xdf;tm&#xf6;glicher Wert der Gleichspannung, die am Eingang eines Betriebsmittels angelegt werden kann"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB977#007"/>
+      </attribute>
+      <attribute name="max. Eingangsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+        <description value=" gr&#xf6;&#xdf;tm&#xf6;glicher Wert der Gleichspannung, die am Eingang eines Betriebsmittels angelegt werden kann"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB848#006"/>
+      </attribute>
+      <attribute name="Art der Eingangsspannung" value="DC" attributeDataType="xs:string">
+        <description value="Form der Eingangsspannung, die bestimmt, wie sich die elektrischen Ladungen aufgrund der anliegenden Spannung im zeitlichen Verlauf bewegen"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAC065#006"/>
+      </attribute>
+      <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+        <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+      </attribute>
+      <attribute name="Herstellerartikelnummer" value="750-341" attributeDataType="xs:string">
+        <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+      </attribute>
+      <externalInterface iD="50933457-d90b-4059-89be-2140f644ba39" name="EthernetSocket" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSocket"/>
+      <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-07 Feldbus, Dez. Peripherie - Grundger&#xe4;t"/>
+      <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPPhysicalDevice"/>
+    </systemUnitClass>
+    <systemUnitClass name="WagoIOInput750-437">
+      <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+      <attribute name="eClassReferenceFeatureGroupID" value="27242604" attributeDataType="xs:string"/>
+      <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+      <attribute name="Anzahl der digitalen Ausg&#xe4;nge" value="0" attributeDataType="xs:integer">
+        <description value=" quantitative Angabe zur Menge der Ausg&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP610#001"/>
+      </attribute>
+      <attribute name="Anzahl der digitalen Eing&#xe4;nge" value="8" attributeDataType="xs:integer">
+        <description value=" quantitative Angabe zur Menge der Eing&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP508#003"/>
+      </attribute>
+      <attribute name="min. Versorgungsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+        <description value="kleinster Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC025#006"/>
+      </attribute>
+      <attribute name="max. Versorgungsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+        <description value=" gr&#xf6;&#xdf;ter Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB909#006"/>
+      </attribute>
+      <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+        <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+      </attribute>
+      <attribute name="Herstellerartikelnummer" value="750-437" attributeDataType="xs:string">
+        <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+      </attribute>
+      <externalInterface iD="f9e6207b-8963-4407-acea-5cdf4f228b5e" name="Pin0" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="b9e58fdc-6702-4744-b8b1-d866cd1052f3" name="Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="ca7ca4b0-2f8b-4856-9833-f26211d8d585" name="Pin2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="28fb3943-4e31-4a72-91cf-23c6779d5ca4" name="Pin3" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="2ed48e6f-05f5-4f5d-b42c-8bee2c85c2fe" name="Pin4" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="9cf3dc4f-f3b3-4ef8-9a8b-886df7c9a9dd" name="Pin5" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="21a9cca4-c1c7-46da-aeb8-9d92c31b0de4" name="Pin6" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="8b8eb62e-81b4-4482-aafb-559ec20b5e87" name="Pin7" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-04 Feldbus, Dez. Peripherie - Digitales EinAusgangs-Modul"/>
+      <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+    </systemUnitClass>
+    <systemUnitClass name="WagoIOOutput750-530">
+      <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+      <attribute name="eClassReferenceFeatureGroupID" value="27242604" attributeDataType="xs:string"/>
+      <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+      <attribute name="Anzahl der digitalen Ausg&#xe4;nge" value="8" attributeDataType="xs:integer">
+        <description value=" quantitative Angabe zur Menge der Ausg&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP610#001"/>
+      </attribute>
+      <attribute name="Anzahl der digitalen Eing&#xe4;nge" value="0" attributeDataType="xs:integer">
+        <description value=" quantitative Angabe zur Menge der Eing&#xe4;nge mit digitalem Signal (gekennzeichnet durch die Zust&#xe4;nde High und Low)"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP508#003"/>
+      </attribute>
+      <attribute name="min. Versorgungsspannung (bei DC)" value="18" unit="V" attributeDataType="xs:float">
+        <description value="kleinster Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC025#006"/>
+      </attribute>
+      <attribute name="max. Versorgungsspannung (bei DC)" value="31.2" unit="V" attributeDataType="xs:float">
+        <description value=" gr&#xf6;&#xdf;ter Grenzwert der erforderlichen Gleichspannung als elektromotorische Kraft, die am Versorgungseingang eines elektrischen Betriebsmittel zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB909#006"/>
+      </attribute>
+      <attribute name="Hersteller-Name" value="Wago" attributeDataType="xs:string">
+        <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+      </attribute>
+      <attribute name="Herstellerartikelnummer" value="750-530" attributeDataType="xs:string">
+        <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+      </attribute>
+      <externalInterface iD="7da3ecfe-54ed-462f-991a-a4a7b4f4a6dd" name="Pin0" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="3d717866-ea60-4b5e-b932-d3021fd5310b" name="Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="9af0b23f-0a5b-4b4e-ad87-6d004f91cad9" name="Pin2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="2f69fa4d-8c6f-4ba2-9351-94d5cb76bf27" name="Pin3" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="179d28d0-8f6f-430b-b862-96b32a65b7a2" name="Pin4" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="8f5f2606-dd97-4e21-9835-62d41b1fd029" name="Pin5" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="8f9c30c0-7608-4c21-aaf5-9fc96c6785a7" name="Pin6" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="c963d3b5-f4b1-458c-b271-b50b1b1e8bd7" name="Pin7" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-24 Control/27-24-26 Feldbus, Dezentrale Peripherie/27-24-26-04 Feldbus, Dez. Peripherie - Digitales EinAusgangs-Modul"/>
+      <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalDevice"/>
+    </systemUnitClass>
+    <systemUnitClass name="ModbusTCPCable">
+      <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+      <attribute name="eClassReferenceFeatureGroupID" value="27060307" attributeDataType="xs:string"/>
+      <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+      <attribute name="Anzahl der Adern" value="8" attributeDataType="xs:integer">
+        <description value=" Quantitative Angabe zur Menge der Adern (Ader = Leiter mit seiner Isolierung einschlie&#xdf;lich etwa vorhandener Leitschichten)"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAP775#001"/>
+      </attribute>
+      <attribute name="min. Betriebstemperatur" value="0" unit="&#xb0;C" attributeDataType="xs:float">
+        <description value="kleinster Grenzwert der sich durch den Nennbetrieb typischerweise ergebende Temperatur im nahem Umfeld des Betriebsmittels"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC820#005"/>
+      </attribute>
+      <attribute name="Werkstoff" value="Kupfer" attributeDataType="xs:string">
+        <description value="Materialzusammensetzung, aus der ein einzelnes Bauteil hergestellt ist, als Ergebnis eines Herstellungsprozesses, in dem der/die Rohstoff(e) durch Extrusion, Verformung, Schwei&#xdf;en usw. in die endg&#xfc;ltige Form gebracht werden"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAB664#011"/>
+      </attribute>
+      <attribute name="max. Betriebstemperatur" value="65" unit="&#xb0;C" attributeDataType="xs:float">
+        <description value="gr&#xf6;&#xdf;ter Grenzwert der sich durch den Nennbetrieb typischerweise ergebende Temperatur im nahem Umfeld des Betriebsmittels"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC821#005"/>
+      </attribute>
+      <attribute name="Hersteller-Name" value="GOOD CONNECTIONS" attributeDataType="xs:string">
+        <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+      </attribute>
+      <attribute name="Herstellerartikelnummer" value="4014619323814" attributeDataType="xs:string">
+        <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+      </attribute>
+      <externalInterface iD="3f046e99-12f1-4557-8fb1-02030eb7138e" name="RJ45Plug1" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPPlug"/>
+      <externalInterface iD="f44c8bef-963b-48b0-b611-ffef64de1db4" name="RJ45Plug2" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPPlug"/>
+      <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-06 Cable, Wire/27-06-03 Konfektionierte Leitung/27-06-03-07 Bus-Kabel"/>
+      <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPPhysicalConnection"/>
+    </systemUnitClass>
+    <systemUnitClass name="IOCabel">
+      <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+      <attribute name="eClassReferenceFeatureGroupID" value="27060311" attributeDataType="xs:string"/>
+      <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+      <attribute name="Polzahl" value="1" attributeDataType="xs:integer">
+        <description value="quantitative Angabe zur Menge der Strompfade (Pole)"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAT080#001"/>
+      </attribute>
+      <attribute name="min. zul&#xe4;ssige Kabelau&#xdf;entemperatur (fest verlegt)" value="-50" unit="&#xb0;C" attributeDataType="xs:float">
+        <description value="unter den ung&#xfc;nstigsten Betriebsbedingungen kleinst zul&#xe4;ssiger Grenzwert, der nie &#xfc;berschritten werden darf, um Personen- und/oder Sachsch&#xe4;den zu vermeiden, der Temperatur der au&#xdf;en liegenden Oberfl&#xe4;chen des Kabels, zu der die umgebende Atmosph&#xe4;re gelangen kann, wobei dieses Kabel auf bestimmte Stelle(n) angebracht und befestigt ist"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC028#007"/>
+      </attribute>
+      <attribute name="max. zul&#xe4;ssige Kabelau&#xdf;entemperatur (fest verlegt)" value="180" unit="&#xb0;C" attributeDataType="xs:float">
+        <description value="unter den ung&#xfc;nstigsten Betriebsbedingungen h&#xf6;chst zul&#xe4;ssiger Grenzwert, der nie &#xfc;berschritten werden darf, um Personen- und/oder Sachsch&#xe4;den zu vermeiden, der Temperatur der au&#xdf;en liegenden Oberfl&#xe4;chen des Kabels, zu der die umgebende Atmosph&#xe4;re gelangen kann, wobei dieses Kabel auf bestimmte Stelle(n) angebracht und befestigt ist"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAB912#007"/>
+      </attribute>
+      <attribute name="Hersteller-Name" value="Beispielhersteller1" attributeDataType="xs:string">
+        <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+      </attribute>
+      <attribute name="Herstellerartikelnummer" value="irgenteineNummer" attributeDataType="xs:string">
+        <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+      </attribute>
+      <externalInterface iD="ed854871-660a-4886-b47e-0cdc0ee622e5" name="Plug1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <externalInterface iD="2c8c3c5c-43ed-4f84-9119-684c55c072f8" name="Plug2" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/PhysicalConnection"/>
+      <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-06 Cable, Wire/27-06-03 Konfektionierte Leitung/27-06-03-11 Konfektionierte Sensor-Aktor-Leitung"/>
+    </systemUnitClass>
+  </systemUnitClassLib>
+  <systemUnitClassLib name="LogicalCommunicationDevices">
+    <description value="Logical communication component library developed by Gecko Project (proprietary, includes control applications)"/>
+    <version value="0.9"/>
+    <systemUnitClass name="PiProgram">
+      <externalInterface iD="64f5bb99-0714-4cc3-9bd5-2b8721e5513b" name="MotorAn" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/VariableInterface">
+        <attribute name="refURI" attributeDataType="xs:anyURI"/>
+      </externalInterface>
+      <externalInterface iD="9c53382b-04e9-4da3-95d0-5add57836bac" name="SensorValue" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/VariableInterface">
+        <attribute name="refURI" attributeDataType="xs:anyURI"/>
+      </externalInterface>
+      <externalInterface iD="c5a09f2d-243b-4e27-8818-b5bf51bf458f" name="ReadRegisterSensorState" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPMasterRequest"/>
+      <externalInterface iD="1f1860e1-af11-4025-a2ec-228105ccd4a2" name="WriteRegisterMotorAn" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPMasterRequest"/>
+      <supportedRoleClass refRoleClassPath="CommunicationRoleClassLib/LogicalDevice"/>
+    </systemUnitClass>
+    <systemUnitClass name="IOMapperApplication">
+      <externalInterface iD="a22014a2-3bd4-4b69-aa1e-cba5fbbf3187" name="ReadInputRegister" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSlaveResponce"/>
+      <externalInterface iD="58e93f2a-f6ff-4bbe-9c86-a379f702a747" name="WriteOutputRegister" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSlaveResponce"/>
+    </systemUnitClass>
+    <systemUnitClass name="ModbusLogicalConnection">
+      <attribute name="QoS">
+        <description value="Quality of Service Features required"/>
+        <attribute name="PackageSize" unit="Byte" attributeDataType="xs:integer">
+          <description value="Size of package in Byte"/>
+        </attribute>
+        <attribute name="Cycletime" unit="s" attributeDataType="xs:float">
+          <description value="duration between two subsequent request packages"/>
+        </attribute>
+      </attribute>
+      <externalInterface iD="f6d6e4b3-28c1-4b9a-a075-9b9db2dae168" name="ModbusTCPSlaveResponce" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPSlaveResponce"/>
+      <externalInterface iD="afd5c9cf-690b-4441-82f6-d41ec5baebcf" name="ModbusTCPMasterRequest" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPMasterRequest"/>
+      <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPLogicalConnection"/>
+    </systemUnitClass>
+    <systemUnitClass name="ModbusRequestPackage">
+      <attribute name="RequestAddress" attributeDataType="xs:string">
+        <description value="Position of the requested data in the data array"/>
+      </attribute>
+      <attribute name="RequestType" attributeDataType="xs:string">
+        <description value="Funktionscode of Modbus TCP request"/>
+      </attribute>
+      <externalInterface iD="83c2a649-9103-43ec-a10e-c6b026e49228" name="RequestedRegisterPart" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPDatagrammObject"/>
+      <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPCommunicationPackage"/>
+    </systemUnitClass>
+    <systemUnitClass name="ModbusResponcePackage">
+      <attribute name="RequestAddress" attributeDataType="xs:string">
+        <description value="Position of the requested data in the data array"/>
+      </attribute>
+      <attribute name="RequestType" attributeDataType="xs:string">
+        <description value="Funktionscode of Modbus TCP request"/>
+      </attribute>
+      <externalInterface iD="727560b3-0115-4626-a49b-ef83bbb38ab2" name="RespondedRegisterPart" refBaseClassPath="ModbusTCPInterfaceClassLib/ModbusTCPDatagrammObject"/>
+      <supportedRoleClass refRoleClassPath="ModbusTCPRoleClassLib/ModbusTCPCommunicationPackage"/>
+    </systemUnitClass>
+  </systemUnitClassLib>
+  <systemUnitClassLib name="PlantComponents">
+    <description value="Plant component library developed by Gecko Project (proprietary)"/>
+    <version value="0.9"/>
+    <systemUnitClass name="Turntable">
+      <attribute name="Hersteller-Name" value="Fischertechnik" attributeDataType="xs:string">
+        <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+      </attribute>
+      <attribute name="Herstellerartikelnummer" value="xxxxxxx" attributeDataType="xs:string">
+        <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+      </attribute>
+      <internalElement iD="c3bffeda-a5b1-44bc-84be-9f8d5f8ee592" name="Motor" refBaseSystemUnitPath="PlantComponents/Motor">
+        <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+        <attribute name="eClassReferenceFeatureGroupID" value="27022501" attributeDataType="xs:string"/>
+        <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+        <attribute name="Hersteller-Name" value="Fischertechnik" attributeDataType="xs:string">
+          <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+        </attribute>
+        <attribute name="Herstellerartikelnummer" value="35481 " attributeDataType="xs:string">
+          <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+        </attribute>
+        <attribute name="Min. Rotation Speed" value="5800" unit="1/s" attributeDataType="xs:integer">
+          <description value="Kleinstm&#xf6;gliche Drehzahl, bei der ein Motor im thermisch zul&#xe4;ssigen Bemessungsbetriebspunkt dauernd betrieben werden kann"/>
+        </attribute>
+        <attribute name="Nominal Speed" value="8746" unit="1/s" attributeDataType="xs:float">
+          <description value=" Drehzahl die den Nenndaten des verwendeten Motors entspricht"/>
+        </attribute>
+        <externalInterface iD="ff997883-f2ab-4a6f-a7db-1e4bbc41fa65" name="MotorAn_PinA" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-02 Electrical Drive/27-02-25 DC-Motor/27-02-25-01 DC-Motor (IEC)"/>
+        <supportedRoleClass refRoleClassPath="Device"/>
+      </internalElement>
+      <internalElement iD="4e89b7f2-025b-4274-9fa3-f56f35dbed2a" name="InductiveSensor" refBaseSystemUnitPath="PlantComponents/InductiveSensor">
+        <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+        <attribute name="eClassReferenceFeatureGroupID" value="27270101" attributeDataType="xs:string"/>
+        <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+        <attribute name="Umgebungstemperatur min" value="0" unit="&#xb0;C" attributeDataType="xs:float">
+          <description value="Umgebungstemperatur min ist die niedrigste Umgebungstemperatur, der das Ger&#xe4;t ausgesetzt ist und f&#xfc;r die es seine Spezifikation einhalten soll bzw. ist die minimal zul&#xe4;ssige Temperatur der Umgebung, unabh&#xe4;ngig von der Mediumstemperatur, bei der das Ger&#xe4;t noch bestimmungsgem&#xe4;&#xdf;, d. h. mit den vom Hersteller angegebenen Genauigkeitsspezifikationen arbeitet oder ist die maximal zul&#xe4;ssige Temperatur aufgrund weiterer Vorgaben, wie gesetzlicher Bestimmungen oder von Zulassungsbestimmungen (die Beziehung ergibt sich aus dem Kontext der Verwendung von Umgebungstemperatur min)"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAS160#001"/>
+        </attribute>
+        <attribute name="min. Versorgungsspannung" value="10" unit="V" attributeDataType="xs:float">
+          <description value="kleinster Grenzwert der Spannung, die am Versorgungseingang eines elektrischen Betriebsmittels zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC962#006"/>
+        </attribute>
+        <attribute name="Umgebungstemperatur max" value="55" unit="&#xb0;C" attributeDataType="xs:float">
+          <description value=" Umgebungstemperatur max ist die h&#xf6;chste Umgebungstemperatur, der das Ger&#xe4;t ausgesetzt ist und f&#xfc;r die es seine Spezifikation einhalten soll bzw. ist die maximal zul&#xe4;ssige Temperatur der Umgebung, unabh&#xe4;ngig von der Mediumstemperatur, bei der das Ger&#xe4;t noch bestimmungsgem&#xe4;&#xdf;, d. h. mit den vom Hersteller angegebenen Genauigkeitsspezifikationen arbeitet oder ist die maximal zul&#xe4;ssige Temperatur aufgrund weiterer Vorgaben, wie gesetzlicher Bestimmungen oder von Zulassungsbestimmungen (die Beziehung ergibt sich aus dem Kontext der Verwendung von Umgebungstemperatur max)"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAS155#001"/>
+        </attribute>
+        <attribute name="max. Versorgungsspannung" value="30" unit="V" attributeDataType="xs:float">
+          <description value=" h&#xf6;chster Grenzwert der Spannung, die am Versorgungseingang eines elektrischen Betriebsmittels zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC965#006"/>
+        </attribute>
+        <attribute name="Geh&#xe4;usebauform" value="Quader" attributeDataType="xs:string">
+          <description value=" Gibt an, welcher geometrische Grundk&#xf6;rper die &#xe4;u&#xdf;ere Gestalt des Ger&#xe4;tes bestimmt bzw. ob es sich um eine genormte Bauform handelt"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAD840#006"/>
+        </attribute>
+        <attribute name="Hersteller-Name" value="Fischertechnik" attributeDataType="xs:string">
+          <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+        </attribute>
+        <attribute name="Herstellerartikelnummer" value="xxxxxxx" attributeDataType="xs:string">
+          <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+          <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+        </attribute>
+        <externalInterface iD="9798be00-f68d-4e87-8157-efa450edd404" name="SensorValue_Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+        <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-27 Binat Sensor Technology/27-27-01 Proximity Switch/27-27-01-01 Inductive Proximity Switch"/>
+        <supportedRoleClass refRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure/Device"/>
+      </internalElement>
+      <supportedRoleClass refRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure/MechatronicAssembly"/>
+    </systemUnitClass>
+    <systemUnitClass name="Motor">
+      <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+      <attribute name="eClassReferenceFeatureGroupID" value="27022501" attributeDataType="xs:string"/>
+      <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+      <attribute name="Hersteller-Name" value="Fischertechnik" attributeDataType="xs:string">
+        <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+      </attribute>
+      <attribute name="Herstellerartikelnummer" value="35481" attributeDataType="xs:string">
+        <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+      </attribute>
+      <attribute name="Min. Rotation Speed" value="5800" unit="1/s" attributeDataType="xs:integer">
+        <description value="Kleinstm&#xf6;gliche Drehzahl, bei der ein Motor im thermisch zul&#xe4;ssigen Bemessungsbetriebspunkt dauernd betrieben werden kann"/>
+      </attribute>
+      <attribute name="Nominal Speed" value="8746" unit="1/s" attributeDataType="xs:float">
+        <description value=" Drehzahl die den Nenndaten des verwendeten Motors entspricht"/>
+      </attribute>
+      <externalInterface iD="923608d1-6cbb-448b-b739-ff85d11e1958" name="MotorAn_PinA" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <supportedRoleClass refRoleClassPath="27-02-25-01 DC-Motor (IEC)"/>
+      <supportedRoleClass refRoleClassPath="Device"/>
+    </systemUnitClass>
+    <systemUnitClass name="InductiveSensor">
+      <attribute name="eClassReferenceFeatureGroupID2" attributeDataType="xs:string"/>
+      <attribute name="eClassReferenceFeatureGroupID" value="27270101" attributeDataType="xs:string"/>
+      <attribute name="eClassVersion" value="9.0" attributeDataType="xs:string"/>
+      <attribute name="Umgebungstemperatur min" value="0" unit="&#xb0;C" attributeDataType="xs:float">
+        <description value="Umgebungstemperatur min ist die niedrigste Umgebungstemperatur, der das Ger&#xe4;t ausgesetzt ist und f&#xfc;r die es seine Spezifikation einhalten soll bzw. ist die minimal zul&#xe4;ssige Temperatur der Umgebung, unabh&#xe4;ngig von der Mediumstemperatur, bei der das Ger&#xe4;t noch bestimmungsgem&#xe4;&#xdf;, d. h. mit den vom Hersteller angegebenen Genauigkeitsspezifikationen arbeitet oder ist die maximal zul&#xe4;ssige Temperatur aufgrund weiterer Vorgaben, wie gesetzlicher Bestimmungen oder von Zulassungsbestimmungen (die Beziehung ergibt sich aus dem Kontext der Verwendung von Umgebungstemperatur min)"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAS160#001"/>
+      </attribute>
+      <attribute name="min. Versorgungsspannung" value="10" unit="V" attributeDataType="xs:float">
+        <description value="kleinster Grenzwert der Spannung, die am Versorgungseingang eines elektrischen Betriebsmittels zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC962#006"/>
+      </attribute>
+      <attribute name="Umgebungstemperatur max" value="55" unit="&#xb0;C" attributeDataType="xs:float">
+        <description value=" Umgebungstemperatur max ist die h&#xf6;chste Umgebungstemperatur, der das Ger&#xe4;t ausgesetzt ist und f&#xfc;r die es seine Spezifikation einhalten soll bzw. ist die maximal zul&#xe4;ssige Temperatur der Umgebung, unabh&#xe4;ngig von der Mediumstemperatur, bei der das Ger&#xe4;t noch bestimmungsgem&#xe4;&#xdf;, d. h. mit den vom Hersteller angegebenen Genauigkeitsspezifikationen arbeitet oder ist die maximal zul&#xe4;ssige Temperatur aufgrund weiterer Vorgaben, wie gesetzlicher Bestimmungen oder von Zulassungsbestimmungen (die Beziehung ergibt sich aus dem Kontext der Verwendung von Umgebungstemperatur max)"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAS155#001"/>
+      </attribute>
+      <attribute name="max. Versorgungsspannung" value="30" unit="V" attributeDataType="xs:float">
+        <description value=" h&#xf6;chster Grenzwert der Spannung, die am Versorgungseingang eines elektrischen Betriebsmittels zeitweise oder st&#xe4;ndig anliegen muss, um die Funktion des Betriebsmittels aufrecht zu erhalten"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAC965#006"/>
+      </attribute>
+      <attribute name="Geh&#xe4;usebauform" value="Quader" attributeDataType="xs:string">
+        <description value=" Gibt an, welcher geometrische Grundk&#xf6;rper die &#xe4;u&#xdf;ere Gestalt des Ger&#xe4;tes bestimmt bzw. ob es sich um eine genormte Bauform handelt"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-BAD840#006"/>
+      </attribute>
+      <attribute name="Hersteller-Name" value="Fischertechnik" attributeDataType="xs:string">
+        <description value="Bezeichnung f&#xfc;r eine nat&#xfc;rliche oder juristische Person, die f&#xfc;r die Auslegung, Herstellung und Verpackung sowie die Etikettierung eines Produkts im Hinblick auf das 'Inverkehrbringen' im eigenen Namen verantwortlich ist"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+      </attribute>
+      <attribute name="Herstellerartikelnummer" value="xxxxxxx" attributeDataType="xs:string">
+        <description value="eindeutiger Produktschl&#xfc;ssel des Herstellers"/>
+        <refSemantic correspondingAttributePath="ECLASS:0173-1#02-AAO676#002"/>
+      </attribute>
+      <externalInterface iD="fb307d80-3469-47b8-8b8b-dfa2fd84b86d" name="SensorWert_Pin1" refBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication/SignalInterface"/>
+      <supportedRoleClass refRoleClassPath="EClassRoleClassLib/EClassClassification/27/27-27 Binat Sensor Technology/27-27-01 Proximity Switch/27-27-01-01 Inductive Proximity Switch"/>
+      <supportedRoleClass refRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure/Device"/>
+    </systemUnitClass>
+  </systemUnitClassLib>
+</CAEX:CAEXFile>
