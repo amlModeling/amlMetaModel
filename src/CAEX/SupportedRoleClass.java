@@ -20,11 +20,12 @@ package CAEX;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.SupportedRoleClass#getMappingObject <em>Mapping Object</em>}</li>
  *   <li>{@link CAEX.SupportedRoleClass#getRefRoleClassPath <em>Ref Role Class Path</em>}</li>
+ *   <li>{@link CAEX.SupportedRoleClass#getRoleClass <em>Role Class</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getSupportedRoleClass()
  * @model extendedMetaData="name='SupportedRoleClass' kind='elementOnly'"
@@ -84,5 +85,31 @@ public interface SupportedRoleClass extends CAEXBasicObject {
 	 * @generated
 	 */
 	void setRefRoleClassPath(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Role Class</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Role Class</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Role Class</em>' reference.
+	 * @see #setRoleClass(RoleClass)
+	 * @see CAEX.CAEXPackage#getSupportedRoleClass_RoleClass()
+	 * @model
+	 * @generated
+	 */
+	RoleClass getRoleClass();
+
+	/**
+	 * Sets the value of the '{@link CAEX.SupportedRoleClass#getRoleClass <em>Role Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Role Class</em>' reference.
+	 * @see #getRoleClass()
+	 * @generated
+	 */
+	void setRoleClass(RoleClass value);
 
 } // SupportedRoleClass

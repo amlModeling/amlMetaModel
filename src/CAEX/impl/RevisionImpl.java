@@ -29,6 +29,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.RevisionImpl#getRevisionDate <em>Revision Date</em>}</li>
  *   <li>{@link CAEX.impl.RevisionImpl#getOldVersion <em>Old Version</em>}</li>
@@ -36,7 +37,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link CAEX.impl.RevisionImpl#getAuthorName <em>Author Name</em>}</li>
  *   <li>{@link CAEX.impl.RevisionImpl#getComment <em>Comment</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

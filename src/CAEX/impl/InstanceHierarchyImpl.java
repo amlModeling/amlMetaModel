@@ -34,10 +34,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.InstanceHierarchyImpl#getInternalElement <em>Internal Element</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

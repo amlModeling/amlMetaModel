@@ -25,16 +25,16 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
+ *   <li>{@link CAEX.Attribute#getDefaultValue <em>Default Value</em>}</li>
+ *   <li>{@link CAEX.Attribute#getValue <em>Value</em>}</li>
  *   <li>{@link CAEX.Attribute#getRefSemantic <em>Ref Semantic</em>}</li>
  *   <li>{@link CAEX.Attribute#getConstraint <em>Constraint</em>}</li>
  *   <li>{@link CAEX.Attribute#getAttribute <em>Attribute</em>}</li>
- *   <li>{@link CAEX.Attribute#getAttributeDataType <em>Attribute Data Type</em>}</li>
  *   <li>{@link CAEX.Attribute#getUnit <em>Unit</em>}</li>
- *   <li>{@link CAEX.Attribute#getValue <em>Value</em>}</li>
- *   <li>{@link CAEX.Attribute#getDefaultValue <em>Default Value</em>}</li>
+ *   <li>{@link CAEX.Attribute#getAttributeDataType <em>Attribute Data Type</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getAttribute()
  * @model extendedMetaData="name='AttributeType' kind='elementOnly'"

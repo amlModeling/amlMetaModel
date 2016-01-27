@@ -13,12 +13,14 @@
 package CAEX.impl;
 
 import CAEX.CAEXPackage;
+import CAEX.InterfaceClass;
 import CAEX.InternalLink;
 
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
@@ -27,11 +29,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.InternalLinkImpl#getRefPartnerSideA <em>Ref Partner Side A</em>}</li>
  *   <li>{@link CAEX.impl.InternalLinkImpl#getRefPartnerSideB <em>Ref Partner Side B</em>}</li>
+ *   <li>{@link CAEX.impl.InternalLinkImpl#getPartnerSideA <em>Partner Side A</em>}</li>
+ *   <li>{@link CAEX.impl.InternalLinkImpl#getPartnerSideB <em>Partner Side B</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -75,6 +79,26 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 	 * @ordered
 	 */
 	protected String refPartnerSideB = REF_PARTNER_SIDE_B_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getPartnerSideA() <em>Partner Side A</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPartnerSideA()
+	 * @generated
+	 * @ordered
+	 */
+	protected InterfaceClass partnerSideA;
+
+	/**
+	 * The cached value of the '{@link #getPartnerSideB() <em>Partner Side B</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPartnerSideB()
+	 * @generated
+	 * @ordered
+	 */
+	protected InterfaceClass partnerSideB;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,6 +166,82 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public InterfaceClass getPartnerSideA() {
+		if (partnerSideA != null && partnerSideA.eIsProxy()) {
+			InternalEObject oldPartnerSideA = (InternalEObject)partnerSideA;
+			partnerSideA = (InterfaceClass)eResolveProxy(oldPartnerSideA);
+			if (partnerSideA != oldPartnerSideA) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_A, oldPartnerSideA, partnerSideA));
+			}
+		}
+		return partnerSideA;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InterfaceClass basicGetPartnerSideA() {
+		return partnerSideA;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPartnerSideA(InterfaceClass newPartnerSideA) {
+		InterfaceClass oldPartnerSideA = partnerSideA;
+		partnerSideA = newPartnerSideA;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_A, oldPartnerSideA, partnerSideA));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InterfaceClass getPartnerSideB() {
+		if (partnerSideB != null && partnerSideB.eIsProxy()) {
+			InternalEObject oldPartnerSideB = (InternalEObject)partnerSideB;
+			partnerSideB = (InterfaceClass)eResolveProxy(oldPartnerSideB);
+			if (partnerSideB != oldPartnerSideB) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_B, oldPartnerSideB, partnerSideB));
+			}
+		}
+		return partnerSideB;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InterfaceClass basicGetPartnerSideB() {
+		return partnerSideB;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPartnerSideB(InterfaceClass newPartnerSideB) {
+		InterfaceClass oldPartnerSideB = partnerSideB;
+		partnerSideB = newPartnerSideB;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_B, oldPartnerSideB, partnerSideB));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -149,6 +249,12 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 				return getRefPartnerSideA();
 			case CAEXPackage.INTERNAL_LINK__REF_PARTNER_SIDE_B:
 				return getRefPartnerSideB();
+			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_A:
+				if (resolve) return getPartnerSideA();
+				return basicGetPartnerSideA();
+			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_B:
+				if (resolve) return getPartnerSideB();
+				return basicGetPartnerSideB();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -166,6 +272,12 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 				return;
 			case CAEXPackage.INTERNAL_LINK__REF_PARTNER_SIDE_B:
 				setRefPartnerSideB((String)newValue);
+				return;
+			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_A:
+				setPartnerSideA((InterfaceClass)newValue);
+				return;
+			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_B:
+				setPartnerSideB((InterfaceClass)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -185,6 +297,12 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 			case CAEXPackage.INTERNAL_LINK__REF_PARTNER_SIDE_B:
 				setRefPartnerSideB(REF_PARTNER_SIDE_B_EDEFAULT);
 				return;
+			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_A:
+				setPartnerSideA((InterfaceClass)null);
+				return;
+			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_B:
+				setPartnerSideB((InterfaceClass)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -201,6 +319,10 @@ public class InternalLinkImpl extends CAEXObjectImpl implements InternalLink {
 				return REF_PARTNER_SIDE_A_EDEFAULT == null ? refPartnerSideA != null : !REF_PARTNER_SIDE_A_EDEFAULT.equals(refPartnerSideA);
 			case CAEXPackage.INTERNAL_LINK__REF_PARTNER_SIDE_B:
 				return REF_PARTNER_SIDE_B_EDEFAULT == null ? refPartnerSideB != null : !REF_PARTNER_SIDE_B_EDEFAULT.equals(refPartnerSideB);
+			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_A:
+				return partnerSideA != null;
+			case CAEXPackage.INTERNAL_LINK__PARTNER_SIDE_B:
+				return partnerSideB != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -38,12 +38,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.RoleClassImpl#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link CAEX.impl.RoleClassImpl#getExternalInterface <em>External Interface</em>}</li>
  *   <li>{@link CAEX.impl.RoleClassImpl#getRefBaseClassPath <em>Ref Base Class Path</em>}</li>
+ *   <li>{@link CAEX.impl.RoleClassImpl#getBaseClass <em>Base Class</em>}</li>
+ *   <li>{@link CAEX.impl.RoleClassImpl#getRoleClass <em>Role Class</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -87,6 +89,26 @@ public class RoleClassImpl extends CAEXObjectImpl implements RoleClass {
 	 * @ordered
 	 */
 	protected String refBaseClassPath = REF_BASE_CLASS_PATH_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getBaseClass() <em>Base Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBaseClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected RoleClass baseClass;
+
+	/**
+	 * The cached value of the '{@link #getRoleClass() <em>Role Class</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRoleClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<RoleClass> roleClass;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -157,6 +179,56 @@ public class RoleClassImpl extends CAEXObjectImpl implements RoleClass {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public RoleClass getBaseClass() {
+		if (baseClass != null && baseClass.eIsProxy()) {
+			InternalEObject oldBaseClass = (InternalEObject)baseClass;
+			baseClass = (RoleClass)eResolveProxy(oldBaseClass);
+			if (baseClass != oldBaseClass) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.ROLE_CLASS__BASE_CLASS, oldBaseClass, baseClass));
+			}
+		}
+		return baseClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RoleClass basicGetBaseClass() {
+		return baseClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBaseClass(RoleClass newBaseClass) {
+		RoleClass oldBaseClass = baseClass;
+		baseClass = newBaseClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.ROLE_CLASS__BASE_CLASS, oldBaseClass, baseClass));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<RoleClass> getRoleClass() {
+		if (roleClass == null) {
+			roleClass = new EObjectContainmentEList<RoleClass>(RoleClass.class, this, CAEXPackage.ROLE_CLASS__ROLE_CLASS);
+		}
+		return roleClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -164,6 +236,8 @@ public class RoleClassImpl extends CAEXObjectImpl implements RoleClass {
 				return ((InternalEList<?>)getAttribute()).basicRemove(otherEnd, msgs);
 			case CAEXPackage.ROLE_CLASS__EXTERNAL_INTERFACE:
 				return ((InternalEList<?>)getExternalInterface()).basicRemove(otherEnd, msgs);
+			case CAEXPackage.ROLE_CLASS__ROLE_CLASS:
+				return ((InternalEList<?>)getRoleClass()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -182,6 +256,11 @@ public class RoleClassImpl extends CAEXObjectImpl implements RoleClass {
 				return getExternalInterface();
 			case CAEXPackage.ROLE_CLASS__REF_BASE_CLASS_PATH:
 				return getRefBaseClassPath();
+			case CAEXPackage.ROLE_CLASS__BASE_CLASS:
+				if (resolve) return getBaseClass();
+				return basicGetBaseClass();
+			case CAEXPackage.ROLE_CLASS__ROLE_CLASS:
+				return getRoleClass();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -206,6 +285,13 @@ public class RoleClassImpl extends CAEXObjectImpl implements RoleClass {
 			case CAEXPackage.ROLE_CLASS__REF_BASE_CLASS_PATH:
 				setRefBaseClassPath((String)newValue);
 				return;
+			case CAEXPackage.ROLE_CLASS__BASE_CLASS:
+				setBaseClass((RoleClass)newValue);
+				return;
+			case CAEXPackage.ROLE_CLASS__ROLE_CLASS:
+				getRoleClass().clear();
+				getRoleClass().addAll((Collection<? extends RoleClass>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -227,6 +313,12 @@ public class RoleClassImpl extends CAEXObjectImpl implements RoleClass {
 			case CAEXPackage.ROLE_CLASS__REF_BASE_CLASS_PATH:
 				setRefBaseClassPath(REF_BASE_CLASS_PATH_EDEFAULT);
 				return;
+			case CAEXPackage.ROLE_CLASS__BASE_CLASS:
+				setBaseClass((RoleClass)null);
+				return;
+			case CAEXPackage.ROLE_CLASS__ROLE_CLASS:
+				getRoleClass().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -245,6 +337,10 @@ public class RoleClassImpl extends CAEXObjectImpl implements RoleClass {
 				return externalInterface != null && !externalInterface.isEmpty();
 			case CAEXPackage.ROLE_CLASS__REF_BASE_CLASS_PATH:
 				return REF_BASE_CLASS_PATH_EDEFAULT == null ? refBaseClassPath != null : !REF_BASE_CLASS_PATH_EDEFAULT.equals(refBaseClassPath);
+			case CAEXPackage.ROLE_CLASS__BASE_CLASS:
+				return baseClass != null;
+			case CAEXPackage.ROLE_CLASS__ROLE_CLASS:
+				return roleClass != null && !roleClass.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

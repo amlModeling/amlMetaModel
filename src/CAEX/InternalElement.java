@@ -20,12 +20,13 @@ package CAEX;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.InternalElement#getRoleRequirements <em>Role Requirements</em>}</li>
  *   <li>{@link CAEX.InternalElement#getMappingObject <em>Mapping Object</em>}</li>
  *   <li>{@link CAEX.InternalElement#getRefBaseSystemUnitPath <em>Ref Base System Unit Path</em>}</li>
+ *   <li>{@link CAEX.InternalElement#getBaseSystemUnit <em>Base System Unit</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getInternalElement()
  * @model extendedMetaData="name='InternalElementType' kind='elementOnly'"
@@ -109,5 +110,31 @@ public interface InternalElement extends SystemUnitClass {
 	 * @generated
 	 */
 	void setRefBaseSystemUnitPath(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Base System Unit</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Base System Unit</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Base System Unit</em>' reference.
+	 * @see #setBaseSystemUnit(SystemUnitClass)
+	 * @see CAEX.CAEXPackage#getInternalElement_BaseSystemUnit()
+	 * @model
+	 * @generated
+	 */
+	SystemUnitClass getBaseSystemUnit();
+
+	/**
+	 * Sets the value of the '{@link CAEX.InternalElement#getBaseSystemUnit <em>Base System Unit</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Base System Unit</em>' reference.
+	 * @see #getBaseSystemUnit()
+	 * @generated
+	 */
+	void setBaseSystemUnit(SystemUnitClass value);
 
 } // InternalElement

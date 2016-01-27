@@ -35,11 +35,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.MappingImpl#getAttributeNameMapping <em>Attribute Name Mapping</em>}</li>
  *   <li>{@link CAEX.impl.MappingImpl#getInterfaceNameMapping <em>Interface Name Mapping</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

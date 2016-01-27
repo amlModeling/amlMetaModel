@@ -17,6 +17,7 @@ import CAEX.InternalElement;
 import CAEX.Mapping;
 import CAEX.RoleRequirements;
 
+import CAEX.SystemUnitClass;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 
@@ -31,12 +32,13 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.InternalElementImpl#getRoleRequirements <em>Role Requirements</em>}</li>
  *   <li>{@link CAEX.impl.InternalElementImpl#getMappingObject <em>Mapping Object</em>}</li>
  *   <li>{@link CAEX.impl.InternalElementImpl#getRefBaseSystemUnitPath <em>Ref Base System Unit Path</em>}</li>
+ *   <li>{@link CAEX.impl.InternalElementImpl#getBaseSystemUnit <em>Base System Unit</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -80,6 +82,16 @@ public class InternalElementImpl extends SystemUnitClassImpl implements Internal
 	 * @ordered
 	 */
 	protected String refBaseSystemUnitPath = REF_BASE_SYSTEM_UNIT_PATH_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getBaseSystemUnit() <em>Base System Unit</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBaseSystemUnit()
+	 * @generated
+	 * @ordered
+	 */
+	protected SystemUnitClass baseSystemUnit;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -212,6 +224,44 @@ public class InternalElementImpl extends SystemUnitClassImpl implements Internal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public SystemUnitClass getBaseSystemUnit() {
+		if (baseSystemUnit != null && baseSystemUnit.eIsProxy()) {
+			InternalEObject oldBaseSystemUnit = (InternalEObject)baseSystemUnit;
+			baseSystemUnit = (SystemUnitClass)eResolveProxy(oldBaseSystemUnit);
+			if (baseSystemUnit != oldBaseSystemUnit) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.INTERNAL_ELEMENT__BASE_SYSTEM_UNIT, oldBaseSystemUnit, baseSystemUnit));
+			}
+		}
+		return baseSystemUnit;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SystemUnitClass basicGetBaseSystemUnit() {
+		return baseSystemUnit;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBaseSystemUnit(SystemUnitClass newBaseSystemUnit) {
+		SystemUnitClass oldBaseSystemUnit = baseSystemUnit;
+		baseSystemUnit = newBaseSystemUnit;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.INTERNAL_ELEMENT__BASE_SYSTEM_UNIT, oldBaseSystemUnit, baseSystemUnit));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -237,6 +287,9 @@ public class InternalElementImpl extends SystemUnitClassImpl implements Internal
 				return getMappingObject();
 			case CAEXPackage.INTERNAL_ELEMENT__REF_BASE_SYSTEM_UNIT_PATH:
 				return getRefBaseSystemUnitPath();
+			case CAEXPackage.INTERNAL_ELEMENT__BASE_SYSTEM_UNIT:
+				if (resolve) return getBaseSystemUnit();
+				return basicGetBaseSystemUnit();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -257,6 +310,9 @@ public class InternalElementImpl extends SystemUnitClassImpl implements Internal
 				return;
 			case CAEXPackage.INTERNAL_ELEMENT__REF_BASE_SYSTEM_UNIT_PATH:
 				setRefBaseSystemUnitPath((String)newValue);
+				return;
+			case CAEXPackage.INTERNAL_ELEMENT__BASE_SYSTEM_UNIT:
+				setBaseSystemUnit((SystemUnitClass)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -279,6 +335,9 @@ public class InternalElementImpl extends SystemUnitClassImpl implements Internal
 			case CAEXPackage.INTERNAL_ELEMENT__REF_BASE_SYSTEM_UNIT_PATH:
 				setRefBaseSystemUnitPath(REF_BASE_SYSTEM_UNIT_PATH_EDEFAULT);
 				return;
+			case CAEXPackage.INTERNAL_ELEMENT__BASE_SYSTEM_UNIT:
+				setBaseSystemUnit((SystemUnitClass)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -297,6 +356,8 @@ public class InternalElementImpl extends SystemUnitClassImpl implements Internal
 				return mappingObject != null;
 			case CAEXPackage.INTERNAL_ELEMENT__REF_BASE_SYSTEM_UNIT_PATH:
 				return REF_BASE_SYSTEM_UNIT_PATH_EDEFAULT == null ? refBaseSystemUnitPath != null : !REF_BASE_SYSTEM_UNIT_PATH_EDEFAULT.equals(refBaseSystemUnitPath);
+			case CAEXPackage.INTERNAL_ELEMENT__BASE_SYSTEM_UNIT:
+				return baseSystemUnit != null;
 		}
 		return super.eIsSet(featureID);
 	}

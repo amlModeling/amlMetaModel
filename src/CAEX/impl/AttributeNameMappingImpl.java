@@ -27,11 +27,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.AttributeNameMappingImpl#getRoleAttributeName <em>Role Attribute Name</em>}</li>
  *   <li>{@link CAEX.impl.AttributeNameMappingImpl#getSystemUnitAttributeName <em>System Unit Attribute Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

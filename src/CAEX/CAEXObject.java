@@ -25,11 +25,11 @@ package CAEX;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.CAEXObject#getID <em>ID</em>}</li>
  *   <li>{@link CAEX.CAEXObject#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getCAEXObject()
  * @model extendedMetaData="name='CAEXObject' kind='elementOnly'"

@@ -38,12 +38,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.RoleRequirementsImpl#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link CAEX.impl.RoleRequirementsImpl#getExternalInterface <em>External Interface</em>}</li>
  *   <li>{@link CAEX.impl.RoleRequirementsImpl#getRefBaseRoleClassPath <em>Ref Base Role Class Path</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -21,10 +21,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.NominalScaled#getRequiredValue <em>Required Value</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getNominalScaled()
  * @model extendedMetaData="name='NominalScaledType' kind='elementOnly'"

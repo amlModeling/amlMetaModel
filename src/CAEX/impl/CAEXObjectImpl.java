@@ -27,11 +27,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.CAEXObjectImpl#getID <em>ID</em>}</li>
  *   <li>{@link CAEX.impl.CAEXObjectImpl#getName <em>Name</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -37,11 +37,13 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.InterfaceClassImpl#getAttribute <em>Attribute</em>}</li>
  *   <li>{@link CAEX.impl.InterfaceClassImpl#getRefBaseClassPath <em>Ref Base Class Path</em>}</li>
+ *   <li>{@link CAEX.impl.InterfaceClassImpl#getBaseClass <em>Base Class</em>}</li>
+ *   <li>{@link CAEX.impl.InterfaceClassImpl#getInterfaceClass <em>Interface Class</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -75,6 +77,26 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 	 * @ordered
 	 */
 	protected String refBaseClassPath = REF_BASE_CLASS_PATH_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getBaseClass() <em>Base Class</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBaseClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected InterfaceClass baseClass;
+
+	/**
+	 * The cached value of the '{@link #getInterfaceClass() <em>Interface Class</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getInterfaceClass()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<InterfaceClass> interfaceClass;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -133,11 +155,63 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public InterfaceClass getBaseClass() {
+		if (baseClass != null && baseClass.eIsProxy()) {
+			InternalEObject oldBaseClass = (InternalEObject)baseClass;
+			baseClass = (InterfaceClass)eResolveProxy(oldBaseClass);
+			if (baseClass != oldBaseClass) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CAEXPackage.INTERFACE_CLASS__BASE_CLASS, oldBaseClass, baseClass));
+			}
+		}
+		return baseClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InterfaceClass basicGetBaseClass() {
+		return baseClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setBaseClass(InterfaceClass newBaseClass) {
+		InterfaceClass oldBaseClass = baseClass;
+		baseClass = newBaseClass;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CAEXPackage.INTERFACE_CLASS__BASE_CLASS, oldBaseClass, baseClass));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<InterfaceClass> getInterfaceClass() {
+		if (interfaceClass == null) {
+			interfaceClass = new EObjectContainmentEList<InterfaceClass>(InterfaceClass.class, this, CAEXPackage.INTERFACE_CLASS__INTERFACE_CLASS);
+		}
+		return interfaceClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CAEXPackage.INTERFACE_CLASS__ATTRIBUTE:
 				return ((InternalEList<?>)getAttribute()).basicRemove(otherEnd, msgs);
+			case CAEXPackage.INTERFACE_CLASS__INTERFACE_CLASS:
+				return ((InternalEList<?>)getInterfaceClass()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -154,6 +228,11 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 				return getAttribute();
 			case CAEXPackage.INTERFACE_CLASS__REF_BASE_CLASS_PATH:
 				return getRefBaseClassPath();
+			case CAEXPackage.INTERFACE_CLASS__BASE_CLASS:
+				if (resolve) return getBaseClass();
+				return basicGetBaseClass();
+			case CAEXPackage.INTERFACE_CLASS__INTERFACE_CLASS:
+				return getInterfaceClass();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -174,6 +253,13 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 			case CAEXPackage.INTERFACE_CLASS__REF_BASE_CLASS_PATH:
 				setRefBaseClassPath((String)newValue);
 				return;
+			case CAEXPackage.INTERFACE_CLASS__BASE_CLASS:
+				setBaseClass((InterfaceClass)newValue);
+				return;
+			case CAEXPackage.INTERFACE_CLASS__INTERFACE_CLASS:
+				getInterfaceClass().clear();
+				getInterfaceClass().addAll((Collection<? extends InterfaceClass>)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -192,6 +278,12 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 			case CAEXPackage.INTERFACE_CLASS__REF_BASE_CLASS_PATH:
 				setRefBaseClassPath(REF_BASE_CLASS_PATH_EDEFAULT);
 				return;
+			case CAEXPackage.INTERFACE_CLASS__BASE_CLASS:
+				setBaseClass((InterfaceClass)null);
+				return;
+			case CAEXPackage.INTERFACE_CLASS__INTERFACE_CLASS:
+				getInterfaceClass().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -208,6 +300,10 @@ public class InterfaceClassImpl extends CAEXObjectImpl implements InterfaceClass
 				return attribute != null && !attribute.isEmpty();
 			case CAEXPackage.INTERFACE_CLASS__REF_BASE_CLASS_PATH:
 				return REF_BASE_CLASS_PATH_EDEFAULT == null ? refBaseClassPath != null : !REF_BASE_CLASS_PATH_EDEFAULT.equals(refBaseClassPath);
+			case CAEXPackage.INTERFACE_CLASS__BASE_CLASS:
+				return baseClass != null;
+			case CAEXPackage.INTERFACE_CLASS__INTERFACE_CLASS:
+				return interfaceClass != null && !interfaceClass.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

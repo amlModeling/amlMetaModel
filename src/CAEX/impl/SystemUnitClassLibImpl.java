@@ -13,9 +13,8 @@
 package CAEX.impl;
 
 import CAEX.CAEXPackage;
+import CAEX.SystemUnitClass;
 import CAEX.SystemUnitClassLib;
-import CAEX.SystemUnitFamily;
-
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -34,10 +33,10 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.impl.SystemUnitClassLibImpl#getSystemUnitClass <em>System Unit Class</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -50,7 +49,7 @@ public class SystemUnitClassLibImpl extends CAEXObjectImpl implements SystemUnit
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<SystemUnitFamily> systemUnitClass;
+	protected EList<SystemUnitClass> systemUnitClass;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -76,9 +75,9 @@ public class SystemUnitClassLibImpl extends CAEXObjectImpl implements SystemUnit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SystemUnitFamily> getSystemUnitClass() {
+	public EList<SystemUnitClass> getSystemUnitClass() {
 		if (systemUnitClass == null) {
-			systemUnitClass = new EObjectContainmentEList<SystemUnitFamily>(SystemUnitFamily.class, this, CAEXPackage.SYSTEM_UNIT_CLASS_LIB__SYSTEM_UNIT_CLASS);
+			systemUnitClass = new EObjectContainmentEList<SystemUnitClass>(SystemUnitClass.class, this, CAEXPackage.SYSTEM_UNIT_CLASS_LIB__SYSTEM_UNIT_CLASS);
 		}
 		return systemUnitClass;
 	}
@@ -122,7 +121,7 @@ public class SystemUnitClassLibImpl extends CAEXObjectImpl implements SystemUnit
 		switch (featureID) {
 			case CAEXPackage.SYSTEM_UNIT_CLASS_LIB__SYSTEM_UNIT_CLASS:
 				getSystemUnitClass().clear();
-				getSystemUnitClass().addAll((Collection<? extends SystemUnitFamily>)newValue);
+				getSystemUnitClass().addAll((Collection<? extends SystemUnitClass>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

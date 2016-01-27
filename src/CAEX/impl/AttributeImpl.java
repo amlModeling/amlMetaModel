@@ -32,20 +32,60 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
+ *   <li>{@link CAEX.impl.AttributeImpl#getDefaultValue <em>Default Value</em>}</li>
+ *   <li>{@link CAEX.impl.AttributeImpl#getValue <em>Value</em>}</li>
  *   <li>{@link CAEX.impl.AttributeImpl#getRefSemantic <em>Ref Semantic</em>}</li>
  *   <li>{@link CAEX.impl.AttributeImpl#getConstraint <em>Constraint</em>}</li>
  *   <li>{@link CAEX.impl.AttributeImpl#getAttribute <em>Attribute</em>}</li>
- *   <li>{@link CAEX.impl.AttributeImpl#getAttributeDataType <em>Attribute Data Type</em>}</li>
  *   <li>{@link CAEX.impl.AttributeImpl#getUnit <em>Unit</em>}</li>
- *   <li>{@link CAEX.impl.AttributeImpl#getValue <em>Value</em>}</li>
- *   <li>{@link CAEX.impl.AttributeImpl#getDefaultValue <em>Default Value</em>}</li>
+ *   <li>{@link CAEX.impl.AttributeImpl#getAttributeDataType <em>Attribute Data Type</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
 public class AttributeImpl extends CAEXObjectImpl implements Attribute {
+	/**
+	 * The default value of the '{@link #getDefaultValue() <em>Default Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDefaultValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DEFAULT_VALUE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDefaultValue() <em>Default Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDefaultValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected String defaultValue = DEFAULT_VALUE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALUE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getValue()
+	 * @generated
+	 * @ordered
+	 */
+	protected String value = VALUE_EDEFAULT;
+
 	/**
 	 * The cached value of the '{@link #getRefSemantic() <em>Ref Semantic</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -77,26 +117,6 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	protected EList<Attribute> attribute;
 
 	/**
-	 * The default value of the '{@link #getAttributeDataType() <em>Attribute Data Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAttributeDataType()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String ATTRIBUTE_DATA_TYPE_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getAttributeDataType() <em>Attribute Data Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getAttributeDataType()
-	 * @generated
-	 * @ordered
-	 */
-	protected String attributeDataType = ATTRIBUTE_DATA_TYPE_EDEFAULT;
-
-	/**
 	 * The default value of the '{@link #getUnit() <em>Unit</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -117,44 +137,24 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	protected String unit = UNIT_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * The default value of the '{@link #getAttributeDataType() <em>Attribute Data Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValue()
+	 * @see #getAttributeDataType()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALUE_EDEFAULT = null;
+	protected static final String ATTRIBUTE_DATA_TYPE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+	 * The cached value of the '{@link #getAttributeDataType() <em>Attribute Data Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getValue()
+	 * @see #getAttributeDataType()
 	 * @generated
 	 * @ordered
 	 */
-	protected String value = VALUE_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getDefaultValue() <em>Default Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDefaultValue()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String DEFAULT_VALUE_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getDefaultValue() <em>Default Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDefaultValue()
-	 * @generated
-	 * @ordered
-	 */
-	protected String defaultValue = DEFAULT_VALUE_EDEFAULT;
+	protected String attributeDataType = ATTRIBUTE_DATA_TYPE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -321,20 +321,20 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
+			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
+				return getDefaultValue();
+			case CAEXPackage.ATTRIBUTE__VALUE:
+				return getValue();
 			case CAEXPackage.ATTRIBUTE__REF_SEMANTIC:
 				return getRefSemantic();
 			case CAEXPackage.ATTRIBUTE__CONSTRAINT:
 				return getConstraint();
 			case CAEXPackage.ATTRIBUTE__ATTRIBUTE:
 				return getAttribute();
-			case CAEXPackage.ATTRIBUTE__ATTRIBUTE_DATA_TYPE:
-				return getAttributeDataType();
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				return getUnit();
-			case CAEXPackage.ATTRIBUTE__VALUE:
-				return getValue();
-			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
-				return getDefaultValue();
+			case CAEXPackage.ATTRIBUTE__ATTRIBUTE_DATA_TYPE:
+				return getAttributeDataType();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -348,6 +348,12 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
+			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
+				setDefaultValue((String)newValue);
+				return;
+			case CAEXPackage.ATTRIBUTE__VALUE:
+				setValue((String)newValue);
+				return;
 			case CAEXPackage.ATTRIBUTE__REF_SEMANTIC:
 				getRefSemantic().clear();
 				getRefSemantic().addAll((Collection<? extends RefSemantic>)newValue);
@@ -360,17 +366,11 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 				getAttribute().clear();
 				getAttribute().addAll((Collection<? extends Attribute>)newValue);
 				return;
-			case CAEXPackage.ATTRIBUTE__ATTRIBUTE_DATA_TYPE:
-				setAttributeDataType((String)newValue);
-				return;
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				setUnit((String)newValue);
 				return;
-			case CAEXPackage.ATTRIBUTE__VALUE:
-				setValue((String)newValue);
-				return;
-			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
-				setDefaultValue((String)newValue);
+			case CAEXPackage.ATTRIBUTE__ATTRIBUTE_DATA_TYPE:
+				setAttributeDataType((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -384,6 +384,12 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
+			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
+				setDefaultValue(DEFAULT_VALUE_EDEFAULT);
+				return;
+			case CAEXPackage.ATTRIBUTE__VALUE:
+				setValue(VALUE_EDEFAULT);
+				return;
 			case CAEXPackage.ATTRIBUTE__REF_SEMANTIC:
 				getRefSemantic().clear();
 				return;
@@ -393,17 +399,11 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 			case CAEXPackage.ATTRIBUTE__ATTRIBUTE:
 				getAttribute().clear();
 				return;
-			case CAEXPackage.ATTRIBUTE__ATTRIBUTE_DATA_TYPE:
-				setAttributeDataType(ATTRIBUTE_DATA_TYPE_EDEFAULT);
-				return;
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				setUnit(UNIT_EDEFAULT);
 				return;
-			case CAEXPackage.ATTRIBUTE__VALUE:
-				setValue(VALUE_EDEFAULT);
-				return;
-			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
-				setDefaultValue(DEFAULT_VALUE_EDEFAULT);
+			case CAEXPackage.ATTRIBUTE__ATTRIBUTE_DATA_TYPE:
+				setAttributeDataType(ATTRIBUTE_DATA_TYPE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -417,20 +417,20 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
+			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
+				return DEFAULT_VALUE_EDEFAULT == null ? defaultValue != null : !DEFAULT_VALUE_EDEFAULT.equals(defaultValue);
+			case CAEXPackage.ATTRIBUTE__VALUE:
+				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
 			case CAEXPackage.ATTRIBUTE__REF_SEMANTIC:
 				return refSemantic != null && !refSemantic.isEmpty();
 			case CAEXPackage.ATTRIBUTE__CONSTRAINT:
 				return constraint != null && !constraint.isEmpty();
 			case CAEXPackage.ATTRIBUTE__ATTRIBUTE:
 				return attribute != null && !attribute.isEmpty();
-			case CAEXPackage.ATTRIBUTE__ATTRIBUTE_DATA_TYPE:
-				return ATTRIBUTE_DATA_TYPE_EDEFAULT == null ? attributeDataType != null : !ATTRIBUTE_DATA_TYPE_EDEFAULT.equals(attributeDataType);
 			case CAEXPackage.ATTRIBUTE__UNIT:
 				return UNIT_EDEFAULT == null ? unit != null : !UNIT_EDEFAULT.equals(unit);
-			case CAEXPackage.ATTRIBUTE__VALUE:
-				return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
-			case CAEXPackage.ATTRIBUTE__DEFAULT_VALUE:
-				return DEFAULT_VALUE_EDEFAULT == null ? defaultValue != null : !DEFAULT_VALUE_EDEFAULT.equals(defaultValue);
+			case CAEXPackage.ATTRIBUTE__ATTRIBUTE_DATA_TYPE:
+				return ATTRIBUTE_DATA_TYPE_EDEFAULT == null ? attributeDataType != null : !ATTRIBUTE_DATA_TYPE_EDEFAULT.equals(attributeDataType);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -445,14 +445,14 @@ public class AttributeImpl extends CAEXObjectImpl implements Attribute {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (attributeDataType: ");
-		result.append(attributeDataType);
-		result.append(", unit: ");
-		result.append(unit);
+		result.append(" (defaultValue: ");
+		result.append(defaultValue);
 		result.append(", value: ");
 		result.append(value);
-		result.append(", defaultValue: ");
-		result.append(defaultValue);
+		result.append(", unit: ");
+		result.append(unit);
+		result.append(", attributeDataType: ");
+		result.append(attributeDataType);
 		result.append(')');
 		return result.toString();
 	}

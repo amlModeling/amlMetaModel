@@ -21,12 +21,12 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link CAEX.OrdinalScaled#getRequiredMaxValue <em>Required Max Value</em>}</li>
  *   <li>{@link CAEX.OrdinalScaled#getRequiredValue <em>Required Value</em>}</li>
  *   <li>{@link CAEX.OrdinalScaled#getRequiredMinValue <em>Required Min Value</em>}</li>
  * </ul>
- * </p>
  *
  * @see CAEX.CAEXPackage#getOrdinalScaled()
  * @model extendedMetaData="name='OrdinalScaledType' kind='elementOnly'"
